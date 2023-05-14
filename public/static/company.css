@@ -1,0 +1,101 @@
+.banner--wrapper.company_banner {
+    background-image: url(/static/images/sample/company.jpg);
+}
+
+.company .text_company {
+    display: block;
+    width: 100%;
+    padding: 5% 5%;
+}
+
+.view_touch {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2%;
+}
+
+.touch.view_touch {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2% 8%;
+}
+
+.we_help .we_help.content {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 6% 0% 2%;
+}
+
+.we_help .we_help.content ul {
+    padding: 0;
+    margin: 0;
+}
+
+.we_help .we_help.content ul li {
+    display: inline-block;
+    margin-right: 2%;
+    width: 11%;
+}
+
+.we_help .we_help.content ul li img {
+    width: 110px;
+}
+
+.principle .principle.content {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 6% 15% 2%;
+}
+
+.principle .principle.content ul {
+    padding: 0;
+    margin: 0;
+}
+
+.principle .principle.content ul li {
+    display: inline-block;
+    margin-right: 2%;
+    width: 31%;
+}
+
+.principle .principle.content ul li img {
+    width: 110px;
+}
+
+.view_touch .get_btn {
+    margin-top: 30px;
+}
+
+.view_touch h3 {
+    font-weight: 700;
+    white-space: pre-wrap;
+    color: #fff;
+    font-size: 1.5rem;
+    line-height: 1.875rem;
+    text-align: center;
+    margin: 0px 0px 0.5em;
+}
+
+.view_touch p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-align: center;
+    color: #fff;
+    margin: 0.5rem 0px 0px;
+}
+
+.btn__transparent {
+    border-radius: 3px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 12px;
+}

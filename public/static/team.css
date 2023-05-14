@@ -1,0 +1,38 @@
+.banner--wrapper.team_banner {
+    background-image: url(/static/images/sample/virtual.jpg);
+}
+
+.team--card{
+    border: 5px solid white;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.team--card:hover{
+    cursor: pointer;
+}
+.team--card:hover .team--card:after {
+    content: "";
+    display: block;
+    position: fixed; /* could also be absolute */ 
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+    background-color: rgba(0,0,0,0.2);
+  }
+.team--card img{
+    width: 100%;
+}
+.team--card-title{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: white;
+    width: 100%;
+    text-align: center;
+}
+

@@ -1,0 +1,16 @@
+/* .pop-convert--modal .modal-content {
+    height: auto !important;
+} */
+
+.modal-body {
+    background-color: white !important;
+    border: 0px solid rgba(0,0,0,.2) !important;
+}
+
+.modal-content {
+    border: 0px solid rgba(0,0,0,.2) !important;
+}
+.modal-open .modal {
+    padding-right: 0 !important;
+    scroll-padding-left: 0 !important
+}
