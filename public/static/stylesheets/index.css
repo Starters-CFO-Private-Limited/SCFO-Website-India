@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+* :not(i) {
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+.text-navy {
+    color: #2d3e50 !important;
+}
+
+.text-scfo {
+    color: #425089 !important;
+}
+
+.border-scfo {
+    border-color: #6774a8 !important;
+}
+
+.bg-scfo {
+    background-color: #425089 !important;
+}
+
+.bg-navy {
+    background-color: #2d3e50;
+}
+
+.bg-scfo-dark {
+    background-color: rgb(45, 62, 80);
+}
+
+.grayscale {
+    filter: grayscale(100%);
+}
+
+.grayscale:hover {
+    filter: grayscale(0%);
+}
+
+input:focus {
+    outline: none !important;
+}
