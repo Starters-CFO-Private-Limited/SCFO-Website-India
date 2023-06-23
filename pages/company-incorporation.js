@@ -14,8 +14,8 @@ import Meta from '../components/site/meta';
 import { WHATSAPP_DISPLAY_NUMBER } from '../constants';
 import DigitallyEnabled from '../components/leadPages/digitallyEnabled';
 
-const PLC_REGISTRATION_COST = "₹ 6,800";
-const OPC_REGISTRATION_COST = "₹ 5,800";
+const PLC_REGISTRATION_COST = "₹ 7,800"; // "₹ 6,800"; 
+const OPC_REGISTRATION_COST = "₹ 7,499"; //"₹ 5,800";
 
 
 class CompanyIncorporation extends React.Component {

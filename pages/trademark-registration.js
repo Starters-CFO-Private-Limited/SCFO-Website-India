@@ -343,7 +343,7 @@ class TrademarkRegistration extends React.Component {
                                 <Col>
                                     <Card className="-no-shadow" onClick={this.togglePopConvert}>
                                         <Card.Body className="background-color__white">
-                                            <h3>₹ 6499/-</h3>
+                                            <h3>₹ 7499/-</h3>
                                             <h5 className="font__20">For Individuals</h5>
                                             <p>Applicable if the owner of the trademark is to be an individual person.</p>
                                         </Card.Body>
@@ -352,7 +352,7 @@ class TrademarkRegistration extends React.Component {
                                 <Col>
                                     <Card className="-no-shadow" onClick={this.togglePopConvert}>
                                         <Card.Body>
-                                            <h3>₹ 6499/-</h3>
+                                            <h3>₹ 7499/-</h3>
                                             <h5 className="font__20">For Start Up India 🇮🇳 Companies</h5>
                                             <p>Applicable ONLY if your company is registered under Startup India / MSME.</p>
                                         </Card.Body>
@@ -361,7 +361,7 @@ class TrademarkRegistration extends React.Component {
                                 <Col>
                                     <Card className="-no-shadow" onClick={this.togglePopConvert}>
                                         <Card.Body>
-                                            <h3>₹ 10,999/-</h3>
+                                            <h3>₹ 11,999/-</h3>
                                             <h5>For Companies</h5>
                                             <p>Applicable for all other companies, private limited or otherwise.</p>
                                         </Card.Body>
@@ -374,7 +374,7 @@ class TrademarkRegistration extends React.Component {
                                 <Col sm={12}>
                                     <Card className="-no-shadow mb-2" onClick={this.togglePopConvert}>
                                         <Card.Body className="background-color__white">
-                                            <h3>₹ 6499/-</h3>
+                                            <h3>₹ 7499/-</h3>
                                             <h5 className="font__20">For Individuals</h5>
                                             <p>Applicable if the owner of the trademark is to be an individual person.</p>
                                         </Card.Body>
@@ -383,7 +383,7 @@ class TrademarkRegistration extends React.Component {
                                 <Col sm={12}>
                                     <Card className="-no-shadow mb-2" onClick={this.togglePopConvert}>
                                         <Card.Body>
-                                            <h3>₹ 6499/-</h3>
+                                            <h3>₹ 7499/-</h3>
                                             <h5 className="font__20">For Start Up India 🇮🇳 Companies</h5>
                                             <p>Applicable ONLY if your company is registered under Startup India / MSME.</p>
                                         </Card.Body>
@@ -392,7 +392,7 @@ class TrademarkRegistration extends React.Component {
                                 <Col sm={12}>
                                     <Card className="-no-shadow" onClick={this.togglePopConvert}>
                                         <Card.Body>
-                                            <h3>₹ 10,999/-</h3>
+                                            <h3>₹ 11,999/-</h3>
                                             <h5>For Companies</h5>
                                             <p>Applicable for all other companies, private limited or otherwise.</p>
                                         </Card.Body>
