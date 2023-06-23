@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import Button from 'react-bootstrap/Button';
@@ -67,7 +68,7 @@ class Header extends React.Component {
                         activeKey="/"
                         className="nav__light -1">
                         <div className="container justify-content-between d-flex">
-                            <div style={{ 'display': 'flex', 'align-items': 'center' }}>
+                            <div style={{ 'display': 'flex', 'alignItems': 'center' }}>
                                 <Nav.Item>
                                     <Nav.Link href={`https://api.whatsapp.com/send?phone=${WHATSAPP_MESSAGE_NUMBER}&text=&source=&data=`} target="_blank"><i className="fab fa-whatsapp color__whatsapp mobile__size"></i> <span className="mobile__hide">{WHATSAPP_DISPLAY_NUMBER}</span></Nav.Link>
                                 </Nav.Item>
@@ -83,13 +84,13 @@ class Header extends React.Component {
                                     |
                                 </div>
                                 <Nav.Item>
-                                    <Nav.Link href="http://blog.starterscfo.com/" target="_blank"><a href="https://www.facebook.com/StartersCFO/" target="_blank" rel="noreferrer"><i class="fa-brands fa-facebook"></i></a></Nav.Link>
+                                    <Nav.Link href="http://blog.starterscfo.com/" target="_blank"><a href="https://www.facebook.com/StartersCFO/" target="_blank" rel="noreferrer"><i className="fa-brands fa-facebook"></i></a></Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
-                                    <Nav.Link href="http://blog.starterscfo.com/" target="_blank"><a href="https://www.linkedin.com/company/starters-cfo/" target="_blank" rel="noreferrer"><i class="fa-brands fa-linkedin"></i></a></Nav.Link>
+                                    <Nav.Link href="http://blog.starterscfo.com/" target="_blank"><a href="https://www.linkedin.com/company/starters-cfo/" target="_blank" rel="noreferrer"><i className="fa-brands fa-linkedin"></i></a></Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
-                                    <Nav.Link href="http://blog.starterscfo.com/" target="_blank"><a href="https://twitter.com/CfoStarter" target="_blank" rel="noreferrer"><i class="fa-brands fa-twitter"></i></a></Nav.Link>
+                                    <Nav.Link href="http://blog.starterscfo.com/" target="_blank"><a href="https://twitter.com/CfoStarter" target="_blank" rel="noreferrer"><i className="fa-brands fa-twitter"></i></a></Nav.Link>
                                 </Nav.Item>
                             </div>
                             <div style={{ 'display': 'flex' }}>
@@ -101,10 +102,10 @@ class Header extends React.Component {
                     {/* navbar 2 */}
                     <Navbar {...this.props} collapseOnSelect expand="lg" className="nav__white" sticky="top">
                         <div className="container justify-content-between d-flex -2">
-                            <Navbar.Brand href="/">
-                                <img src="/static/images/logos/scfo/no-cap.png" className="nav--logo"></img>
+                            <Navbar.Brand>
+                            <Link href="/"><a><img src="/static/images/logos/scfo/no-cap.png" className="nav--logo"></img></a></Link>
                                 {/* web */}
-                                <a href="/careers"><Button className="btn__primary ml-4 py-1 px-2 font__11 rounded__full d-none d-md-inline-block d-lg-inline-block d-xl-inline-block">We're hiring!</Button></a>
+                                <Link href="/careers"><a><Button className="btn__primary ml-4 py-1 px-2 font__11 rounded__full d-none d-md-inline-block d-lg-inline-block d-xl-inline-block">We're hiring!</Button></a></Link>
                             </Navbar.Brand>
                             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                             <Navbar.Collapse id="responsive-navbar-nav">
@@ -112,34 +113,39 @@ class Header extends React.Component {
                                 </Nav>
                                 <Nav>
                                     <Nav.Item className="d-xs-block d-sm-block d-md-none mt-2">
-                                        <a href="/careers"><Button className="btn__primary py-1 px-2 font__11 rounded__full">We're hiring!</Button></a>
+                                    <Link href="/careers"><a><Button className="btn__primary py-1 px-2 font__11 rounded__full">We're hiring!</Button></a></Link>
                                     </Nav.Item>
-                                    <Nav.Item>
-                                        <Nav.Link href="/startup-valuation-india">Valuation </Nav.Link>
+                                    <Nav.Item className="nav-link" >
+                                        <Nav.Link as={Link} href="/startup-valuation-india">Valuation </Nav.Link>
                                     </Nav.Item>
-                                    <Nav.Item>
-                                        <Nav.Link href="/virtual-cfo">Virtual CFO </Nav.Link>
+
+                                    <Nav.Item className="nav-link">
+                                        <Nav.Link as={Link}  href="/virtual-cfo">Virtual CFO </Nav.Link>
                                     </Nav.Item>
-                                    <Nav.Item>
-                                        <Nav.Link href="/compliances">Compliances </Nav.Link>
-                                    </Nav.Item>
+                                    <Nav.Item className="nav-link">
+                                        <Nav.Link as={Link}  href="/compliances">Compliances </Nav.Link>
+                                    </Nav.Item >
                                     <NavDropdown id="collasible-nav-dropdown" title={
                                         <>
                                             Tools <i className="fa fa-caret-down"></i>
                                         </>
                                     }>
-                                        <NavDropdown.Item href="/tools/incorporation/help">Company Structure Quiz</NavDropdown.Item>
+
+                                        <NavDropdown.Item>
+                                        <Link href="/tools/incorporation/help"><a>Company Structure Quiz</a></Link>
+                                        </NavDropdown.Item>
                                     </NavDropdown>
+
                                     <NavDropdown id="collasible-nav-dropdown" title={
                                         <>
                                             Register <i className="fa fa-caret-down"></i>
                                         </>
                                     }>
-                                        <NavDropdown.Item href="/company-incorporation">Company</NavDropdown.Item>
-                                        <NavDropdown.Item href="/trademark-registration">Trademark</NavDropdown.Item>
-                                        <NavDropdown.Item href="/gst">GST</NavDropdown.Item>
-                                        <NavDropdown.Item href="/startup-india-registration">Start up India</NavDropdown.Item>
-                                        <NavDropdown.Item href="/msme-registration-india">MSME / Udyog Aadhar</NavDropdown.Item>
+                                        <NavDropdown.Item><Link href="/company-incorporation"><a>Company</a></Link></NavDropdown.Item>
+                                        <NavDropdown.Item><Link href="/trademark-registration"><a>Trademark</a></Link></NavDropdown.Item>
+                                        <NavDropdown.Item ><Link href="/gst"><a>GST</a></Link> </NavDropdown.Item>
+                                        <NavDropdown.Item><Link href="/startup-india-registration"><a>Start up India</a></Link></NavDropdown.Item>
+                                        <NavDropdown.Item><Link href="/msme-registration-india"><a>MSME / Udyog Aadhar</a></Link></NavDropdown.Item>
                                     </NavDropdown>
                                     <Nav.Item className="desktop__hide">
                                         <Nav.Link href="http://blog.starterscfo.com/">Blog </Nav.Link>
@@ -160,11 +166,12 @@ class Header extends React.Component {
                                         <Row>
                                             <Col md={9} className="d-flex justify-content-start">
                                                 <p className="color__white text-white font__12 text-center" style={{ paddingTop: "8px", marginBottom: "10px" }}>
-                                                    <a href="/startup-valuation-india"><Button className="btn__attention py-2 px-2 font__11 rounded__full d-none d-md-inline-block d-lg-inline-block d-xl-inline-block">Trending 🙌</Button></a>&nbsp;&nbsp;<span className="color__white font__15">Valuation for start ups. Find out what your organisation is worth!</span>
+                                                <Link href="/startup-valuation-india"><a><Button className="btn__attention py-2 px-2 font__11 rounded__full d-none d-md-inline-block d-lg-inline-block d-xl-inline-block">Trending 🙌</Button></a></Link>&nbsp;&nbsp;<span className="color__white font__15">Valuation for start ups. Find out what your organisation is worth!</span>
                                                 </p>
                                             </Col>
                                             <Col md={3} className="d-flex justify-content-end text-center">
-                                                <Button className="btn__secondary" onClick={() => { window.location = "/startup-valuation-india" }}>Get Started Free</Button>
+                                            {/* <Button className="btn__secondary" onClick={() => { window.location = "/startup-valuation-india" }}>Get Started Free</Button> */}
+                                            <Link href="/startup-valuation-india"><a><Button className="btn__secondary" >Get Started Free</Button></a></Link>
                                             </Col>
                                         </Row>
                                     </div>
