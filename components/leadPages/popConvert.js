@@ -98,9 +98,15 @@ class PopConvert extends React.Component {
                     centered
                 >
                     <Modal.Body>
-                        <Row style={{ marginTop: '50px' }}></Row>
+                     {/* <Row style={{ marginTop: '50px' }}></Row> */}
+                        <div class="modal_header">
+                                <button type="button" class="close" onClick={(e) => { this._handleClose(e) }} aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                                </button>
+                        </div>
                         <Row className="d-flex justify-content-center align-items-center">
-                            <Col md={{ 'span': '5' }} className="d-flex justify-content-center flex-column align-items-start">
+                            <Col md={{ 'span': '11' }} className="d-flex justify-content-center flex-column align-items-start">
+
 
                                 <a href="" onClick={(e) => { this._handleClose(e) }}>
                                     <img src="/static/images/logos/scfo/no-cap.png" className="pop-convert--modal-logo"></img>
