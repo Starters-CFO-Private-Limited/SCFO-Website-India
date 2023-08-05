@@ -6,8 +6,8 @@ import Link from 'next/link';
 
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
-// import Col from 'react-bootstrap/Col';
-// import Button from 'react-bootstrap/Button';
+import Col from 'react-bootstrap/Col';
+import Button from 'react-bootstrap/Button';
 // import Card from 'react-bootstrap/Card';
 // import Form from 'react-bootstrap/Form';
 // import { FormValidation } from 'calidation';
@@ -253,17 +253,17 @@ componentDidMount() {
 <>
   <Layout promobanner={true}>
     <link rel="stylesheet" href="/static/blog.css" />
-    <Meta title="Articles" description="Starters' CFO Support - available monday to saturday, 10:00 AM to 6:00 PM"></Meta>
+    <Meta title="Articles" description="Starters' CFO Articles"></Meta>
 
     <Container>
 
     <>
     
       <section className="grid_blog">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-9 col-12">
-            <div className="row">
+        <Container>
+          <Row className="row">
+            <Col className="col-md-9 col-12">
+            <Row className="row">
 
             {this.state.loading===false? (
                this.state.blogsList.map((object, i) =>
@@ -319,12 +319,12 @@ componentDidMount() {
                 ) 
             
                 ):
-                <div className='col-12 m-lg-5 p-5 text-center'>
+                <Col className='col-12 m-lg-5 p-5 text-center'>
                     <h1>Loading....</h1>
-                </div>
+                </Col>
           }
 
-        <div class="col-12">
+        <Col class="col-12">
             <nav aria-label="Page navigation example">
                 <ul class="pagination">
                   {
@@ -357,14 +357,14 @@ componentDidMount() {
                 </ul>
               </nav>
           
-        </div>
+        </Col>
 
             
             
-            </div>
+            </Row>
 
-            </div>
-            <div className="col-md-3 col-12">
+            </Col>
+            <Col className="col-md-3 col-12">
               <div className="right_blog">
                 <div className="categories">
                   <h2>CATEGORIES</h2>
@@ -417,9 +417,9 @@ componentDidMount() {
                     <form action="">
                       <div className="form-group">
                         <input type="" name="" placeholder="Enter name" />
-                        <button>
+                        <Button>
                           <i className="fa fa-paper-plane" aria-hidden="true" />
-                        </button>
+                        </Button>
                       </div>
                     </form>
                   </div>
@@ -436,9 +436,9 @@ componentDidMount() {
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
+            </Col>
+          </Row>
+        </Container>
       </section>
 
     </>

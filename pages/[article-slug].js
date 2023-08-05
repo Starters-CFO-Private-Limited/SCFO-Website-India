@@ -7,6 +7,7 @@ import Link from 'next/link';
 
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 
 export default function Article() {
@@ -72,7 +73,7 @@ export default function Article() {
     { blog ? 
         <Meta title={ parse(blog.yoast_head_json.title) } description={ parse(blog.yoast_head_json.og_description) } ></Meta>
     :
-    <Meta title="Contact" description="Starters' CFO Support - available monday to saturday, 10:00 AM to 6:00 PM"></Meta>
+    <Meta title="Articles" description="Starters' CFO Articles"></Meta>
     }
 
     <Container>
@@ -81,9 +82,9 @@ export default function Article() {
     
 
     <section className="single_blog">
-      <div className="container">
-        <div className="row">
-          <div className="col-md-8 col-12">
+      <Container>
+        <Row className="row">
+          <Col className="col-md-8 col-12">
             <div className="single_product_image">
               <img src={blog.x_featured_media_large} />
             </div>
@@ -111,11 +112,11 @@ export default function Article() {
             <div className="sub_content">
             { parse(blog.content.rendered) }
             </div>
-          </div>
+          </Col>
 
 
 
-          <div className="col-md-4 col-12">
+          <Col className="col-md-4 col-12">
             <div className="single_blog_right">
               <h2>Other Useful Guides</h2>
               <div className="related_post">
@@ -135,16 +136,16 @@ export default function Article() {
 
               </div>
             </div>
-          </div>
-        </div>
-      </div>
+          </Col>
+        </Row>
+      </Container>
     </section>
 
     </>
     :
     <section>
-    <div className='row'>
-    <div className='col-12 m-lg-5 p-5 text-center'>
+    <Row className='row'>
+    <Col className='col-12 m-lg-5 p-5 text-center'>
       {loading?
        <h1>Loading....</h1>
       :
@@ -152,8 +153,8 @@ export default function Article() {
       }
 
     
-    </div>
-    </div>
+    </Col>
+    </Row>
     </section>
 
 
