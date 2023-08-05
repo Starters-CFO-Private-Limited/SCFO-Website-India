@@ -90,7 +90,7 @@ class PopConvert extends React.Component {
             <>
                 <Modal
                     {...this.props}
-                    size="lg"
+                    size="md"
                     aria-labelledby="contained-modal-title-vcenter"
                     dialogClassName="pop-convert--modal"
                     backdrop="static"
@@ -99,8 +99,8 @@ class PopConvert extends React.Component {
                 >
                     <Modal.Body>
                      {/* <Row style={{ marginTop: '50px' }}></Row> */}
-                        <div class="modal_header">
-                                <button type="button" class="close" onClick={(e) => { this._handleClose(e) }} aria-label="Close">
+                        <div className="modal_header">
+                                <button type="button" className="close" onClick={(e) => { this._handleClose(e) }} aria-label="Close">
                                 <span aria-hidden="true">×</span>
                                 </button>
                         </div>
