@@ -13,6 +13,7 @@ import { FormValidation } from 'calidation';
 import Meta from '../components/site/meta';
 import { WHATSAPP_DISPLAY_NUMBER } from '../constants';
 import DigitallyEnabled from '../components/leadPages/digitallyEnabled';
+import FormIframe from '../components/leadPages/formIframe';
 
 const PLC_REGISTRATION_COST = "₹ 7,800"; // "₹ 6,800"; 
 const OPC_REGISTRATION_COST = "₹ 7,499"; //"₹ 5,800";
@@ -41,62 +42,7 @@ class CompanyIncorporation extends React.Component {
 
     render() {
 
-        const formConfig = {
-            full_name: {
-                isRequired: {
-                    message: 'Full name is a required field.'
-                },
-            },
-            mobile: {
-                isRequired: {
-                    message: 'Mobile is a required field.'
-                },
-                isExactLength: {
-                    message: 'Mobile number must have exactly 10 digits.',
-                    length: 10,
-                },
-                isRegexMatch: {
-                    message: 'Mobile numbers can only contain digits.',
-                    regex: /^\d{10}$/,
-                },
-            },
-            email: {
-                isRequired: {
-                    message: 'Email is a required field.'
-                },
-                isEmail: { message: 'Please enter a valid e-mail address' },
-            },
-        };
 
-        const onSubmit = async ({ fields, isValid }) => {
-            if (isValid) {
-                this.setState({ 'buttonText': 'Processing...' });
-                const response = await fetch('/api/v1/leads/', {
-                    'body': JSON.stringify({
-                        "full_name": fields.full_name,
-                        "email": fields.email,
-                        "mobile": fields.mobile,
-                        "product": "ci"
-                    }),
-                    'method': 'POST',
-                    'headers': {
-                        "cache-control": "no-cache",
-                        'Accept': 'application/json',
-                        'Content-Type': 'application/json'
-                    }
-                })
-
-                if (response.ok) {
-                    // json = await response.json();
-                } else {
-                    response.text().then(result => { console.log(result) });
-                }
-
-                this.setState({
-                    'convertSuccess': 'x',
-                })
-            }
-        };
 
         return (
 
@@ -157,59 +103,13 @@ class CompanyIncorporation extends React.Component {
                                                                 </span>
                                                             </p>
                                                         </> :
-                                                            <FormValidation className="pop-convert--form" config={formConfig} onSubmit={onSubmit}>
-                                                                {({ errors, fields, submitted }) => (
-                                                                    <>
-                                                                        <Fragment>
-                                                                            <Row style={{ marginBottom: '5px' }}>
-                                                                                <Col>
-                                                                                    <h4 className="color__dark">Get a Free Consultation</h4>
-                                                                                    <p className="color__dark">Hear back in 24 hours, or Whatsapp +91 81128 11268 now.</p>
-                                                                                </Col>
-                                                                            </Row>
-                                                                            <Row>
-                                                                                <Col md={12}>
-                                                                                    <Form.Group controlId="formBasicName">
-                                                                                        <Form.Control type="text" placeholder="Full Name" required name="full_name" value={fields.full_name} onChange={() => { }} />
-                                                                                        {submitted && errors.full_name && <small className="text-danger">{errors.full_name}</small>}
-                                                                                    </Form.Group>
-                                                                                </Col>
-                                                                            </Row>
-                                                                            <Row>
-                                                                                <Col md={12}>
-                                                                                    <Form.Group controlId="formBasicEmail">
-                                                                                        <Form.Control type="email" placeholder="Email *" required name="email" value={fields.email} onChange={() => { }} />
-                                                                                        {submitted && errors.email && <small className="text-danger">{errors.email}</small>}
-                                                                                    </Form.Group>
-                                                                                </Col>
-                                                                            </Row>
-                                                                            <Row>
-                                                                                <Col md={2} sm={2} xs={2} style={{ paddingRight: '0px', marginRight: '0px' }}>
-                                                                                    <Form.Group controlId="formMobile">
-                                                                                        <Form.Control type="text" value="+91" disabled />
-                                                                                    </Form.Group>
-                                                                                </Col>
-                                                                                <Col md={10} sm={10} xs={10}>
-                                                                                    <Form.Group controlId="formMobile">
-                                                                                        <Form.Control type="tel" placeholder="Mobile Number *" required name="mobile" value={fields.mobile} onChange={() => { }} maxLength={'10'} minLength={'10'} />
-                                                                                        {submitted && errors.full_name && <small className="text-danger">{errors.mobile}</small>}
-                                                                                    </Form.Group>
-                                                                                </Col>
-                                                                            </Row>
-                                                                            <Row>
-                                                                                <Col>
-                                                                                    <Button variant="primary" type="submit">
-                                                                                        {this.state.buttonText}
-                                                                                    </Button>
-                                                                                </Col>
-                                                                            </Row>
-                                                                        </Fragment>
-                                                                        <p className="color__light-grey font__10">
-                                                                            By creating an account with Starter's CFO, you agree to our <a href="">terms</a> and <a href="">privacy policy</a>.
-                                                                        </p>
-                                                                    </>
-                                                                )}
-                                                            </FormValidation>
+                                                                       
+                                                        <FormIframe 
+                                                        title="Get a Free Consultation"
+                                                        whatsapp="true" 
+                                                        footerText="true" />
+
+                                                           
                                                     }
                                                 </Card.Body>
                                             </Card>

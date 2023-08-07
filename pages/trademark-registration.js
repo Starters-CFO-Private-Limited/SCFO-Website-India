@@ -14,7 +14,7 @@ import Carousel from 'react-bootstrap/Carousel';
 import Accordion from 'react-bootstrap/Accordion';
 import Meta from '../components/site/meta';
 import { WHATSAPP_DISPLAY_NUMBER, WHATSAPP_MESSAGE_NUMBER } from '../constants';
-
+import FormIframe from '../components/leadPages/formIframe';
 
 class TrademarkRegistration extends React.Component {
 
@@ -38,64 +38,6 @@ class TrademarkRegistration extends React.Component {
     }
 
     render() {
-
-        const formConfig = {
-            full_name: {
-                isRequired: {
-                    message: 'Full name is a required field.'
-                },
-            },
-            mobile: {
-                isRequired: {
-                    message: 'Mobile is a required field.'
-                },
-                isExactLength: {
-                    message: 'Mobile number must have exactly 10 digits.',
-                    length: 10,
-                },
-                isRegexMatch: {
-                    message: 'Mobile numbers can only contain digits.',
-                    regex: /^\d{10}$/,
-                },
-            },
-            email: {
-                isRequired: {
-                    message: 'Email is a required field.'
-                },
-                isEmail: { message: 'Please enter a valid e-mail address' },
-            },
-        };
-
-        const onSubmit = async ({ fields, isValid }) => {
-            if (isValid) {
-                this.setState({ 'buttonText': 'Processing...' });
-                const response = await fetch('/api/v1/leads/', {
-                    'body': JSON.stringify({
-                        "full_name": fields.full_name,
-                        "email": fields.email,
-                        "mobile": fields.mobile,
-                        "product": "trademark"
-                    }),
-                    'method': 'POST',
-                    'headers': {
-                        "cache-control": "no-cache",
-                        'Accept': 'application/json',
-                        'Content-Type': 'application/json'
-                    }
-                })
-                console.log(response);
-
-                if (response.ok) {
-                    // json = await response.json();
-                } else {
-                    response.text().then(result => { console.log(result) });
-                }
-
-                this.setState({
-                    'convertSuccess': 'x',
-                })
-            }
-        };
 
         return (
 
@@ -143,59 +85,14 @@ class TrademarkRegistration extends React.Component {
                                                             </span>
                                                         </p>
                                                     </> :
-                                                        <FormValidation className="pop-convert--form" config={formConfig} onSubmit={onSubmit}>
-                                                            {({ errors, fields, submitted }) => (
-                                                                <>
-                                                                    <Fragment>
-                                                                        <Row style={{ marginBottom: '5px' }}>
-                                                                            <Col>
-                                                                                <h4 className="color__dark">Request Call Back</h4>
-                                                                                <p className="color__dark">Hear back in 24 hours, or <a href={`tel:${WHATSAPP_MESSAGE_NUMBER}`} className="color__dark font__15">Whatsapp {WHATSAPP_DISPLAY_NUMBER} now</a>.</p>
-                                                                            </Col>
-                                                                        </Row>
-                                                                        <Row>
-                                                                            <Col md={12}>
-                                                                                <Form.Group controlId="formBasicName">
-                                                                                    <Form.Control type="text" placeholder="Full Name" required name="full_name" value={fields.full_name} onChange={() => { }} />
-                                                                                    {submitted && errors.full_name && <small className="text-danger">{errors.full_name}</small>}
-                                                                                </Form.Group>
-                                                                            </Col>
-                                                                        </Row>
-                                                                        <Row>
-                                                                            <Col md={12}>
-                                                                                <Form.Group controlId="formBasicEmail">
-                                                                                    <Form.Control type="email" placeholder="Email *" required name="email" value={fields.email} onChange={() => { }} />
-                                                                                    {submitted && errors.email && <small className="text-danger">{errors.email}</small>}
-                                                                                </Form.Group>
-                                                                            </Col>
-                                                                        </Row>
-                                                                        <Row>
-                                                                            <Col md={2} sm={2} xs={2} style={{ paddingRight: '0px', marginRight: '0px' }}>
-                                                                                <Form.Group controlId="formMobile">
-                                                                                    <Form.Control type="text" value="+91" disabled />
-                                                                                </Form.Group>
-                                                                            </Col>
-                                                                            <Col md={10} sm={10} xs={10}>
-                                                                                <Form.Group controlId="formMobile">
-                                                                                    <Form.Control type="tel" placeholder="Mobile Number *" required name="mobile" value={fields.mobile} onChange={() => { }} min="10" max="10" />
-                                                                                    {submitted && errors.full_name && <small className="text-danger">{errors.mobile}</small>}
-                                                                                </Form.Group>
-                                                                            </Col>
-                                                                        </Row>
-                                                                        <Row>
-                                                                            <Col>
-                                                                                <Button variant="primary" type="submit" className="gradient btn__primary">
-                                                                                    {this.state.buttonText}
-                                                                                </Button>
-                                                                            </Col>
-                                                                        </Row>
-                                                                    </Fragment>
-                                                                    <p className="color__light-grey font__10">
-                                                                        By creating an account with Starter's CFO, you agree to our <a href="">terms</a> and <a href="">privacy policy</a>.
-                                                                    </p>
-                                                                </>
-                                                            )}
-                                                        </FormValidation>
+                                                    <>
+                                                    
+                                                        <FormIframe 
+                                                        title="Request Call Back"
+                                                        whatsapp="true" 
+                                                        footerText="true" />
+
+                                                    </>
                                                 }
                                             </Card.Body>
                                         </Card>

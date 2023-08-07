@@ -146,72 +146,18 @@ class Contact extends React.Component {
 												<Col md={12} className="text-left">
 													<div className="form_content">
 														<div className="form_start">
-															<>
-																{
-																	this.state.submitSuccess ? <>
-																		<p className="color__grey">
-																			<Row className="text-center">
-																				<Col>
-																					<h4 className="color__dark font__15">WhatsApp us directly at</h4>
-																					<span className="color__scfo font__30 mobile_font__15"><i className="fab fa-whatsapp"></i>&nbsp; {WHATSAPP_DISPLAY_NUMBER}</span>
-																					<br></br>
-																				</Col>
-																			</Row>
-																			<br></br>
-																			We've received your message. We can't wait to get started.
-																			We will reach out in the next 30 - 90 minutes. You can call us if you need a faster response.
-																			<br></br>
-																			<br></br>
-																			<span className="color__grey">
-																				WhatsApp us at <a href={`https://api.whatsapp.com/send?phone={WHATSAPP_MESSAGE_NUMBER}&text=Hi%21%20I%20just%20submitted%20a%20request%20form%20on%20your%20website.%0d%0aI%20am%20interested%20in%20your%20product.&source=&data=`} target="_blank" rel="noreferrer"> &nbsp; <i className="fab fa-whatsapp color__whatsapp font__15"></i> <span className="font__15">{WHATSAPP_DISPLAY_NUMBER}</span></a>
-																				<br></br>
-																				Email us at info@starterscfo.in
-																				<br></br>
-																				Chat with us, look for chat bubble in the bottom right corner of the screen.
-																			</span>
-																		</p>
-																		<br></br><br></br>
-																	</> : <>
-																		<FormValidation className="pop-convert--form" config={formConfig} onSubmit={onSubmit}>
-																			{({ errors, fields, submitted }) => (
-																				<>
-																					<Fragment>
-																						<Form.Group controlId="formBasicName">
-																							<Form.Control type="text" placeholder="Full Name" required name="full_name" value={fields.full_name} onChange={() => { }} />
-																							{submitted && errors.full_name && <small className="text-danger">{errors.full_name}</small>}
-																						</Form.Group>
-
-																						<Form.Group controlId="formBasicEmail">
-																							<Form.Control type="email" placeholder="Email *" required name="email" value={fields.email} onChange={() => { }} />
-																							{submitted && errors.email && <small className="text-danger">{errors.email}</small>}
-																						</Form.Group>
-
-																						<Form.Group controlId="formBasicMobile">
-																							<Form.Control type="tel" placeholder="Mobile *" required name="mobile" value={fields.mobile} onChange={() => { }} />
-																							{submitted && errors.mobile && <small className="text-danger">{errors.mobile}</small>}
-																						</Form.Group>
-
-																						<Form.Group controlId="formBasicMobile">
-																							<Form.Control type="text" placeholder="Message *" required name="message" value={fields.message} onChange={() => { }} />
-																							{submitted && errors.mobile && <small className="text-danger">{errors.message}</small>}
-																						</Form.Group>
-																					</Fragment>
-
-																					<Button variant="primary" type="submit">
-																						{this.state.buttonText}
-																					</Button>
-
-																					<br></br>
-																					<p className="color__light-grey font__10">
-																						By creating an account with Starter's CFO, you agree to our <a href="">terms</a> and <a href="">privacy policy</a>.
-																					</p>
-																				</>
-																			)}
-																		</FormValidation>
-																		<br></br>
-																	</>
-																}
-															</>
+														<iframe
+															width="100%" 
+															height="300" 
+															src="https://crm.starterscfo.com/forms/wtl/b56e9ff27f8b8b45c8be967db7edc920" 
+															frameBorder="0" 
+															sandbox="allow-top-navigation allow-forms allow-same-origin allow-popups" 
+															allowFullScreen>
+														</iframe>														<br></br>
+														<p className="color__light-grey font__10">
+														By creating an account with Starter's CFO, you agree to our <a href="">terms</a> and <a href="">privacy policy</a>.
+														</p>
+															
 														</div>
 													</div>
 												</Col>
@@ -222,6 +168,8 @@ class Contact extends React.Component {
 							</Col>
 						</Row>
 						<Row style={{ marginTop: '40px' }}></Row>
+
+
 					</Container>
 				</Layout>
 			</>
