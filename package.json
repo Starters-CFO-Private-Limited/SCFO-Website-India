@@ -24,6 +24,7 @@
     "express": "^4.17.2",
     "express-slash": "^2.0.1",
     "fs": "0.0.1-security",
+    "html-react-parser": "^4.2.0",
     "hubspot": "^2.3.14",
     "isomorphic-unfetch": "^3.1.0",
     "jquery": "^3.6.0",

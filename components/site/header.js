@@ -78,19 +78,19 @@ class Header extends React.Component {
                                 <Nav.Item className="mobile__hide">
                                 </Nav.Item>
                                 <Nav.Item className="mobile__hide">
-                                    <Nav.Link href="http://blog.starterscfo.com/" target="_blank">Blog</Nav.Link>
+                                    <Nav.Link href="/articles" >Blog</Nav.Link>
                                 </Nav.Item>
                                 <div className="mobile__hide">
                                     |
                                 </div>
                                 <Nav.Item>
-                                    <Nav.Link href="http://blog.starterscfo.com/" target="_blank"><a href="https://www.facebook.com/StartersCFO/" target="_blank" rel="noreferrer"><i className="fa-brands fa-facebook"></i></a></Nav.Link>
+                                    <Nav.Link href="/articles" target="_blank"><a href="https://www.facebook.com/StartersCFO/" target="_blank" rel="noreferrer"><i className="fa-brands fa-facebook"></i></a></Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
-                                    <Nav.Link href="http://blog.starterscfo.com/" target="_blank"><a href="https://www.linkedin.com/company/starters-cfo/" target="_blank" rel="noreferrer"><i className="fa-brands fa-linkedin"></i></a></Nav.Link>
+                                    <Nav.Link href="/articles" target="_blank"><a href="https://www.linkedin.com/company/starters-cfo/" target="_blank" rel="noreferrer"><i className="fa-brands fa-linkedin"></i></a></Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
-                                    <Nav.Link href="http://blog.starterscfo.com/" target="_blank"><a href="https://twitter.com/CfoStarter" target="_blank" rel="noreferrer"><i className="fa-brands fa-twitter"></i></a></Nav.Link>
+                                    <Nav.Link href="/articles" target="_blank"><a href="https://twitter.com/CfoStarter" target="_blank" rel="noreferrer"><i className="fa-brands fa-twitter"></i></a></Nav.Link>
                                 </Nav.Item>
                             </div>
                             <div style={{ 'display': 'flex' }}>
@@ -148,7 +148,7 @@ class Header extends React.Component {
                                         <NavDropdown.Item><Link href="/msme-registration-india"><a>MSME / Udyog Aadhar</a></Link></NavDropdown.Item>
                                     </NavDropdown>
                                     <Nav.Item className="desktop__hide">
-                                        <Nav.Link href="http://blog.starterscfo.com/">Blog </Nav.Link>
+                                        <Nav.Link href="/articles">Blog </Nav.Link>
                                     </Nav.Item>
                                 </Nav>
                             </Navbar.Collapse>

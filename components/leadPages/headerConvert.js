@@ -9,6 +9,7 @@ import Button from 'react-bootstrap/Button';
 import { FormValidation } from 'calidation';
 import TestimonialsSlider from "./testimonialsSlider";
 import { WHATSAPP_DISPLAY_NUMBER, WHATSAPP_MESSAGE_NUMBER } from "../../constants";
+import FormIframe from './formIframe';
 
 const FORM_CONFIG = {
     full_name: {
@@ -46,36 +47,6 @@ export default class HeaderConvert extends React.Component {
         'convertSuccess': ''
     }
 
-    onSubmit = async ({ fields, isValid }) => {
-        if (isValid) {
-            this.setState({ 'buttonText': 'Processing...' });
-            const response = await fetch('/api/v1/leads/', {
-                'body': JSON.stringify({
-                    "full_name": fields.full_name,
-                    "email": fields.email,
-                    "mobile": fields.mobile,
-                    "product": "startupindia"
-                }),
-                'method': 'POST',
-                'headers': {
-                    "cache-control": "no-cache",
-                    'Accept': 'application/json',
-                    'Content-Type': 'application/json'
-                }
-            })
-            console.log(response);
-
-            if (response.ok) {
-                json = await response.json();
-            } else {
-                response.text().then(result => { console.log(result) });
-            }
-
-            this.setState({
-                'convertSuccess': 'x',
-            })
-        }
-    };
 
     render() {
         const {
@@ -120,59 +91,13 @@ export default class HeaderConvert extends React.Component {
                                                 </span>
                                             </p>
                                         </> :
-                                            <FormValidation className="pop-convert--form" config={FORM_CONFIG} onSubmit={this.onSubmit}>
-                                                {({ errors, fields, submitted }) => (
-                                                    <>
-                                                        <Fragment>
-                                                            <Row style={{ marginBottom: '5px' }}>
-                                                                <Col>
-                                                                    <h4 className="color__dark">Register with Startup India</h4>
-                                                                    <p className="color__dark">Hear back in 24 hours, or Whatsapp +91 81128 11268 now.</p>
-                                                                </Col>
-                                                            </Row>
-                                                            <Row>
-                                                                <Col md={12}>
-                                                                    <Form.Group controlId="formBasicName">
-                                                                        <Form.Control type="text" placeholder="Full Name" required name="full_name" value={fields.full_name} onChange={() => { }} />
-                                                                        {submitted && errors.full_name && <small className="text-danger">{errors.full_name}</small>}
-                                                                    </Form.Group>
-                                                                </Col>
-                                                            </Row>
-                                                            <Row>
-                                                                <Col md={12}>
-                                                                    <Form.Group controlId="formBasicEmail">
-                                                                        <Form.Control type="email" placeholder="Email *" required name="email" value={fields.email} onChange={() => { }} />
-                                                                        {submitted && errors.email && <small className="text-danger">{errors.email}</small>}
-                                                                    </Form.Group>
-                                                                </Col>
-                                                            </Row>
-                                                            <Row>
-                                                                <Col md={2} sm={2} xs={2} style={{ paddingRight: '0px', marginRight: '0px' }}>
-                                                                    <Form.Group controlId="formMobile">
-                                                                        <Form.Control type="text" value="+91" disabled />
-                                                                    </Form.Group>
-                                                                </Col>
-                                                                <Col md={10} sm={10} xs={10}>
-                                                                    <Form.Group controlId="formMobile">
-                                                                        <Form.Control type="tel" placeholder="Mobile Number *" required name="mobile" value={fields.mobile} onChange={() => { }} min="10" max="10" />
-                                                                        {submitted && errors.full_name && <small className="text-danger">{errors.mobile}</small>}
-                                                                    </Form.Group>
-                                                                </Col>
-                                                            </Row>
-                                                            <Row>
-                                                                <Col>
-                                                                    <Button variant="primary" type="submit" className="gradient btn__primary">
-                                                                        {this.state.buttonText}
-                                                                    </Button>
-                                                                </Col>
-                                                            </Row>
-                                                        </Fragment>
-                                                        <p className="color__light-grey font__10">
-                                                            By creating an account with Starter's CFO, you agree to our <a href="">terms</a> and <a href="">privacy policy</a>.
-                                                        </p>
-                                                    </>
-                                                )}
-                                            </FormValidation>
+                                            <> 
+                                            <FormIframe 
+                                            title="Register with Startup India"
+                                            whatsapp="true" 
+                                            footerText="" />
+
+                                            </> 
                                     }
                                 </Card.Body>
                             </Card>

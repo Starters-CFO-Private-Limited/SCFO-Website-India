@@ -61,9 +61,21 @@ body {
     margin-right: 10px;
 }
 
+.pop-convert--modal .close
+{
+    padding: 1rem 1rem;
+    margin: -1rem -1rem -1rem auto;
+}
+.modal_header
+{
+    display: flex;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -ms-flex-pack: justify;
+}
 /* pop convert */
 
-.pop-convert--modal {
+/* .pop-convert--modal {
     max-width: 9000px;
     width: 100% !important;
     height: 100vh;
@@ -74,7 +86,7 @@ body {
     height: 100vh;
     margin: 0;
     border-radius: 0;
-}
+} */
 
 .pop-convert--modal-backdrop {
     opacity: 0.8;
