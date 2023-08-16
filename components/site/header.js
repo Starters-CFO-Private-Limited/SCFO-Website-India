@@ -60,6 +60,8 @@ class Header extends React.Component {
                     <script src="/static/integrations.js"></script>
                     <script src="//cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.0/js.cookie.min.js"></script>
                     <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/5761448.js"></script>
+                    <meta name="google-site-verification" content="hwGg0k7JuVnA49F784MZXUy6ABXLBXG-OK8On0vglTA" />
+
                 </Head>
 
                 <div className="w-100">
