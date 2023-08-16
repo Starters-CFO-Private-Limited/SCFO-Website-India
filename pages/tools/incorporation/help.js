@@ -617,7 +617,7 @@ class CompanyIncorporation extends React.Component {
                                                 <td style={{ 'minWidth': '300px' }}>
                                                     <ul className="card__list">
                                                         <li><i className="fa fa-check"></i>&nbsp;Flat rate of 30% +</li>
-                                                        <li><i className="fa fa-check"></i>&nbsp;Surcharge@12% of tax if NTI > 1 Crore +</li>
+                                                        <li><i className="fa fa-check"></i>&nbsp;Surcharge@12% of tax if NTI {'>'} 1 Crore +</li>
                                                         <li><i className="fa fa-check"></i>&nbsp;4% HEC (compulsory)</li>
                                                         <li><i className="fa fa-check"></i>&nbsp;Paid in 4 installments.</li>
                                                     </ul>
@@ -885,7 +885,7 @@ class CompanyIncorporation extends React.Component {
                                                 <td>
                                                     <ul className="card__list">
                                                         <li><i className="fa fa-check"></i>&nbsp;Flat rate of 30%</li>
-                                                        <li><i className="fa fa-check"></i>&nbsp;Surcharge of 7% if NTI > 1 crore and upto 10 Crores</li>
+                                                        <li><i className="fa fa-check"></i>&nbsp;Surcharge of 7% if NTI {'>'} 1 crore and upto 10 Crores</li>
                                                         <li><i className="fa fa-check"></i>&nbsp;4% cess</li>
                                                         <li><i className="fa fa-check"></i>&nbsp;Paid in 4 installments.</li>
                                                         <li><i className="fa fa-check"></i>&nbsp;No dividend distribution tax.</li>
