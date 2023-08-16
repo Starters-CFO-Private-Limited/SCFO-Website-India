@@ -36,15 +36,13 @@ class INFORMATIONFORM extends React.Component {
                                     </Col>
                                 </Row>
                                 <Row>
-                                        <Col>
-                                     
-                                        <iframe
-                                        width="100%" 
-                                        height="300" 
-                                        src="https://crm.starterscfo.com/forms/wtl/b56e9ff27f8b8b45c8be967db7edc920" 
-                                        frameBorder="0" 
-                                        sandbox="allow-top-navigation allow-forms allow-same-origin allow-popups" 
-                                        allowFullScreen>
+                                    <Col>
+                                        <iframe 
+                                            width="100%"
+                                            height="300" 
+                                            src="https://crm.starterscfo.com/forms/wtl/d3938263727cd88e397764e4c01c291a" 
+                                            frameborder="0" sandbox="allow-top-navigation allow-forms allow-same-origin allow-scripts allow-popups"
+                                            allowfullscreen>
                                         </iframe>
                                     </Col>
                                     

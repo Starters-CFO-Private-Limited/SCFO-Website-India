@@ -5,7 +5,6 @@ import Col from 'react-bootstrap/Col';
 import Layout from '../components/site/layout';
 import PopConvert from '../components/leadPages/popConvert';
 import Trust from '../components/leadPages/trust';
-import LineConvert from '../components/leadPages/lineConvert';
 import ExitConvert from '../components/leadPages/exitConvert';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
@@ -14,9 +13,11 @@ import FAQ from '../components/leadPages/faq';
 import PerksV2 from '../components/leadPages/perksV2';
 import { WHATSAPP_DISPLAY_NUMBER } from '../constants';
 import { VALUATION_FAQ } from "../content/valuation_faq";
-import BoxCovert from '../components/leadPages/boxConvert';
 import DigitallyEnabled from "../components/leadPages/digitallyEnabled";
 import NumbersSpeak from '../components/leadPages/numbersSpeak';
+
+import LineConvert from '../components/leadPages/lineConvertValuation';
+import BoxCovert from '../components/leadPages/boxConvertValuation';
 
 
 class Valuation extends React.Component {
