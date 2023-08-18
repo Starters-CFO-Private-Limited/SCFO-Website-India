@@ -60,7 +60,7 @@ class Home extends React.Component {
                     <meta property="twitter:description" content="You run your business. We will do the bookkeeping. 
             India's first Virtual CFO Service for start-ups and SMEs. Accounting & Taxes, Statutory Compliances & more"></meta>
                     <meta property="twitter:image" content="/static/images/banner/meta.png"></meta>
-
+                    <meta name="google-site-verification" content="hwGg0k7JuVnA49F784MZXUy6ABXLBXG-OK8On0vglTA" />
                 </Head>
 
                 <Layout promobanner={true}>

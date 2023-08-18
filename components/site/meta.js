@@ -26,6 +26,7 @@ export default class Meta extends React.Component {
                     <meta property="twitter:card" content="summary_large_image"></meta>
                     <meta property="twitter:title" content={PrefixedTitle}></meta>
                     <meta property="twitter:description" content={description}></meta>
+                    <meta name="google-site-verification" content="hwGg0k7JuVnA49F784MZXUy6ABXLBXG-OK8On0vglTA" />
                 </Head>
             </React.Fragment>
         )

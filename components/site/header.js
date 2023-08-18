@@ -55,6 +55,7 @@ class Header extends React.Component {
 
                     {/* viewport  */}
                     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1.0, user-scalable=no"></meta>
+                    <meta name="google-site-verification" content="hwGg0k7JuVnA49F784MZXUy6ABXLBXG-OK8On0vglTA" />
 
                     {/* integrations ( place last ) */}
                     <script src="/static/integrations.js"></script>
