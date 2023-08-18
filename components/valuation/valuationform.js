@@ -4,37 +4,38 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
-import Form from 'react-bootstrap/Form';
-import Button from 'react-bootstrap/Button';
-import { FormValidation } from 'calidation';
-import { WHATSAPP_DISPLAY_NUMBER, WHATSAPP_MESSAGE_NUMBER } from "../../constants";
+// import Form from 'react-bootstrap/Form';
+// import Button from 'react-bootstrap/Button';
+// import { FormValidation } from 'calidation';
+// import { WHATSAPP_DISPLAY_NUMBER, WHATSAPP_MESSAGE_NUMBER } from "../../constants";
+import Link from 'next/link';
 
-const FORM_CONFIG = {
-    full_name: {
-        isRequired: {
-            message: 'Full name is a required field.'
-        },
-    },
-    mobile: {
-        isRequired: {
-            message: 'Mobile is a required field.'
-        },
-        isExactLength: {
-            message: 'Mobile number must have exactly 10 digits.',
-            length: 10,
-        },
-        isRegexMatch: {
-            message: 'Mobile numbers can only contain digits.',
-            regex: /^\d{10}$/,
-        },
-    },
-    email: {
-        isRequired: {
-            message: 'Email is a required field.'
-        },
-        isEmail: { message: 'Please enter a valid e-mail address' },
-    },
-};
+// const FORM_CONFIG = {
+//     full_name: {
+//         isRequired: {
+//             message: 'Full name is a required field.'
+//         },
+//     },
+//     mobile: {
+//         isRequired: {
+//             message: 'Mobile is a required field.'
+//         },
+//         isExactLength: {
+//             message: 'Mobile number must have exactly 10 digits.',
+//             length: 10,
+//         },
+//         isRegexMatch: {
+//             message: 'Mobile numbers can only contain digits.',
+//             regex: /^\d{10}$/,
+//         },
+//     },
+//     email: {
+//         isRequired: {
+//             message: 'Email is a required field.'
+//         },
+//         isEmail: { message: 'Please enter a valid e-mail address' },
+//     },
+// };
 
 
 export default class VALUATIONFORM extends React.Component {
@@ -45,36 +46,36 @@ export default class VALUATIONFORM extends React.Component {
         'convertSuccess': ''
     }
 
-    onSubmit = async ({ fields, isValid }) => {
-        if (isValid) {
-            this.setState({ 'buttonText': 'Processing...' });
-            const response = await fetch('/api/v1/leads/', {
-                'body': JSON.stringify({
-                    "full_name": fields.full_name,
-                    "email": fields.email,
-                    "mobile": fields.mobile,
-                    "product": this.props.product,
-                }),
-                'method': 'POST',
-                'headers': {
-                    "cache-control": "no-cache",
-                    'Accept': 'application/json',
-                    'Content-Type': 'application/json'
-                }
-            })
-            console.log(response);
+    // onSubmit = async ({ fields, isValid }) => {
+    //     if (isValid) {
+    //         this.setState({ 'buttonText': 'Processing...' });
+    //         const response = await fetch('/api/v1/leads/', {
+    //             'body': JSON.stringify({
+    //                 "full_name": fields.full_name,
+    //                 "email": fields.email,
+    //                 "mobile": fields.mobile,
+    //                 "product": this.props.product,
+    //             }),
+    //             'method': 'POST',
+    //             'headers': {
+    //                 "cache-control": "no-cache",
+    //                 'Accept': 'application/json',
+    //                 'Content-Type': 'application/json'
+    //             }
+    //         })
+    //         console.log(response);
 
-            if (response.ok) {
-                let json = await response.json();
-            } else {
-                response.text().then(result => { console.log(result) });
-            }
+    //         if (response.ok) {
+    //             let json = await response.json();
+    //         } else {
+    //             response.text().then(result => { console.log(result) });
+    //         }
 
-            this.setState({
-                'convertSuccess': 'x',
-            })
-        }
-    };
+    //         this.setState({
+    //             'convertSuccess': 'x',
+    //         })
+    //     }
+    // };
 
     render() {
         const {
@@ -88,7 +89,35 @@ export default class VALUATIONFORM extends React.Component {
                         <Col sm={12} md={12}>
                             <Card>
                                 <Card.Body style={{ 'backgroundColor': '#f3f8fb' }}>
-                                    {
+                                <>
+                                        <Fragment>
+                                            <Row style={{ marginBottom: '5px' }}>
+                                                <Col>
+                                                    <h4 className="color__dark">{this.props.title}</h4>
+                                                    <p className="color__dark">Hear back in 24 hours, or Whatsapp +91 81128 11268 now.</p>
+                                                </Col>
+                                            </Row>
+                                            <Row>
+                                            <Col md={12}>
+                                            <iframe 
+                                                width="100%"
+                                                height="300" 
+                                                src="https://crm.starterscfo.com/forms/wtl/d3938263727cd88e397764e4c01c291a" 
+                                                frameborder="0" sandbox="allow-top-navigation allow-forms allow-same-origin allow-scripts allow-popups"
+                                                allowfullscreen>
+                                            </iframe>
+
+                                            </Col>
+                                                
+                                            </Row>
+                                            
+                                        </Fragment>
+                                        <p className="privacy_policy color__light-grey font__10">
+                                            By creating an account with Starter's CFO, you agree to our <Link href="/terms-of-service"><a>terms</a></Link> and <Link href="/privacy-policy"><a>privacy policy</a></Link>.
+                                        </p>
+                                    </>
+                                    
+                                    {/* {
                                         this.state.convertSuccess ? <>
                                             <p>
                                                 <Row className="text-center">
@@ -171,7 +200,7 @@ export default class VALUATIONFORM extends React.Component {
                                                     </>
                                                 )}
                                             </FormValidation>
-                                    }
+                                    } */}
                                 </Card.Body>
                             </Card>
                         </Col>

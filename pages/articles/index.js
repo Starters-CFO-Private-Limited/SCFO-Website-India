@@ -324,13 +324,13 @@ componentDidMount() {
                 </Col>
           }
 
-        <Col class="col-12">
+        <Col className="col-12">
             <nav aria-label="Page navigation example">
-                <ul class="pagination">
+                <ul className="pagination">
                   {
                   this.state.page>1?
-                  <li class="page-item">
-                    <a class="page-link" onClick={() => this.pageNumber(this.state.page-1)} href="#" aria-label="Previous">
+                  <li className="page-item">
+                    <a className="page-link" onClick={() => this.pageNumber(this.state.page-1)} href="#" aria-label="Previous">
                       <span aria-hidden="true">«</span>
                     </a>
                   </li>
@@ -340,14 +340,14 @@ componentDidMount() {
                   
               {Array(this.state.allCat).fill(null).map((value, index) => (
              
-              <li onClick={() => this.pageNumber(index+1)}  class={this.state.page===index+1?"page-item active":"page-item"} ><a class="page-link" href="#">{index+1}</a></li>
+              <li onClick={() => this.pageNumber(index+1)}  className={this.state.page===index+1?"page-item active":"page-item"} ><a className="page-link" href="#">{index+1}</a></li>
 
               ))}
 
                 {
                   this.state.page!==this.state.allCat?
-                  <li class="page-item">
-                    <a class="page-link" href="#" onClick={() => this.pageNumber(this.state.page+1)}   aria-label="Next">
+                  <li className="page-item">
+                    <a className="page-link" href="#" onClick={() => this.pageNumber(this.state.page+1)}   aria-label="Next">
                     <span aria-hidden="true">»</span>
                     </a>
                   </li>

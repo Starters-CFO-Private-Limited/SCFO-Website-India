@@ -1,5 +1,6 @@
 import React from 'react';
 import Container from 'react-bootstrap/Container';
+import Link from 'next/link';
 // import ContainerFluid from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -10,7 +11,7 @@ import ExitConvert from '../components/leadPages/exitConvert';
 import Button from 'react-bootstrap/Button';
 import Meta from '../components/site/meta';
 import FAQ from '../components/leadPages/faq';
-// import PerksV2 from '../components/leadPages/perksV2';
+import PerksV2 from '../components/leadPages/perksV2';
 import { VALUATION_FAQ } from "../content/valuation_faq";
 // import DigitallyEnabled from "../components/leadPages/digitallyEnabled";
 // import NumbersSpeak from '../components/leadPages/numbersSpeak';
@@ -19,11 +20,17 @@ import { VALUATION_FAQ } from "../content/valuation_faq";
 import { BUSINESS_VARITION_ACCORDION } from "../content/business_valution_accordion";
 // import SliderComponent from '../components/Slider'
 // import SliderComponenttwo from '../components/Slidertwo'
-import VALUATIONFORM from '../components/leadPages/valuationform';
-import INFORMATIONFORM from '../components/leadPages/informationform';
+import VALUATIONFORM from '../components/valuation/valuationform';
+import INFORMATIONFORM from '../components/valuation/informationform';
 
-import ValuationSlider from '../components/valuationSlider';
-import ValuationSliderTwo from '../components/ValuationSliderTwo';
+import ValuationSlider from '../components/valuation/valuationSlider';
+import ValuationSliderTwo from '../components/valuation/ValuationSliderTwo';
+import ValuationServices from '../components/valuation/ValuationServices';
+import ConsultantPlans from '../components/valuation/ConsultationPlans';
+import PartnersLogo from '../components/valuation/PartnersLogo';
+
+import FormIframe from '../components/leadPages/formIframe';
+
 
 class Valuation extends React.Component {
 
@@ -71,17 +78,15 @@ class Valuation extends React.Component {
                                         <Col>
 
                                             <div style={{ marginTop: "50px 0;" }}>
-                                                <h4 className="title">Discover the hidden
-                                                    gems of your startup's
-                                                    potential!</h4>
-                                                <h4 className="color__white">Starters' CFO reliable and trustworthy valuation services go
-                                                    beyond the numbers to provide you with valuable insights into
-                                                    your business <br></br><br></br></h4>
+                                                <h4 className="title">What is your startup 
+                                                worth?</h4>
+                                                <h4 className="color__white">Seamless valuation services from Starters' CFO<br></br><br></br></h4>
                                                 <p className="description">
                                                     <ul className="card__list">
-                                                        <li><i className="fa fa-check"></i>&nbsp; Valuation for regulatory purposes</li>
-                                                        <li><i className="fa fa-check"></i>&nbsp; Valuation for investment pitches</li>
-                                                        <li><i className="fa fa-check"></i>&nbsp; Clear & details valuation reports for negotiations</li>
+                                                        <li><i className="fa fa-check"></i>&nbsp;  Valuation for regulatory purposes</li>
+                                                        <li><i className="fa fa-check"></i>&nbsp;  Valuation for investment pitches</li>
+                                                        <li><i className="fa fa-check"></i>&nbsp;  Clear & details valuation reports for negotiations</li>
+                                                        <li><i className="fa fa-check"></i>&nbsp;  Trusted by 1000+ happy customers</li>
 
                                                     </ul>
                                                 </p>
@@ -104,7 +109,7 @@ class Valuation extends React.Component {
                                             </div>
                                         </Col>
                                         <Col className="d-flex align-items-center h-100">
-                                            <VALUATIONFORM product={'valuation'} title={'Get on Board'} />
+                                         <VALUATIONFORM product={'valuation'} title={'Get on Board'} />
                                         </Col>
                                     </Row>
                                 </Container>
@@ -129,7 +134,18 @@ class Valuation extends React.Component {
                                                     <li><i className="fa fa-check"></i>&nbsp; Trusted by 1000+ happy customers</li>
                                                 </ul>
                                             </p>
-                                            <Button className="btn__primary large" onClick={this.togglePopConvert}>Get started</Button>
+                                            <Row style={{ alignItems: 'center', flexWrap: 'nowrap'}}>
+                                            {/* <div className='buttonstop'> */}
+                                            <Col>
+
+                                            <Button style={{ width: '165px'}} className="btn__primary large" onClick={this.togglePopConvert}>Get started</Button>
+                                            </Col>
+                                            <Col>
+                                            <Link href="/contact"><a><Button style={{ width: '165px'}} className="btn__primary large">Contact Us</Button></a></Link>
+                                            </Col>
+
+                                            {/* </div> */}
+                                            </Row>
                                         </Col>
                                     </Row>
                                 </Container>
@@ -147,8 +163,7 @@ class Valuation extends React.Component {
                                         <br></br>
                                         <Row>
                                             <Col md={{ 'span': '8', 'offset': '2' }}>
-                                                <p className=" text-center color__dark">"In an ever-evolving marketplace, business valuation services serve as an essential tool
-                                                    for strategic decision-making and fostering sustainable growth.</p>
+                                                <p className=" text-center color__dark">"Yesterday" was the right time to have an independent business valuation for your company by an independent business valuer. And tomorrow will be late. The need for a business valuation arises for several reasons: incoming investors, financial strategy, business planning, business sale, founder exit, public offering, or net worth certification.</p>
                                             </Col>
 
                                         </Row>
@@ -199,7 +214,7 @@ class Valuation extends React.Component {
                               
                             </Col>
 
-                            <Col sm={12} md={4} className="text-center">
+                            <Col sm={12} md={4} className="text-center d-none d-md-block d-lg-block d-xl-block">
                                 <div className='valution_secbox'>  <img className="text-center" src="/static/images/icons/valutaion2.png" ></img>
                               
                                 <h5 className="text-left" >    Lorem ipsum dolor sit.</h5>
@@ -211,7 +226,7 @@ class Valuation extends React.Component {
                                 </div>
 
                             </Col>
-                            <Col sm={12} md={4} className="text-center">
+                            <Col sm={12} md={4} className="text-center d-none d-md-block d-lg-block d-xl-block">
                             <div className='valution_secbox'>  
                                 <img className="text-center"  src="/static/images/icons/valutaion2.png" ></img>
                               
@@ -225,6 +240,14 @@ class Valuation extends React.Component {
 </div>
                             </Col>
                            
+                           
+                        </Row>
+                       
+                        <Row style={{alignItems:"center;"}} className="valuationservices d-xs-block d-sm-block d-md-none w-100">
+                          
+                           <Col sm={12} md={12} >
+                           <ValuationServices /> 
+                           </Col>
                            
                         </Row>
                        
@@ -249,13 +272,15 @@ class Valuation extends React.Component {
                                 <img src="/static/images/banner/info_profession.png" className="" ></img>
                             </Col>
                             <Col sm={12} md={6}>
-                                <h4 className='pt-5'>
-                                Turn Your Local Knowledge Into Professional
-                                </h4>
-                                <p style={{fontSize:"16px"}} className=" color__dark">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum id aperiam accusantium excepturi facilis est tempore eos. Dolores, reprehenderit eaque?
-    How Much Should An Investor Pay    For An Interest In Your Company?    It Depends On What The Company    Is Worth.
-    Lorem ipsum dolor sit.
+                                <h4 className='pt-2'>Valuation for regulatory purposes</h4>
+                                <p className="font__20 color__dark">
+                                    Regulatory Valuations are required under Companies Act, Income Tax Act, FEMA, SEBI Regulations, Insolvency & Bankruptcy Code, IND-AS (Financial Reporting).
+                                    <br></br>
+                                    <br></br>
+                                    Different regulators in India have prescribed different, and at some places even contradictory, valuation requirements to be applied in specific situations. In addition to applicable laws & regulations, more recently, some regulators have also prescribed valuation to be conducted as per internationally accepted valuation guidelines.
+                                    <br></br>
+                                    <br></br>
+                                    Starters' CFO  helps companies to navigate this environment of changing laws and regulations by offering skilled expertise for forming strategy and defending valuation positions by working in closely with Companies’ Board and Management and their tax and legal advisors to provide valuations services required under various laws and regulations.
                                 </p>
                             </Col>
                         </Row>
@@ -276,7 +301,6 @@ class Valuation extends React.Component {
                         </Container>
                         </Col>
 
-                        
                    
 {/* card slideetwo  */}
                          <div className='card_slider_re2'>
@@ -306,7 +330,7 @@ class Valuation extends React.Component {
                         </Col>
 
                         <Col sm={12} md={12}>
-                            <div className='part_logo'>
+                            <div className='part_logo  d-none d-md-block d-lg-block d-xl-block'>
                             <img src="/static/images/logos/Freshbooks.png" alt="Logo"></img>
                             <img src="/static/images/logos/Shopify.png" alt="Logo"></img>
                             <img src="/static/images/logos/Gusto.png" alt="Logo"></img>
@@ -314,6 +338,9 @@ class Valuation extends React.Component {
                             <img src="/static/images/logos/Shopify.png" alt="Logo"></img>
                             <img src="/static/images/logos/Gusto.png" alt="Logo"></img>
 
+                            </div>
+                            <div className='mobilepartner text-center d-xs-block d-sm-block d-md-none w-100'>
+                            <PartnersLogo /> 
                             </div>
                         </Col>                           
                         </Row>
@@ -340,7 +367,7 @@ have all your <span className='weight__600 '>questions answered before</span> yo
                         </Container>
 
                     <Container>
-                        <Row>
+                        <Row className=' d-none d-md-flex d-lg-flex d-xl-flex'>
                             <Col sm={4} md={4}><Div className='plan_price_bo'>
                             <div className='text-center'>
                                
@@ -402,8 +429,16 @@ have all your <span className='weight__600 '>questions answered before</span> yo
 
 
                         </Row>
+                        <Row className='consultantplan text-center d-xs-block d-sm-block d-md-none w-100' style={{margin: 'auto'}}>
+                            <Col sm={12} md={12}>
+                                  <ConsultantPlans /> 
+                            </Col>
+
+
+                        </Row>
                     </Container>
               
+
 
  
                     <Row >
@@ -415,6 +450,7 @@ have all your <span className='weight__600 '>questions answered before</span> yo
                     </Row>
 
                     
+                    <PerksV2 />
 
 
                     <Container>

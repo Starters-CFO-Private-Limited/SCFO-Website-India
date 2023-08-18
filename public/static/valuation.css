@@ -124,10 +124,10 @@
 
 .hero--wrapper.startup_potential {
     background: url(../static/images/banner/startup_slider.png) !important;
-    background-size: cover !important;
+    background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    background-position: bottom !important;
+    background-position: bottom;
 }
 
 .startup_potential button {
@@ -384,7 +384,7 @@
 .plan_price_bo h4 {
     font-family: sans-serif;
 }
-.informationneed form.pop-convert--form {
+.informationneed .pop-convert--form {
     padding: 30px;
     border-radius: 10px;
     background: #f1f0ff;
@@ -593,12 +593,12 @@
                 left: 31rem;
             }
             .card_slider_re2 .slick-next{
-                top: -71px ;
-                right: 13rem ;
+                top: -71px !important;
+                right: 9rem !important;
             }
             .card_slider_re2 .slick-prev{
                 top: -70px;
-                left: 36rem;
+                left: 33rem;
             }
             .startup_potential h4.title{
                 font-size: 30px !important;
@@ -636,12 +636,12 @@
     left: 11rem;
 }
 .card_slider_re2 .slick-next{
-    top: -85px;
-    right: 6rem;
+    top: -82px !important;
+    right: 6rem !important;
 }
 .card_slider_re2 .slick-prev{
-    top: -85px;
-    left: 13rem;
+    top: -82px !important;
+    left: 13rem !important;
 }
 .hero__text .title{
     font-size: 30px !important;
@@ -668,3 +668,102 @@ h4.color__dark.text-center.font__40, h4.color__dark.text-center.font__40, .info_
 
 }
 
+/**12-08-2020 css add**/
+
+@media (max-width:767px){
+.valuationservices .slide3 {
+    text-align: center;
+    margin: 40px 20px 0px;
+}
+
+.valuationservices .slide3 img {
+    margin: auto;
+}
+
+.valuationservices .slide3 p {
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.valuationservices .slide3 h2 {
+    font-size: 20px;
+    font-weight: 700;
+    padding-top: 20px;
+}
+
+.valuationservices .slide3 button {
+    background-color: #f8d05f !important;
+    color: #000;
+    border: none !important;
+    font-size: 14px;
+    font-family: sans-serif;
+    padding: 6px 18px;
+    margin-top: 30px;
+    border-radius: 4px;
+}
+
+
+.valuationservices button.slick-arrow.slick-prev {
+    left: 0px;
+}
+
+
+.first_v.col .find_thee button {
+    font-size: 10px !important;
+    padding: 8px 16px !important;
+}
+
+
+.consultantplan 
+ .plan_price_bo {
+    text-align: center;
+}
+
+.plan_price_bo ul {
+    list-style: none;
+}
+
+
+
+.consultantplan button.slick-arrow.slick-prev {
+    left: 7px;
+}
+
+.consultantplan button.slick-arrow.slick-next {
+    right: 0px;
+}
+.buttonstop {
+    display: grid;
+}
+
+.buttonstop button {
+    margin-bottom: 17px;
+}
+
+
+
+.mobilepartner 
+ .part_logo img {
+    width: 50% !important;
+    height: auto !important;
+    margin: auto;
+}
+
+.mobilepartner {
+    margin-top: 20px;
+}
+
+.mobilepartner button.slick-arrow.slick-prev {
+    left: 6px;
+}
+
+.mobilepartner button.slick-arrow.slick-next {
+    right: 4px;
+}
+.hero--wrapper.-mobile {
+    height: 550px !important;
+}
+}

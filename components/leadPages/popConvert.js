@@ -60,14 +60,15 @@ class PopConvert extends React.Component {
                                 <br></br><br></br>
                                 {
                                      <>
-                                     	<iframe
-                                         width="100%" 
-                                        height="300" 
-                                        src="https://crm.starterscfo.com/forms/wtl/b56e9ff27f8b8b45c8be967db7edc920" 
-                                        frameBorder="0" 
-                                        sandbox="allow-top-navigation allow-forms allow-same-origin allow-popups" 
-                                        allowFullScreen>
-                                        </iframe>
+                                        <iframe
+                                            width="100%" 
+                                            height="300"
+                                            src="https://crm.starterscfo.com/forms/wtl/b56e9ff27f8b8b45c8be967db7edc920"
+                                            frameborder="0"
+                                            sandbox="allow-top-navigation allow-forms allow-same-origin allow-scripts allow-popups" 
+                                            allowfullscreen>
+                                        </iframe>	
+
                                         <br></br>
                                         <p className="color__light-grey font__10">
                                             By creating an account with Starter's CFO, you agree to our <a href="/terms-of-service">terms</a> and <a href="/privacy-policy">privacy policy</a>.
