@@ -1,4 +1,6 @@
 
+
+
 .buss_acoordian .color__dark.card-header{
     font-weight: 600;
     text-align: left;
@@ -112,16 +114,42 @@
         border-radius: 50px;
         margin-right: 10px;
 }
-.card_slider_re2 .slide2 p{
-    font-size: 14px;
-    font-family: sans-serif;
-    color: #00000078;
+
+.read-more {
+    text-decoration: none !important;
+    font-size: 15px !important;
+    /* color: #384152 !important; */
 }
-.card_slider_re2 .slide2testi{
-    margin-top: 80px;
-} 
 
 
+.read-more:hover {
+    text-decoration: underline !important;
+    font-size: 15px !important;
+    /* color: #384152; */
+}
+
+
+.card_slider_re2 .slide2 p{
+    /* font-size: 14px;
+    font-family: sans-serif;
+    color: #00000078; */
+
+    line-height: 1.4;
+    color: rgb(17, 17, 17);
+    font-size: 15px;
+    text-align: left;
+
+}
+/* .card_slider_re2 .slide2testi{
+     margin-top: 80px; 
+}  */
+.color__star {
+    color:rgb(252, 191, 2) !important;
+}
+.width_auto
+{
+    width: auto !important;
+}
 .hero--wrapper.startup_potential {
     background: url(../static/images/banner/startup_slider.png) !important;
     background-size: cover;
@@ -500,6 +528,9 @@
 }
 
 @media(max-width:992px){
+
+
+    
     .startup_potential h4.color__white{
         font-size: 16px;
     }
@@ -609,7 +640,9 @@
 }
 
 @media(max-width:767px){
-    
+    .text-margin{
+    margin: inherit !important;
+    }
 .buss_acoordian {
     margin: auto;
     width: 100%;
