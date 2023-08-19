@@ -133,7 +133,7 @@ class Valuation extends React.Component {
 
                         <Row>
                             <Col sm={12} md={4} className="text-center">
-                                <img src="/static/images/illustrations/funding.png" style={{ height: "170px" }}></img>
+                                <img src="/static/images/illustrations/fund-raise.png" alt="Fund Raise" style={{ height: "170px" }}></img>
                                 <br></br><br></br>
                                 <h3>Fund Raise</h3>
                                 <p className="color__grey">
@@ -141,7 +141,7 @@ class Valuation extends React.Component {
                                 </p>
                             </Col>
                             <Col sm={12} md={4} className="text-center">
-                                <img src="/static/images/illustrations/salary_increment.svg" style={{ height: "170px" }}></img>
+                                <img src="/static/images/illustrations/sale-of-the-business.svg" alt='Sale of the business' style={{ height: "170px" }}></img>
                                 <br></br><br></br>
                                 <h3>Sale of the business</h3>
                                 <p className="color__grey">
@@ -149,7 +149,7 @@ class Valuation extends React.Component {
                                 </p>
                             </Col>
                             <Col sm={12} md={4} className="text-center">
-                                <img src="/static/images/illustrations/compliance.webp" style={{ height: "170px" }}></img>
+                                <img src="/static/images/illustrations/mergers_acquisition_amalgamation.webp" alt='Mergers, Acquisition & Amalgamation' style={{ height: "170px" }}></img>
                                 <br></br><br></br>
                                 <h3>Mergers, Acquisition &amp; Amalgamation</h3>
                                 <p className="color__grey">
@@ -159,7 +159,7 @@ class Valuation extends React.Component {
                         </Row>
                         <Row className="mt-md-4 text-center">
                             <Col sm={12} md={4} className="text-center">
-                                <img src="/static/images/illustrations/agreement.svg" style={{ height: "170px" }}></img>
+                                <img src="/static/images/illustrations/ESOP-plans.svg" alt='ESOP plans' style={{ height: "170px" }}></img>
                                 <br></br><br></br>
                                 <h3>ESOP plans</h3>
                                 <p className="color__grey">
@@ -167,7 +167,7 @@ class Valuation extends React.Component {
                                 </p>
                             </Col>
                             <Col sm={12} md={4} className="text-center">
-                                <img src="/static/images/illustrations/1.svg" style={{ height: "170px" }}></img>
+                                <img src="/static/images/illustrations/regulatory_purposes.svg" alt="Regulatory purposes" style={{ height: "170px" }}></img>
                                 <br></br><br></br>
                                 <h3>Regulatory purposes</h3>
                                 <p className="color__grey">
@@ -175,7 +175,7 @@ class Valuation extends React.Component {
                                 </p>
                             </Col>
                             <Col sm={12} md={4} className="text-center">
-                                <img src="/static/images/illustrations/decision_making.png" style={{ height: "170px" }}></img>
+                                <img src="/static/images/illustrations/decision_making.png" alt='Decision Making' style={{ height: "170px" }}></img>
                                 <br></br><br></br>
                                 <h3>Decision Making</h3>
                                 <p className="color__grey">
@@ -208,7 +208,7 @@ class Valuation extends React.Component {
                                         <li style={{ marginTop: "5px" }}><i className="fa-solid fa-circle-check color__scfo"></i>&nbsp; Accounting Standard Valuation</li>
                                     </ul>
                                 </div>
-                                <img src="/static/svg/undraw_setup_analytics_8qkl.svg" className="h-18" style={{ marginTop: "60px" }}></img>
+                                <img src="/static/svg/valuation-for-regulatory-purposes.svg" alt='Valuation for regulatory purposes' className="h-18" style={{ marginTop: "60px" }}></img>
                             </Col>
                             <Col sm={12} md={6}>
                                 <p className="font__20 color__dark">

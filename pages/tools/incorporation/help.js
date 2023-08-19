@@ -104,7 +104,7 @@ class CompanyIncorporation extends React.Component {
                     <ExitConvert></ExitConvert>
 
                     <div className="d-none d-md-block d-lg-block d-xl-block w-100">
-                        <div className="hero--wrapper -white" style={{ 'height': '800px' }}>
+                        <div className="hero--wrapper -white" style={{ 'height': '500px' }}>
                             <div className="hero__background">
                                 <div className="-white">
                                     <Container>
@@ -125,7 +125,7 @@ class CompanyIncorporation extends React.Component {
                                                     <Card.Body style={{ paddingTop: '50px', paddingLeft: '30px', paddingRight: '30px' }}>
                                                         <Row className="text-center">
                                                             <Col>
-                                                                <img src="/static/images/illustrations/1.svg" height="100px"></img>
+                                                                <img src="/static/images/illustrations/take_questionnaire.svg" alt="Take questionnaire" height="100px"></img>
                                                                 <br></br><br></br>
                                                                 <h4 className="color__dark"><b>Take questionnaire</b></h4>
                                                             </Col>
@@ -138,7 +138,7 @@ class CompanyIncorporation extends React.Component {
                                                     <Card.Body style={{ paddingTop: '50px', paddingLeft: '30px', paddingRight: '30px' }}>
                                                         <Row className="text-center">
                                                             <Col>
-                                                                <img src="/static/images/illustrations/service.svg" height="100px"></img>
+                                                                <img src="/static/images/illustrations/consul_with_us.svg" alt='Consult with us' height="100px"></img>
                                                                 <br></br><br></br>
                                                                 <h4 className="color__dark"><b>Consult with us</b></h4>
                                                             </Col>
@@ -151,7 +151,7 @@ class CompanyIncorporation extends React.Component {
                                                     <Card.Body style={{ paddingTop: '50px', paddingLeft: '30px', paddingRight: '30px' }}>
                                                         <Row className="text-center">
                                                             <Col onClick={() => { window.location = "#options" }}>
-                                                                <img src="/static/images/illustrations/compliance.webp" height="100px"></img>
+                                                                <img src="/static/images/illustrations/read-and-decide.webp" alt='Read & Decide' height="100px"></img>
                                                                 <br></br><br></br>
                                                                 <h4 className="color__dark"><b>Read & Decide</b></h4>
                                                             </Col>
@@ -189,7 +189,7 @@ class CompanyIncorporation extends React.Component {
                                                     <Card.Body style={{ paddingTop: '50px', paddingLeft: '30px', paddingRight: '30px' }}>
                                                         <Row className="text-center">
                                                             <Col>
-                                                                <img src="/static/images/illustrations/1.svg" height="100px"></img>
+                                                                <img src="/static/images/illustrations/take_questionnaire.svg" alt='Take questionnaire' height="100px"></img>
                                                                 <br></br><br></br>
                                                                 <h4 className="color__dark"><b>Take questionnaire</b></h4>
                                                             </Col>
@@ -202,7 +202,7 @@ class CompanyIncorporation extends React.Component {
                                                     <Card.Body style={{ paddingTop: '50px', paddingLeft: '30px', paddingRight: '30px' }}>
                                                         <Row className="text-center">
                                                             <Col>
-                                                                <img src="/static/images/illustrations/service.svg" height="100px"></img>
+                                                                <img src="/static/images/illustrations/consul_with_us.svg" alt='Consult with us' height="100px"></img>
                                                                 <br></br><br></br>
                                                                 <h4 className="color__dark"><b>Consult with us</b></h4>
                                                             </Col>
@@ -215,7 +215,7 @@ class CompanyIncorporation extends React.Component {
                                                     <Card.Body style={{ paddingTop: '50px', paddingLeft: '30px', paddingRight: '30px' }}>
                                                         <Row className="text-center">
                                                             <Col onClick={() => { window.location = "#options" }}>
-                                                                <img src="/static/images/illustrations/compliance.webp" height="100px"></img>
+                                                                <img src="/static/images/illustrations/read-and-decide.webp" alt='Read & Decide' height="100px"></img>
                                                                 <br></br><br></br>
                                                                 <h4 className="color__dark"><b>Read & Decide</b></h4>
                                                             </Col>

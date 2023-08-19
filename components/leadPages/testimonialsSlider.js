@@ -25,7 +25,7 @@ class TestimonialsSlider extends React.Component {
                                             </h5>
                                             <Row className="mt-4">
                                                 <Col style={{ flex: 1 }} className="text-right">
-                                                    <img src={testimonial.image} height={'50px'} width={'50px'} style={{ borderRadius: '50%' }}></img>
+                                                    <img src={testimonial.image} alt={testimonial.alt} height={'50px'} width={'50px'} style={{ borderRadius: '50%' }}></img>
                                                 </Col>
                                                 <Col style={{ flex: 9, marginLeft: '-10px' }}>
                                                     <h5 className="color__dark font__15 text-left">{testimonial.name}<br></br><span className="color__grey font__12">{testimonial.title}</span></h5>

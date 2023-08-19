@@ -119,7 +119,7 @@ export default class HeaderConvert extends React.Component {
                                     </div>
                                 </Col>
                                 <Col className="d-flex flex-column align-items-center justify-content-center">
-                                    <img src="/static/images/icons/google.png" width={'50px'}></img>
+                                    <img src="/static/images/icons/google.png" alt='google' width={'50px'}></img>
                                     <br></br>
                                     <h4 className="color__grey d-block">5 / 5</h4>
                                     <div className="color__scfo d-flex flex-row">
@@ -148,7 +148,7 @@ export default class HeaderConvert extends React.Component {
                                     </div>
                                 </Col>
                                 <Col className="d-flex align-items-end">
-                                    <img src="/static/images/icons/google.png" height={'50px'}></img>
+                                    <img src="/static/images/icons/google.png" alt='google' height={'50px'}></img>
                                 </Col>
                                 <Col className="d-flex justify-content-left flex-column">
                                     <h4 className="color__grey d-block">5 / 5</h4>

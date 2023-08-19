@@ -185,7 +185,7 @@ class ESOP extends React.Component {
 
                         <Row>
                             <Col className="justify-content-center align-items-center flex-column d-none d-md-flex d-lg-flex d-xl-flex" md={5}>
-                                <img src="/static/svg/reading.svg" style={{ width: '67%!important' }}></img>
+                                <img src="/static/svg/still-curious.svg" alt='Still curious?' style={{ width: '67%!important' }}></img>
                                 <br></br>
                                 <br></br>
                                 <h5 className="color__dark">Still curious? </h5>
@@ -278,7 +278,7 @@ class ESOP extends React.Component {
                                 </Accordion>
                             </Col>
                             <Col className="justify-content-center align-items-center flex-row d-xs-flex d-sm-flex d-md-none mt-5 text-center">
-                                <img src="/static/svg/reading.svg" style={{ width: '67%!important' }}></img>
+                                <img src="/static/svg/still-curious.svg" alt='Still curious?' style={{ width: '67%!important' }}></img>
                                 <br></br>
                                 <br></br>
                                 <h5 className="color__dark">Still curious? </h5>

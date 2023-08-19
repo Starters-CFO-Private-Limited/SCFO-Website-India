@@ -115,7 +115,7 @@ class CareerForm extends React.Component {
                                                         <Row style={{ marginBottom: '5px' }}>
                                                             <Col>
                                                                 <a href="" onClick={(e) => { this._handleClose(e) }}>
-                                                                    <img src="/static/images/logos/scfo/no-cap.png" className="pop-convert--modal-logo"></img>
+                                                                    <img src="/static/images/logos/scfo/scfo-logo.png" alt='starters scfo' className="pop-convert--modal-logo"></img>
                                                                 </a>
                                                                 <br></br><br></br>
                                                                 <p className="pop-convert--modal-title color__dark">

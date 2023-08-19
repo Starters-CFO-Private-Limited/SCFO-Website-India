@@ -12,7 +12,7 @@ class Trust extends React.Component {
             <Container>
                 <Row>
                     <Col md={4} className="justify-content-end d-xs-flex d-sm-flex d-md-none d-lg-none d-xl-none text-center">
-                        <img src="/static/images/sample/cta_card.webp" className="cta_card__image"></img>
+                        <img src="/static/images/sample/businesses_trust.webp" className="cta_card__image"></img>
                         <div className="hsg-cta-block__circles" data-background-image="horizontal-circles-pink"></div>
                         <br></br><br></br>
                     </Col>

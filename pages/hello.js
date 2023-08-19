@@ -111,7 +111,7 @@ class Lead extends React.Component {
                                                 </div>
                                             </Col>
                                             <Col className="d-flex flex-column align-items-center justify-content-center">
-                                                <img src="/static/images/icons/google.png" width={'50px'}></img>
+                                                <img src="/static/images/icons/google.png" alt='google' width={'50px'}></img>
                                                 <br></br>
                                                 <h4 className="color__grey d-block">5 / 5</h4>
                                                 <div className="color__scfo d-flex flex-row">
@@ -140,7 +140,7 @@ class Lead extends React.Component {
                                                 </div>
                                             </Col>
                                             <Col className="d-flex align-items-end">
-                                                <img src="/static/images/icons/google.png" height={'50px'}></img>
+                                                <img src="/static/images/icons/google.png" alt='google' height={'50px'}></img>
                                             </Col>
                                             <Col className="d-flex justify-content-left flex-column">
                                                 <h4 className="color__grey d-block">5 / 5</h4>
@@ -175,7 +175,7 @@ class Lead extends React.Component {
                                                                     </h5>
                                                                     <Row className="mt-4">
                                                                         <Col style={{ flex: 1 }} className="text-right">
-                                                                            <img src="/static/images/people/1.jpg" height={'50px'} width={'50px'} style={{ borderRadius: '50%' }}></img>
+                                                                            <img src="/static/images/people/shruti-choudhary.jpg"  alt='Shruti Choudhary' height={'50px'} width={'50px'} style={{ borderRadius: '50%' }}></img>
                                                                         </Col>
                                                                         <Col style={{ flex: 9, marginLeft: '-10px' }}>
                                                                             <h5 className="color__dark font__15 text-left">Shruti Choudhary<br></br><span className="color__grey font__12">Product Manager</span></h5>
@@ -192,7 +192,7 @@ class Lead extends React.Component {
                                                                     </h5>
                                                                     <Row className="mt-4">
                                                                         <Col style={{ flex: 1 }} className="text-right">
-                                                                            <img src="/static/images/people/2.jpg" height={'50px'} width={'50px'} style={{ borderRadius: '50%' }}></img>
+                                                                            <img src="/static/images/people/kunal-kishore.jpg" alt='Kunal Kishore' height={'50px'} width={'50px'} style={{ borderRadius: '50%' }}></img>
                                                                         </Col>
                                                                         <Col style={{ flex: 9, marginLeft: '-10px' }}>
                                                                             <h5 className="color__dark font__15 text-left">Kunal Kishore<br></br><span className="color__grey font__12">Business Consultant</span></h5>
@@ -209,7 +209,7 @@ class Lead extends React.Component {
                                                                     </h5>
                                                                     <Row className="mt-4">
                                                                         <Col style={{ flex: 1 }} className="text-right">
-                                                                            <img src="/static/images/people/3.jpg" height={'50px'} width={'50px'} style={{ borderRadius: '50%' }}></img>
+                                                                            <img src="/static/images/people/rohit-joshi.jpg" alt='Rohit Joshi' height={'50px'} width={'50px'} style={{ borderRadius: '50%' }}></img>
                                                                         </Col>
                                                                         <Col style={{ flex: 9, marginLeft: '-10px' }}>
                                                                             <h5 className="color__dark font__15 text-left">Rohit Joshi<br></br><span className="color__grey font__12">CEO, Kreatryx</span></h5>

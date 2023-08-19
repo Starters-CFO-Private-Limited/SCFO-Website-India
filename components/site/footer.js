@@ -18,7 +18,7 @@ class Footer extends React.Component {
                                 <h6 className="color__white">Pages</h6>
                                 <ul className="color__white font__12 color__grey_on_dark" style={{ marginBottom: '10px' }}>
                                     <li className="first"><Link href="/contact"><a>Contact</a></Link></li>
-                                    <li><Link href="http://blog.starterscfo.com/"><a target="_blank">Blog</a></Link></li>
+                                    <li><Link href="articles"><a>Blog</a></Link></li>
                                     <li><Link href="/careers"><a>Careers</a></Link></li>
                                 </ul>
                                 <ul className="color__white font__12 color__grey_on_dark" style={{ marginBottom: '30px' }}>
@@ -77,10 +77,10 @@ class Footer extends React.Component {
                         <Row style={{ marginTop: '20px' }}></Row>
                         <Row className="footer" style={{ paddingTop: '0', paddingBottom: '50px' }}>
                             <Col className="justify-content-start d-none d-md-flex">
-                                <img src="/static/images/logos/scfo/light.png" className="footer__logo"></img>
+                                <img src="/static/images/logos/scfo/footer_light_logo.png" alt='starters scfo' className="footer__logo"></img>
                             </Col>
                             <Col className="text-center d-xs-flex d-sm-flex d-md-none">
-                                <img src="/static/images/logos/scfo/light.png" className="footer__logo"></img>
+                                <img src="/static/images/logos/scfo/footer_light_logo.png" alt='starters scfo' className="footer__logo"></img>
                             </Col>
                         </Row>
                     </Container>
