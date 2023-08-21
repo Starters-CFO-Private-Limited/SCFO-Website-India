@@ -3,6 +3,7 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import { WHATSAPP_DISPLAY_NUMBER, WHATSAPP_MESSAGE_NUMBER } from "../../constants";
 
 class INFORMATIONFORM extends React.Component {
 
@@ -20,7 +21,7 @@ class INFORMATIONFORM extends React.Component {
 
         const {
             title = 'Get the Information you need',
-            subTitle = 'Round-the-clock service o whatsapp us at +9110001010 get solutions to your queries,fell free to ask.',
+            subTitle = 'Round-the-clock service, whatsapp us at +9110001010 get solutions to your queries,feel free to ask.',
         } = this.props;
 
 
@@ -32,7 +33,8 @@ class INFORMATIONFORM extends React.Component {
                                 <Row style={{ marginBottom: '5px' }}>
                                     <Col>
                                         <h4 className="color__dark">{title}</h4>
-                                        <p className="color__dark">{subTitle}</p>
+                                        <p className="color__dark">Round-the-clock service, Whatsapp us at  <a href={`tel:${WHATSAPP_MESSAGE_NUMBER}`} className="color__dark font__15">{WHATSAPP_DISPLAY_NUMBER}</a> get solutions to your queries, feel free to ask. </p>
+
                                     </Col>
                                 </Row>
                                 <Row>

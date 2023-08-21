@@ -106,8 +106,28 @@
     box-shadow: #ebedfc 9px 31px 35px;
     margin: 0 10px;
     padding: 10px;
+    min-height:340px;
 }
 
+
+.banner-bottom-card {
+    position: relative;
+}
+
+.banner-bottom-card span {
+    font-size: 16px;
+    width: 40px;
+    height: 40px;
+    color: #ced2da;
+    background-color: #425089;
+    line-height: 40px;
+    border-radius: 50px;
+    text-align: center;
+    display: inline-block;
+    position: inherit;
+    left: 0;
+    top: -5px;
+}
 .card_slider_re2 .slick-slide img {
         display: inline;
         width: 40px;
@@ -463,6 +483,16 @@
     font-weight: 600;
     color: #384152;
 }
+
+
+
+.happy  h4 span{
+    font-size: 25px;
+    font-weight: 600;
+    color: #384152;
+}
+
+
 
 .startup_potential .card-body {
     background-color: #fff !important;
