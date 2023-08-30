@@ -18,19 +18,20 @@ import { VALUATION_FAQ } from "../content/valuation_faq";
 import CountUp from 'react-countup';
 //  import CountUp from 'react-countup/build/CountUp';
 
-import { BUSINESS_VARITION_ACCORDION } from "../content/business_valution_accordion";
+// import { BUSINESS_VARITION_ACCORDION } from "../content/business_valution_accordion";
 // import SliderComponent from '../components/Slider'
 // import SliderComponenttwo from '../components/Slidertwo'
 import VALUATIONFORM from '../components/valuation/valuationform';
 import INFORMATIONFORM from '../components/valuation/informationform';
 
-import ValuationSlider from '../components/valuation/valuationSlider';
+import ValuationVideoSlider from '../components/valuation/ValuationVideoSlider';
+// import ValuationSlider from '../components/valuation/valuationSlider';
 import ValuationSliderTwo from '../components/valuation/ValuationSliderTwo';
 import ValuationServices from '../components/valuation/ValuationServices';
 import ConsultantPlans from '../components/valuation/ConsultationPlans';
 import PartnersLogo from '../components/valuation/PartnersLogo';
 
-import FormIframe from '../components/leadPages/formIframe';
+// import FormIframe from '../components/leadPages/formIframe';
 
 
 class Valuation extends React.Component {
@@ -306,8 +307,25 @@ class Valuation extends React.Component {
                             </Col>
                         </Row>
                     </Container>
+                </Col> */}
+
+                <Col className='card_slider_re'>
+                    <Container >
+                        <Row  >
+                        <Col>
+                        <h4 className='weight__600'>Video For <span className='valu_serv' style={{ color: "#4c5e9e" }}>Now</span></h4>             
+                        </Col>
+                        <Col className='text-right'><h6   style={{ color:"rgb(76, 94,158)"}}>View more</h6></Col>
+                        </Row>
+                        
+                        <Row style={{ marginTop: '70px' }}>
+                            <Col >
+                            <ValuationVideoSlider />  
+                            </Col>
+                        </Row>
+                    </Container>
                 </Col>
- */}
+
        
                    
 {/* card slideetwo  */}
@@ -389,96 +407,79 @@ class Valuation extends React.Component {
                         </Container>
                         </div> 
 
-                        {/* <Container>
+                         <Container>
                             <Row>
                                 <Col sm={12} md={12}>
                                     <Div className="contact_reach text-center">
                                     <h4 className="text-center font__40 ">Reach OUt To Us For<span className='valu_serv' style={{ color: "#4c5e9e" }}> Consultation</span> </h4>
                                     <h6 className='weight__600 pt-3'>Consult with us today free!</h6>
                                     <Div sm={8} md={8} className='mx-auto'>
-                                    <p className=''>No payments are required before you start speaking to us! Consult with us for free, and
-                                    have all your questions answered before you make any commitments.</p>
                                     <p className='pt-3'>No payments are required before you start speaking to us! Consult with us for free, and
                                     have all your <span className='weight__600 '>questions answered before</span> you make any commitments.</p>
                                     </Div>
-
+                                    
+                                    <h4 className='weight__600 color__dark pt-4'>Valuation Packages</h4>
                                     </Div>
                                 </Col>
                             </Row>
-                        </Container> */}
+                        </Container> 
 
-                    {/* <Container>
+                    <Container>
                         <Row className=' d-none d-md-flex d-lg-flex d-xl-flex'>
                             <Col sm={4} md={4}><Div className='plan_price_bo'>
-                            <div className='text-center'>
+                            <div className='text-center pb-3'>
+     
+                                <h5 className='weight__600'>Registered Valuer/ CA Certified Valuation Report</h5>
+                                {/* <h6 className='weight__600'>INR 25,000/-</h6> */}
+
+                                </div>
+                                {/* <ul>
+                                    <li>Get Startup Valuationb Certificate</li>
+                                    <li>Get Startup Valuationb Certificate</li>
+                                </ul> */}
+                                {/* <p className='text-justify'>Registered Valuer/ CA Certified Valuation Report</p> */}
+                                <button type="button" onClick={this.togglePopConvert} className="btn__primary mb-3 btn btn-primary">INR 25,000/-</button>
+
+                            </Div></Col>
+                            <Col sm={4} md={4}><Div className='plan_price_bo'>
+                                <div className='text-center pb-3'>
+                                <h5 className='weight__600'>Valuation Report for Investment Pitching</h5>
+                                {/* <h6 className='weight__600'>INR 30,000/-</h6> */}
+                                </div>
                                
-                                <h4 className='weight__600'>Customized Plan</h4>
-                                </div>
-                                <ul>
+                               {/*   <ul>
                                     <li>Get Startup Valuationb Certificate</li>
                                     <li>Get Startup Valuationb Certificate</li>
-                                    <li>Get Startup Valuationb Certificate</li>
-                                    <li>Get Startup Valuationb Certificate</li>
-                                   
-
-                                </ul>
-                                <p className='text-justify'>Advance Payment to get
-                                    started with Starters' CFO
-                                    Consultant</p>
-                                <button type="button" className="btn__primary  mb-3 btn btn-primary">Get Started</button>
+                                 </ul> */}
+                                {/* <p className='text-justify'>Valuation Report for Investment Pitching </p> */}
+                                <button type="button" onClick={this.togglePopConvert} className="btn__primary mb-3 btn btn-primary">INR 30,000/-</button>
 
                             </Div></Col>
                             <Col sm={4} md={4}><Div className='plan_price_bo'>
-                                <div className='text-center'>
-                                <h4 className='weight__600'>Basic Plan</h4>
-                                <h6 className='weight__600'>Rs. 30,000/-</h6>
+                               <div className='text-center pb-3'>
+                                <h5 className='weight__600'>Financial Model + Valuation</h5>
+                                {/* <h6 className='weight__600'>INR 60,000/-</h6> */}
                                 </div>
-                                
-                                <ul>
+                                {/* <ul>
                                     <li>Get Startup Valuationb Certificate</li>
                                     <li>Get Startup Valuationb Certificate</li>
-                                    <li>Get Startup Valuationb Certificate</li>
-                                    <li>Get Startup Valuationb Certificate</li>
-                                   
-
-                                </ul>
-                                <p className='text-justify'>Advance Payment to get
-                                    started with Starters' CFO
-                                    Consultant</p>
-                                <button type="button" className="btn__primary  mb-3 btn btn-primary">Rs. 3,000/-</button>
-
-                            </Div></Col>
-                            <Col sm={4} md={4}><Div className='plan_price_bo'>
-                            <div className='text-center'>
-                                <h4 className='weight__600'>Advanced Plan</h4>
-                                <h6 className='weight__600'>Rs. 60,000/-</h6>
-                                </div>
-                                <ul>
-                                    <li>Get Startup Valuationb Certificate</li>
-                                    <li>Get Startup Valuationb Certificate</li>
-                                    <li>Get Startup Valuationb Certificate</li>
-                                    <li>Get Startup Valuationb Certificate</li>
-                                   
-
-                                </ul>
-                                <p className='text-justify'>Advance Payment to get
-                                    started with Starters' CFO
-                                    Consultant</p>
-                                <button type="button" className="btn__primary  mb-3 btn btn-primary">Rs. 6,000/-</button>
+                                </ul> */}
+                                {/* <p className='text-justify'>Financial Model + Valuation </p> */}
+                                <button type="button" onClick={this.togglePopConvert} className="btn__primary mb-3 btn btn-primary">INR 60,000/-</button>
 
                             </Div></Col>
 
 
                         </Row>
                         <Row className='consultantplan text-center d-xs-block d-sm-block d-md-none w-100' style={{margin: 'auto'}}>
-                            <Col sm={12} md={12}>
+                            <Col sm={12} md={12}> 
                                   <ConsultantPlans /> 
                             </Col>
 
 
                         </Row>
                     </Container>
-               */}
+              
 
 
  

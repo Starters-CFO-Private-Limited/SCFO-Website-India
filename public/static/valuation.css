@@ -331,7 +331,17 @@
     margin: 0 10px;
     box-shadow: #ebedfc 9px 31px 35px;
     padding: 10px 20px;
-}.plan_price_bo ul li{
+    min-height: 156px;
+    text-align: center;
+}
+
+.plan_price_bo h5 {
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+.plan_price_bo ul li{
     color: #9d9595;
 }
 .plan_price_bo ul li, .plan_price_bo p {
@@ -686,6 +696,7 @@
 .plan_price_bo{
     width: auto !important;
     margin-top: 20px !important;
+    min-height: auto !important;
 }
 .informationneed p.color__dark{
     width: auto !important;
@@ -695,7 +706,7 @@
     top: -128px;
 }
 .card_slider_re .slick-prev{
-    top: -115px;
+    top: -82px;
     left: 11rem;
 }
 .card_slider_re2 .slick-next{
@@ -725,7 +736,7 @@ h4.color__dark.text-center.font__40, h4.color__dark.text-center.font__40, .info_
     height: 500px !important;
 }
 .card_slider_re .slick-next{
-    top: -115px;
+    top: -82px;
     right: 6rem;
 }
 

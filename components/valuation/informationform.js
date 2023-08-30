@@ -29,7 +29,7 @@ class INFORMATIONFORM extends React.Component {
         return (
              <>
  <div className='pop-convert--form'>
-    <Fragment className="">
+        <Fragment>
                                 <Row style={{ marginBottom: '5px' }}>
                                     <Col>
                                         <h4 className="color__dark">{title}</h4>
