@@ -3,7 +3,9 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Link from 'next/link';
 import Container from 'react-bootstrap/Container';
-import { WHATSAPP_DISPLAY_NUMBER, WHATSAPP_MESSAGE_NUMBER } from '../../constants';
+import { US_WHATSAPP_MESSAGE_NUMBER, US_WHATSAPP_DISPLAY_NUMBER, 
+    DUBAI_WHATSAPP_DISPLAY_NUMBER, DUBAI_WHATSAPP_MESSAGE_NUMBER,
+     WHATSAPP_DISPLAY_NUMBER, WHATSAPP_MESSAGE_NUMBER } from '../../constants';
 
 
 class Footer extends React.Component {
@@ -51,24 +53,51 @@ class Footer extends React.Component {
                                     <li className="first"><Link href="/terms-of-service"><a>Terms of Service</a></Link></li>
                                     <li className="first"><Link href="/contact"><a>Customer Support</a></Link></li>
                                 </ul>
-                            </Col>
-                            <Col>
+                                <br></br>
                                 <h6 className="color__white">Social Presence</h6>
                                 <ul className="color__white font__12 color__grey_on_dark" style={{ marginBottom: '30px' }}>
-                                    <li className="first"><a href="https://www.facebook.com/StartersCFO/" target="_blank" rel="noreferrer">Facebook</a></li>
-                                    <li><a href="https://www.linkedin.com/company/starters-cfo/" target="_blank" rel="noreferrer">Linkedin</a></li>
-                                    <li><a href="https://twitter.com/CfoStarter" target="_blank" rel="noreferrer">Twitter</a></li>
+                                    <li className="first"><a href="https://www.facebook.com/StartersCFO/" target="_blank" rel="noreferrer"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
+                                    <li><a href="https://www.linkedin.com/company/starters-cfo/" target="_blank" rel="noreferrer"><i class="fa-brands fa-linkedin"></i> Linkedin</a></li>
+                                    <li><a href="https://twitter.com/CfoStarter" target="_blank" rel="noreferrer"><i class="fa-brands fa-twitter"></i> Twitter</a></li>
+                                    <li><a href="https://www.instagram.com/starterscfo_2016/" target="_blank" rel="noreferrer"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
                                 </ul>
-                                <br></br>
+                            </Col>
+                            <Col>
+                             
+                               
                                 <h6 className="color__white">Reach Us</h6>
                                 <p className="color__grey_on_dark font__12">
                                     Starters’ CFO Private Limited
+                                    <br></br><br></br>
+                                    <img src="/static/images/icons/india-flag.png" alt='India' width={'25px'}></img> INDIA
+
                                     <br></br>243, 2nd floor, Gujrawala Town, Part 3,
                                     <br></br>Delhi - 110009 
                                     <br></br>Opp HDFC Bank, Near Pentamed Hospital
-                                    <br></br>
-                                    <br></br>
+                                    <br></br><br></br>
                                     <span className="color__grey_on_dark font__14"><i className="fab fa-whatsapp"></i>&nbsp; <a href={`https://api.whatsapp.com/send?phone=${WHATSAPP_MESSAGE_NUMBER}&text=Hi%21%20I%20just%20submitted%20a%20request%20form%20on%20your%20website.%0d%0aI%20am%20interested%20in%20your%20product.&source=&data=`} target="_blank" rel="noreferrer" className="color__grey_on_dark font__14">{WHATSAPP_DISPLAY_NUMBER}</a></span>
+                               
+                                 
+                                    <br></br>
+                                    <br></br>
+                                    
+                                    <img src="/static/images/icons/united-states-flag.png" alt='USA' width={'25px'}></img> USA
+                                    <br></br>68 Valley Brook Ln,
+                                    <br></br>East Amherst, Buffalo
+                                    <br></br>USA 14051
+                                    <br></br><br></br>
+                                    <span className="color__grey_on_dark font__14"><i className="fab fa-whatsapp"></i>&nbsp; <a href={`https://api.whatsapp.com/send?phone=${US_WHATSAPP_MESSAGE_NUMBER}&text=Hi%21%20I%20just%20submitted%20a%20request%20form%20on%20your%20website.%0d%0aI%20am%20interested%20in%20your%20product.&source=&data=`} target="_blank" rel="noreferrer" className="color__grey_on_dark font__14">{US_WHATSAPP_DISPLAY_NUMBER}</a></span>
+                               
+                                    <br></br>
+                                    <br></br>
+                                    
+                                    <img src="/static/images/icons/united-arab-emirates.png" alt="Dubai" width={'25px'}></img> DUBAI
+                                    <br></br>SK & Jymma Accounting Solutions,
+                                    <br></br>Office No. 116, Al Khaleej Center Al Rolla St.
+                                    <br></br>Al Raffa Dubai – United Arab Emirates
+                                    <br></br><br></br>
+                                    <span className="color__grey_on_dark font__14"><i className="fab fa-whatsapp"></i>&nbsp; <a href={`https://api.whatsapp.com/send?phone=${DUBAI_WHATSAPP_MESSAGE_NUMBER}&text=Hi%21%20I%20just%20submitted%20a%20request%20form%20on%20your%20website.%0d%0aI%20am%20interested%20in%20your%20product.&source=&data=`} target="_blank" rel="noreferrer" className="color__grey_on_dark font__14">{DUBAI_WHATSAPP_DISPLAY_NUMBER}</a></span>
+                               
                                 </p>
                             </Col>
                         </Row>
