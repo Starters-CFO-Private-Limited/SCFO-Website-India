@@ -1,4 +1,6 @@
 
+
+
 .buss_acoordian .color__dark.card-header{
     font-weight: 600;
     text-align: left;
@@ -104,24 +106,70 @@
     box-shadow: #ebedfc 9px 31px 35px;
     margin: 0 10px;
     padding: 10px;
+    min-height:340px;
 }
 
+
+.banner-bottom-card {
+    position: relative;
+}
+
+.banner-bottom-card span {
+    font-size: 16px;
+    width: 40px;
+    height: 40px;
+    color: #ced2da;
+    background-color: #425089;
+    line-height: 40px;
+    border-radius: 50px;
+    text-align: center;
+    display: inline-block;
+    position: inherit;
+    left: 0;
+    top: -5px;
+}
 .card_slider_re2 .slick-slide img {
         display: inline;
         width: 40px;
         border-radius: 50px;
         margin-right: 10px;
 }
-.card_slider_re2 .slide2 p{
-    font-size: 14px;
-    font-family: sans-serif;
-    color: #00000078;
+
+.read-more {
+    text-decoration: none !important;
+    font-size: 15px !important;
+    /* color: #384152 !important; */
 }
-.card_slider_re2 .slide2testi{
-    margin-top: 80px;
-} 
 
 
+.read-more:hover {
+    text-decoration: underline !important;
+    font-size: 15px !important;
+    /* color: #384152; */
+}
+
+
+.card_slider_re2 .slide2 p{
+    /* font-size: 14px;
+    font-family: sans-serif;
+    color: #00000078; */
+
+    line-height: 1.4;
+    color: rgb(17, 17, 17);
+    font-size: 15px;
+    text-align: left;
+
+}
+/* .card_slider_re2 .slide2testi{
+     margin-top: 80px; 
+}  */
+.color__star {
+    color:rgb(252, 191, 2) !important;
+}
+.width_auto
+{
+    width: auto !important;
+}
 .hero--wrapper.startup_potential {
     background: url(../static/images/banner/startup_slider.png) !important;
     background-size: cover;
@@ -283,7 +331,17 @@
     margin: 0 10px;
     box-shadow: #ebedfc 9px 31px 35px;
     padding: 10px 20px;
-}.plan_price_bo ul li{
+    min-height: 156px;
+    text-align: center;
+}
+
+.plan_price_bo h5 {
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+.plan_price_bo ul li{
     color: #9d9595;
 }
 .plan_price_bo ul li, .plan_price_bo p {
@@ -436,6 +494,16 @@
     color: #384152;
 }
 
+
+
+.happy  h4 span{
+    font-size: 25px;
+    font-weight: 600;
+    color: #384152;
+}
+
+
+
 .startup_potential .card-body {
     background-color: #fff !important;
     border-radius: 20px !important;
@@ -500,6 +568,9 @@
 }
 
 @media(max-width:992px){
+
+
+    
     .startup_potential h4.color__white{
         font-size: 16px;
     }
@@ -609,7 +680,9 @@
 }
 
 @media(max-width:767px){
-    
+    .text-margin{
+    margin: inherit !important;
+    }
 .buss_acoordian {
     margin: auto;
     width: 100%;
@@ -623,6 +696,7 @@
 .plan_price_bo{
     width: auto !important;
     margin-top: 20px !important;
+    min-height: auto !important;
 }
 .informationneed p.color__dark{
     width: auto !important;
@@ -632,7 +706,7 @@
     top: -128px;
 }
 .card_slider_re .slick-prev{
-    top: -115px;
+    top: -82px;
     left: 11rem;
 }
 .card_slider_re2 .slick-next{
@@ -662,7 +736,7 @@ h4.color__dark.text-center.font__40, h4.color__dark.text-center.font__40, .info_
     height: 500px !important;
 }
 .card_slider_re .slick-next{
-    top: -115px;
+    top: -82px;
     right: 6rem;
 }
 
