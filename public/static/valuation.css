@@ -73,11 +73,11 @@
 }
 .card_slider_re .slick-prev{
     top: -94px;
-    left: 70rem;
+    left: 64rem;
 }
 .card_slider_re .slick-next{
     top: -94px;
-    right: -7rem;
+    right: 0rem;
 }
 .slick-prev:before, .slick-next:before{
     color: #425089 !important;
@@ -109,7 +109,7 @@
 } */
 .card_slider_re2 .slick-prev {
     top: -74px;
-    left: 80rem;
+    left: 72rem;
 }
 .card_slider_re2 .slick-next{
     top: -74px;
