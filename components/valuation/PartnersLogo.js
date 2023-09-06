@@ -10,6 +10,8 @@ const Slide = ({ partnerlogo }) => (
 );
 
 const PartnersLogo = () => {
+  
+  
   const settings = {
     dots: false,
     arrows: true, // Use 'arrows' instead of 'arrow'
@@ -20,19 +22,35 @@ const PartnersLogo = () => {
     autoplay: true,
     responsive: [
       {
-        breakpoint: 768, // Mobile breakpoint
+         
+        breakpoint: 768,
         settings: {
           slidesToShow: 1,
-        },
-      },
-    ],
-    responsive: [
-      {
-        breakpoint: 992, // Mobile breakpoint
-        settings: {
-          slidesToShow: 1,
-        },
-      },
+          dots: true
+        }
+   
+      }, 
+      // {
+   
+      //   breakpoint: 1500,
+      //   settings: "unslick" // destroys slick
+   
+      // },
+
+    //   {
+    //     breakpoint: 768, // Mobile breakpoint
+    //     settings: {
+    //       slidesToShow: 1,
+    //     },
+    //   },
+    // ],
+    // responsive: [
+    //   {
+    //     breakpoint: 992, // Mobile breakpoint
+    //     settings: {
+    //       slidesToShow: 1,
+    //     },
+    //   },
     ],
   };
 

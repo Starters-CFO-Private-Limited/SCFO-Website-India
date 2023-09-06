@@ -18,7 +18,7 @@ import { VALUATION_FAQ } from "../content/valuation_faq";
 import CountUp from 'react-countup';
 //  import CountUp from 'react-countup/build/CountUp';
 
-// import { BUSINESS_VARITION_ACCORDION } from "../content/business_valution_accordion";
+import { BUSINESS_VARITION_ACCORDION } from "../content/business_valution_accordion";
 // import SliderComponent from '../components/Slider'
 // import SliderComponenttwo from '../components/Slidertwo'
 import VALUATIONFORM from '../components/valuation/valuationform';
@@ -73,9 +73,10 @@ class Valuation extends React.Component {
                         <div className="hero--wrapper startup_potential">
                             <div className="d-flex align-items-start h-100">
                                 <Container className="h-100">
-                                    <Col> <div className='pt-5 '>
-                                        <p className='color__dark'> <Button className="btn__primary rounded-pill" style={{ marginRight: "10px;" }} onClick={this.togglePopConvert}>Tranding </Button>Valuation for start ups & SMES! Unlock the true potential Of your business</p>
-                                    </div></Col>
+                                   {/* <Col className='pt-5 '>  */}
+                                   <p className='color__dark pt-5 '> <Button className="btn__primary rounded-pill" style={{ marginRight: "10px;" }} onClick={this.togglePopConvert}>Tranding </Button>Valuation for start ups & SMES! Unlock the true potential Of your business</p>
+                                    
+                                    {/* </Col> */}
                                     <Row className="hero__text -no-margin h-100 pt-3">
                                         <Col>
 
@@ -144,7 +145,7 @@ class Valuation extends React.Component {
                                             <Button style={{ width: '165px'}} className="btn__primary large" onClick={this.togglePopConvert}>Get started</Button>
                                             </Col>
                                             <Col>
-                                            <Link href="/contact"><a><Button style={{ width: '165px'}} className="btn__primary large">Contact Us</Button></a></Link>
+                                            <Link href="/contact"><a><Button style={{ width: '152px'}} className="btn__primary large">Contact Us</Button></a></Link>
                                             </Col>
 
                                             {/* </div> */}
@@ -170,13 +171,13 @@ class Valuation extends React.Component {
                                             </Col>
 
                                         </Row>
-                                        {/* <Row>
+                                        <Row>
                                             <Col>
                                                 <div className='buss_acoordian'>
                                                     <FAQ faq={BUSINESS_VARITION_ACCORDION}></FAQ>
                                                 </div>
                                             </Col>
-                                        </Row> */}
+                                        </Row>
                                         <Row>
                                             <Col className='mt-5 mb-3'>
                                                 <h4 className="color__dark text-center font__40 weight__700">Valuation Services by <span className='valu_serv' style={{ color: "#4c5e9e" }}> Starters' CFO</span> </h4>
@@ -203,7 +204,7 @@ class Valuation extends React.Component {
                                             <img  src="/static/images/illustrations/funding.png" style={{ height: "100px" }}></img>
                                             </div>
                                             <div className='find_thee'>
-                                            <h6>Digitally Enabled, Online Processes</h6>
+                                            <h6 className='font__18'>Digitally Enabled, Online Processes</h6>
                                             {/* <p style={{fontSize:"12px"}}> Lorem ipsum dolor sit</p> */}
                                             <div className='text-left'>            
                                             <Button className="btn__primary rounded-pill text-left" style={{ marginRight: "10px;"}} onClick={this.togglePopConvert}>Get Started </Button>
@@ -313,9 +314,9 @@ class Valuation extends React.Component {
                     <Container >
                         <Row  >
                         <Col>
-                        <h4 className='weight__600'>Video For <span className='valu_serv' style={{ color: "#4c5e9e" }}>Now</span></h4>             
+                        <h4 className='weight__600'>Valuation Video <span className='valu_serv' style={{ color: "#4c5e9e" }}>Guide</span></h4>             
                         </Col>
-                        <Col className='text-right'><h6   style={{ color:"rgb(76, 94,158)"}}>View more</h6></Col>
+                        {/* <Col className='text-right'><h6   style={{ color:"rgb(76, 94,158)"}}>View more</h6></Col> */}
                         </Row>
                         
                         <Row style={{ marginTop: '70px' }}>
@@ -336,7 +337,7 @@ class Valuation extends React.Component {
                             
                             <h4 className='weight__600'>What Our Users <span className='valu_serv' style={{ color: "#4c5e9e" }}>Say About Us</span></h4>             
                                            </Col>
-                            <Col className='text-right'><h6   style={{ color:"rgb(76, 94,158)"}}>View more</h6></Col>
+                            {/* <Col className='text-right'><h6   style={{ color:"rgb(76, 94,158)"}}>View more</h6></Col> */}
                             </Row>
                            </Container>
                             <div className='container-fluid '>
@@ -352,7 +353,7 @@ class Valuation extends React.Component {
                     <Container>
                         <Row className="hero__text">
                             <Col>
-                                <h4 style={{ fontSize: '40px !important' }} className="color__dark text-center font__40">Valuation for investment pitching</h4>
+                                <h5 style={{ fontSize: '30px !important' }} className="color__dark text-center color__dark text-center weight__600 font__30">Valuation for investment pitching</h5>
                                 <br></br>
                             </Col>
                         </Row>
@@ -360,7 +361,7 @@ class Valuation extends React.Component {
                         <Row style={{ marginTop: '10px' }}>
                             <Col sm={12} md={6}>
                                 <div>
-                                    <ul className="card__list font__20">
+                                    <ul className="card__list font__16">
                                         <li style={{ marginTop: "5px" }}><i className="fa-solid fa-circle-check color__scfo"></i>&nbsp; Financial modelling for valuation through DCF</li>
                                         <li style={{ marginTop: "5px" }}><i className="fa-solid fa-circle-check color__scfo"></i>&nbsp; Comparable transactions for valuation through market multiple method</li>
                                         <li style={{ marginTop: "5px" }}><i className="fa-solid fa-circle-check color__scfo"></i>&nbsp; Valuation by stage / VC method</li>
@@ -368,7 +369,7 @@ class Valuation extends React.Component {
                                 </div>
                             </Col>
                             <Col sm={12} md={6}>
-                                <p className="font__20 color__dark">
+                                <p className="font__16 color__dark">
                                     How much should an investor pay for an interest in your company? It depends on what the company is worth. In order to set a price for an investor to buy into your company, a business valuation must be made.
                                     <br></br>
                                     <br></br>

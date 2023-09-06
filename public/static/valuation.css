@@ -1,4 +1,17 @@
 
+.slide { position: relative; }
+
+.playbutton {
+    background: url('/static/images/icons/youtube-button.png') center center no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    width: 65px;
+    height: 50px;
+    margin: -12px 0 0 -37px;
+    z-index: 10;
+    opacity: .9;
+  }
 
 
 .buss_acoordian .color__dark.card-header{
@@ -60,11 +73,11 @@
 }
 .card_slider_re .slick-prev{
     top: -94px;
-    left: 57rem;
+    left: 70rem;
 }
 .card_slider_re .slick-next{
     top: -94px;
-    right: 8rem;
+    right: -7rem;
 }
 .slick-prev:before, .slick-next:before{
     color: #425089 !important;
@@ -86,14 +99,25 @@
     color:#fff;
     margin-top:30px
 }
-.card_slider_re2 .slick-prev{
+/* .card_slider_re2 .slick-prev{
     top: -82px;
     left: 62rem;
 }
 .card_slider_re2 .slick-next{
     top: -82px;
     right: 13rem;
+} */
+.card_slider_re2 .slick-prev {
+    top: -74px;
+    left: 80rem;
 }
+.card_slider_re2 .slick-next{
+    top: -74px;
+    right: 2rem;
+}
+
+
+
 .card_slider_re2 .slick-prev:before, .slick-next:before{
     color: #425089 !important;
 }
@@ -568,7 +592,10 @@
 }
 
 @media(max-width:992px){
-
+    
+    .playbutton {
+        left: 50%;
+      }
 
     
     .startup_potential h4.color__white{
@@ -656,7 +683,7 @@
             .countcode{
                 width: 45px !important;
             }
-            .card_slider_re .slick-next{
+            /* .card_slider_re .slick-next{
                 top: -105px;
             }
             .card_slider_re .slick-prev{
@@ -670,6 +697,21 @@
             .card_slider_re2 .slick-prev{
                 top: -70px;
                 left: 33rem;
+            } */
+            .card_slider_re .slick-next{
+                top: -105px;
+            }
+            .card_slider_re .slick-prev{
+                top: -105px;
+                left: 37rem;
+            }
+            .card_slider_re2 .slick-next{
+                top: -69px !important;
+                right: 2rem !important;
+            }
+            .card_slider_re2 .slick-prev{
+                top: -69px;
+                left: 44rem;
             }
             .startup_potential h4.title{
                 font-size: 30px !important;
@@ -705,7 +747,7 @@
     right: 6rem;
     top: -128px;
 }
-.card_slider_re .slick-prev{
+/* .card_slider_re .slick-prev{
     top: -82px;
     left: 11rem;
 }
@@ -716,7 +758,20 @@
 .card_slider_re2 .slick-prev{
     top: -82px !important;
     left: 13rem !important;
+} */
+.card_slider_re .slick-prev{
+    top: -86px;
+    left: 15rem;
 }
+.card_slider_re2 .slick-next{
+    top: -66px !important;
+    right: 1rem !important;
+}
+.card_slider_re2 .slick-prev {
+    top: -66px !important;
+    left: 16rem !important;
+}
+
 .hero__text .title{
     font-size: 30px !important;
 }
@@ -735,9 +790,14 @@ h4.color__dark.text-center.font__40, h4.color__dark.text-center.font__40, .info_
 .hero--wrapper.-mobile {
     height: 500px !important;
 }
-.card_slider_re .slick-next{
+/* .card_slider_re .slick-next{
     top: -82px;
     right: 6rem;
+} */
+
+.card_slider_re .slick-next{
+    top: -86px;
+    right: 0rem;
 }
 
 }
@@ -745,6 +805,10 @@ h4.color__dark.text-center.font__40, h4.color__dark.text-center.font__40, .info_
 /**12-08-2020 css add**/
 
 @media (max-width:767px){
+    .playbutton {
+        left: 50%;
+      }
+      
 .valuationservices .slide3 {
     text-align: center;
     margin: 40px 20px 0px;

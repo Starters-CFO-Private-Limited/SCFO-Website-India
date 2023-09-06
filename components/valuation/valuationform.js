@@ -103,8 +103,8 @@ export default class VALUATIONFORM extends React.Component {
                                                 width="100%"
                                                 height="300" 
                                                 src="https://crm.starterscfo.com/forms/wtl/d3938263727cd88e397764e4c01c291a" 
-                                                frameborder="0" sandbox="allow-top-navigation allow-forms allow-same-origin allow-scripts allow-popups"
-                                                allowfullscreen>
+                                                frameBorder="0" sandbox="allow-top-navigation allow-forms allow-same-origin allow-scripts allow-popups"
+                                                allowFullScreen>
                                             </iframe>
 
                                             </Col>
