@@ -93,6 +93,9 @@ class Header extends React.Component {
                                 <Nav.Item>
                                     <Nav.Link href="/articles" target="_blank"><a href="https://twitter.com/CfoStarter" target="_blank" rel="noreferrer"><i className="fa-brands fa-twitter"></i></a></Nav.Link>
                                 </Nav.Item>
+                                <Nav.Item>
+                                    <Nav.Link href="/articles" target="_blank"><a href="https://www.instagram.com/starterscfo_2016/" target="_blank" rel="noreferrer"><i className="fa-brands fa-instagram"></i></a></Nav.Link>
+                                </Nav.Item>
                             </div>
                             <div style={{ 'display': 'flex' }}>
                                 <Button className="btn__primary" onClick={this.togglePopConvert}>Get Started Free</Button>
