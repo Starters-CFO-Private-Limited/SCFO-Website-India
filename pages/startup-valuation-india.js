@@ -1,5 +1,8 @@
 import React from 'react';
 import Container from 'react-bootstrap/Container';
+// import { Card, CardBody} from 'react-bootstrap';
+import Card from 'react-bootstrap/Card';
+// import  CardBody from 'react-bootstrap/CardBody';
 import Link from 'next/link';
 // import ContainerFluid from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -31,6 +34,7 @@ import ValuationServices from '../components/valuation/ValuationServices';
 import ConsultantPlans from '../components/valuation/ConsultationPlans';
 import PartnersLogo from '../components/valuation/PartnersLogo';
 
+import RegulatoryPurposesText from '../components/valuation/RegulatoryPurposesText';
 // import FormIframe from '../components/leadPages/formIframe';
 
 
@@ -55,6 +59,8 @@ class Valuation extends React.Component {
     }
 
     render() {
+
+      
 
         return (
 
@@ -201,7 +207,7 @@ class Valuation extends React.Component {
                                     <Row style={{alignItems:"center;"}} className='thr yello_theme_b rounded-pill'>
                                         <Col className='first_v'>
                                             <div className='first_v_img'>
-                                            <img  src="/static/images/illustrations/funding.png" style={{ height: "100px" }}></img>
+                                            <img  src="/static/images/illustrations/funding.png" alt='funding' style={{ height: "100px" }}></img>
                                             </div>
                                             <div className='find_thee'>
                                             <h6 className='font__18'>Digitally Enabled, Online Processes</h6>
@@ -216,7 +222,7 @@ class Valuation extends React.Component {
 
                             <Col sm={12} md={4} className="text-center d-none d-md-block d-lg-block d-xl-block">
                                 <div className='valution_secbox'> 
-                                <img className="text-center" src="/static/images/icons/valutaion2.png" ></img>
+                                <img className="text-center" src="/static/images/icons/valutaion2.png" alt='Valuation Services'></img>
                                 <h5 className="text-left" >  </h5>
                                 <p className=" text-justify" style={{fontSize:"12px"}}>
                                 Starters' CFO differs from the competition in the simple online processes it has built to help you achieve your valuation needs.
@@ -229,7 +235,7 @@ class Valuation extends React.Component {
                             </Col>
                             <Col sm={12} md={4} className="text-center d-none d-md-block d-lg-block d-xl-block">
                             <div className='valution_secbox'> 
-                                <img className="text-center" src="/static/images/icons/valutaion2.png" ></img>
+                                <img className="text-center" src="/static/images/icons/valutaion2.png" alt='Valuation Services' ></img>
                                 <h5 className="text-left" >  </h5>
                                 <p className=" text-justify" style={{fontSize:"12px"}}>
                                 You can stop struggling through lists of email attachments sent back and forth for ever! Our digital partners include Zoho Books, Tally, Quickbooks & Razorpay amongst others.
@@ -242,6 +248,7 @@ class Valuation extends React.Component {
                            
                            
                         </Row>
+                       
                        
                         <Row style={{alignItems:"center;"}} className="valuationservices d-xs-block d-sm-block d-md-none w-100">
                           
@@ -257,16 +264,16 @@ class Valuation extends React.Component {
                     </Col>
 
 
-
-
-                 
-
                     <Container>
                         
-
                         <Row className='info_professional'>
-                            <Col sm={12} md={6}>
-                                <div>
+                        <Col sm={12} md={12} className='text-center' style={{margin: 'auto'}}>
+                          
+                        <h4 className='pb-4'>Valuation for regulatory purposes</h4>
+                       </Col>
+
+                            <Col sm={12} md={6} >
+                                {/* <div>
                                     <ul className="card__list font__16">
                                     <li style={{ marginTop: '5px'}}>
                                         <i className="fa-solid fa-circle-check color__scfo"></i>&nbsp; IBBI Registered Valuer Valuation</li>
@@ -275,11 +282,10 @@ class Valuation extends React.Component {
                                         <li style={{ marginTop: '5px'}}><i className="fa-solid fa-circle-check color__scfo"></i>&nbsp; ESOP Valuation</li>
                                         <li style={{ marginTop: '5px'}}><i className="fa-solid fa-circle-check color__scfo"></i>&nbsp; Accounting Standard Valuation</li>
                                     </ul>
-                                </div>   
-                                <img src="/static/images/banner/info_profession.png" className="" ></img>
+                                </div>    */}
+                                <img src="/static/images/banner/info_profession.png" alt='Valuation for regulatory purposes' className="" ></img>
                             </Col>
                             <Col sm={12} md={6}>
-                                <h4 className='pt-5'>Valuation for regulatory purposes</h4>
                                 <p className="font__20 color__dark">
                                     Regulatory Valuations are required under Companies Act, Income Tax Act, FEMA, SEBI Regulations, Insolvency & Bankruptcy Code, IND-AS (Financial Reporting).
                                     <br></br>
@@ -291,7 +297,15 @@ class Valuation extends React.Component {
                                     Starters' CFO  helps companies to navigate this environment of changing laws and regulations by offering skilled expertise for forming strategy and defending valuation positions by working in closely with Companies’ Board and Management and their tax and legal advisors to provide valuations services required under various laws and regulations.
                                 </p>
                             </Col>
+
+                         <Col sm={12} md={12} className='consultantplan d-xs-block d-sm-block  w-100' style={{margin: 'auto'}}>
+                          
+                            <RegulatoryPurposesText />
+                         </Col>
+
+
                         </Row>
+
                  </Container>
                 
                 {/* <Col className='card_slider_re'>
@@ -391,12 +405,18 @@ class Valuation extends React.Component {
 
                         <Col sm={12} md={12}>
                             <div className='part_logo  d-none d-md-block d-lg-block d-xl-block'>
-                            <img src="/static/images/logos/Freshbooks.png" alt="Logo"></img>
+                            {/* <img src="/static/images/logos/Freshbooks.png" alt="Logo"></img>
                             <img src="/static/images/logos/Shopify.png" alt="Logo"></img>
                             <img src="/static/images/logos/Gusto.png" alt="Logo"></img>
-                            <img src="/static/images/logos/Freshbooks.png" alt="Logo"></img>
-                            <img src="/static/images/logos/Shopify.png" alt="Logo"></img>
-                            <img src="/static/images/logos/Gusto.png" alt="Logo"></img>
+                            <img src="/static/images/logos/tally.png" alt="Logo"></img>*/}
+                            <img src="/static/images/logos/zoho.png" alt="Logo"></img>
+                            <img src="/static/images/logos/tally.png" alt="Logo"></img> 
+                            <img src="/static/images/logos/bw_logo_1.png" alt="Logo"></img>
+                            <img src="/static/images/logos/bw_logo_2.png" alt="Logo"></img>
+                            <img src="/static/images/logos/bw_logo_3.png" alt="Logo"></img>
+                            {/* <img src="/static/images/logos/bw_logo_5.png" alt="Logo"></img> */}
+                            <img src="/static/images/logos/bw_logo_7.png" alt="Logo"></img>
+                            {/* <img src="/static/images/logos/bw_logo_9.png" alt="Logo"></img> */}
 
                             </div>
                             <div className='mobilepartner text-center d-xs-block d-sm-block d-md-none w-100'>
