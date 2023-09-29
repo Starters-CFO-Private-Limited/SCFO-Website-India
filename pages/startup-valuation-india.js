@@ -187,7 +187,7 @@ class Valuation extends React.Component {
                                         <Row>
                                             <Col className='mt-5 mb-3'>
                                                 <h4 className="color__dark text-center font__40 weight__700">Valuation Services by <span className='valu_serv' style={{ color: "#4c5e9e" }}> Starters' CFO</span> </h4>
-                                                <p className=" text-center color__dark">Selecet the category Of service you need and also get to know the details included with
+                                                <p className=" text-center color__dark">Select the category Of service you need and also get to know the details included with
                                                     this category</p>
 
                                             </Col>
@@ -411,12 +411,12 @@ class Valuation extends React.Component {
                             <img src="/static/images/logos/tally.png" alt="Logo"></img>*/}
                             <img src="/static/images/logos/zoho.png" alt="Logo"></img>
                             <img src="/static/images/logos/tally.png" alt="Logo"></img> 
-                            <img src="/static/images/logos/bw_logo_1.png" alt="Logo"></img>
-                            <img src="/static/images/logos/bw_logo_2.png" alt="Logo"></img>
-                            <img src="/static/images/logos/bw_logo_3.png" alt="Logo"></img>
+                            <img src="/static/images/logos/logo_1.png" alt="Logo"></img>
+                            <img src="/static/images/logos/logo_2.png" alt="Logo"></img>
+                            <img src="/static/images/logos/logo_3.png" alt="Logo"></img>
                             {/* <img src="/static/images/logos/bw_logo_5.png" alt="Logo"></img> */}
-                            <img src="/static/images/logos/bw_logo_7.png" alt="Logo"></img>
-                            {/* <img src="/static/images/logos/bw_logo_9.png" alt="Logo"></img> */}
+                            {/* <img src="/static/images/logos/bw_logo_7.png" alt="Logo"></img> */}
+                            <img src="/static/images/logos/logo_9.png" alt="Logo"></img>
 
                             </div>
                             <div className='mobilepartner text-center d-xs-block d-sm-block d-md-none w-100'>

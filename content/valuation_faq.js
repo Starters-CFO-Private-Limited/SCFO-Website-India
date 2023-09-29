@@ -18,9 +18,9 @@ export const VALUATION_FAQ = [
     }
   },
   {
-    "title": "How can Starter's CFO can help you with Business Valuation?",
+    "title": "How can Starters' CFO can help you with Business Valuation?",
     "body": () => {
-      return "Starter’s CFO has a vast experience in this field and we will provide you with the best Startup Business Valuation Services and tools irrespective of the valuation report requested by you. Moreover, based on our client’s unique needs we offer different types of valuation reports ranging from, a comprehensive valuation report to an opinion letter. We take pride in the fact that we charge reasonable fees and has made many trusted and happy clients over the years of our functioning."
+      return "Starters' CFO has a vast experience in this field and we will provide you with the best Startup Business Valuation Services and tools irrespective of the valuation report requested by you. Moreover, based on our client’s unique needs we offer different types of valuation reports ranging from, a comprehensive valuation report to an opinion letter. We take pride in the fact that we charge reasonable fees and has made many trusted and happy clients over the years of our functioning."
     }
   },
   {

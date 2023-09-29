@@ -63,16 +63,16 @@ const PartnersLogo = () => {
       partnerlogo: '/static/images/logos/tally.png',
     },
     {
-      partnerlogo: '/static/images/logos/bw_logo_1.png',
+      partnerlogo: '/static/images/logos/logo_1.png',
     },
     {
-      partnerlogo: '/static/images/logos/bw_logo_2.png',
+      partnerlogo: '/static/images/logos/logo_2.png',
     },
     {
-      partnerlogo: '/static/images/logos/bw_logo_3.png',
+      partnerlogo: '/static/images/logos/logo_3.png',
     },
     {
-      partnerlogo: '/static/images/logos/bw_logo_7.png',
+      partnerlogo: '/static/images/logos/logo_9.png',
     },
 
     
