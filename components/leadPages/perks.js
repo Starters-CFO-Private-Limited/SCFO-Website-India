@@ -20,7 +20,7 @@ class Perks extends Component {
                 <Row>
                     <Col md={{ 'span': '6' }} sm={{ 'span': '6' }} className="text-center text-md-left">
                         <div className="reliable_txt" style={{ marginBottom: '20px' }}>
-                            <img src="/static/images/partners/gcp.png" height="75px" style={{ marginLeft: '-20px' }}></img>
+                            <img src="/static/images/partners/gcp.png" alt=' Google Cloud Platform Referral Partner' height="75px" style={{ marginLeft: '-20px' }}></img>
                             <p className="color__grey">
                                 Google Cloud Platform Referral Partner. <br></br>
                                 Up to $100K in free credits.
@@ -30,7 +30,7 @@ class Perks extends Component {
                     </Col>
                     <Col md={{ 'span': '6' }} sm={{ 'span': '6' }} className="text-center text-md-left">
                         <div className="reliable_txt" style={{ marginBottom: '20px' }}>
-                            <img src="/static/images/partners/aws.png" height="75px" style={{ marginLeft: '-20px' }}></img>
+                            <img src="/static/images/partners/aws.png" alt=' Amazon Web Services Referral Partner' height="75px" style={{ marginLeft: '-20px' }}></img>
                             <p className="color__grey">
                                 Amazon Web Services Referral Partner. <br></br>
                                 Up to $5K in free credits.
@@ -40,7 +40,7 @@ class Perks extends Component {
                     </Col>
                     <Col md={{ 'span': '6' }} sm={{ 'span': '6' }} className="text-center text-md-left">
                         <div className="reliable_txt" style={{ marginBottom: '20px' }}>
-                            <img src="/static/images/partners/rzp.png" height="45px" style={{ marginLeft: '0px' }}></img>
+                            <img src="/static/images/partners/rzp.png" alt='Razorpay Partner' height="45px" style={{ marginLeft: '0px' }}></img>
                             <p className="color__grey">
                                 Razorpay Partner. <br></br>
                                 Discounted transaction rates of 2%.
@@ -50,7 +50,7 @@ class Perks extends Component {
                     </Col>
                     <Col md={{ 'span': '6' }} sm={{ 'span': '6' }} className="text-center text-md-left">
                         <div className="reliable_txt" style={{ marginBottom: '20px' }}>
-                            <img src="/static/images/partners/instaspaces.png" height="45px" style={{ marginLeft: '-10px' }}></img>
+                            <img src="/static/images/partners/instaspaces.png" alt='Instaspaces Partner' height="45px" style={{ marginLeft: '-10px' }}></img>
                             <br></br>
                             <p className="color__grey">
                                 Instaspaces Partner. <br></br>
@@ -66,3 +66,5 @@ class Perks extends Component {
 }
 
 export default Perks;
+
+

@@ -18,7 +18,7 @@ class PerksV2 extends Component {
                 <Row>
                     <Col md={{ 'span': '3' }} sm={{ 'span': '6' }} className="text-center">
                         <div className="reliable_txt" style={{ marginBottom: '20px' }}>
-                            <img src="/static/images/partners/gcp.png" height="75px"></img>
+                            <img src="/static/images/partners/gcp.png" alt='Google Cloud Platform Referral Partner' height="75px"></img>
                             <br></br>
                             <p className="color__grey">
                                 Google Cloud Platform Referral Partner. <br></br>
@@ -29,7 +29,7 @@ class PerksV2 extends Component {
                     </Col>
                     <Col md={{ 'span': '3' }} sm={{ 'span': '6' }} className="text-center">
                         <div className="reliable_txt" style={{ marginBottom: '20px' }}>
-                            <img src="/static/images/partners/aws.png" height="75px"></img>
+                            <img src="/static/images/partners/aws.png" alt='Amazon Web Services Referral Partner' height="75px"></img>
                             <br></br>
                             <p className="color__grey">
                                 Amazon Web Services Referral Partner. <br></br>
@@ -40,7 +40,7 @@ class PerksV2 extends Component {
                     </Col>
                     <Col md={{ 'span': '3' }} sm={{ 'span': '6' }} className="text-center">
                         <div className="reliable_txt" style={{ marginTop: '20px' }}>
-                            <img src="/static/images/partners/rzp.png" height="45px" style={{ marginBottom: '20px' }}></img>
+                            <img src="/static/images/partners/rzp.png" alt='Razorpay Partner' height="45px" style={{ marginBottom: '20px' }}></img>
                             <br></br>
                             <p className="color__grey">
                                 Razorpay Partner. <br></br>
@@ -51,7 +51,7 @@ class PerksV2 extends Component {
                     </Col>
                     <Col md={{ 'span': '3' }} sm={{ 'span': '6' }} className="text-center">
                         <div className="reliable_txt" style={{ marginTop: '20px' }}>
-                            <img src="/static/images/partners/instaspaces.png" height="45px" style={{ marginBottom: '20px' }}></img>
+                            <img src="/static/images/partners/instaspaces.png" alt='Instaspaces Partner' height="45px" style={{ marginBottom: '20px' }}></img>
                             <br></br>
                             <p className="color__grey">
                                 Instaspaces Partner. <br></br>
@@ -67,3 +67,4 @@ class PerksV2 extends Component {
 }
 
 export default PerksV2;
+

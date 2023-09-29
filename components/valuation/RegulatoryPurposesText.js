@@ -2,19 +2,26 @@ import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import Col from 'react-bootstrap/Col';
 
-const Slide = ({ partnerlogo }) => (
-  <div className="part_logo">
-      <img src={partnerlogo} alt="partner logo" />
+const Slide = ({ title }) => (
+  <div className="info_check text-center ">
+       {/* <Col className='info_check' sm={12} md={2}> */}
+
+       <p><i className="fa-solid fa-circle-check color__scfo"></i>&nbsp; {title}</p>
+       {/* <p><i className="fa-solid fa-circle-check color__scfo"></i>&nbsp; {title}</p> */}
+
+
+{/* </Col> */}
   </div>
 );
 
-const PartnersLogo = () => {
+const RegulatoryPurposesText = () => {
   
   
   const settings = {
     dots: false,
-    arrows: true, // Use 'arrows' instead of 'arrow'
+    arrows: false, // Use 'arrows' instead of 'arrow'
     infinite: true,
     speed: 500,
     slidesToShow: 5,
@@ -57,35 +64,31 @@ const PartnersLogo = () => {
 
   const slidesData = [
     {
-      partnerlogo: '/static/images/logos/zoho.png',
+      title: "IBBI Registered Valuer Valuation",
     },
     {
-      partnerlogo: '/static/images/logos/tally.png',
+      title: "Merchant Banker Valuation",
     },
     {
-      partnerlogo: '/static/images/logos/logo_1.png',
+      title: "CA Valuation",
     },
     {
-      partnerlogo: '/static/images/logos/logo_2.png',
+      title: "ESOP Valuation",
     },
     {
-      partnerlogo: '/static/images/logos/logo_3.png',
+        title: "Accounting Standard Valuation",
     },
-    {
-      partnerlogo: '/static/images/logos/logo_9.png',
-    },
-
-    
+   
     // Add more slides as needed
   ];
 
   return (
     <Slider {...settings}>
       {slidesData.map((slide, index) => (
-        <Slide key={index} {...slide} />
+        <Slide  key={index} {...slide} />
       ))}
     </Slider>
   );
 };
 
-export default PartnersLogo;
+export default RegulatoryPurposesText;
