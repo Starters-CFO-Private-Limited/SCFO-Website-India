@@ -59,7 +59,7 @@ const Slide = ({ time, detail, profileimg, profilename, sortame }) => (
         <div className="d-md-flex d-lg-flex d-xl-flex row">
      
           <div className="d-flex align-items-end width_auto col-md-2 col-sm-2">
-            <img src="/static/images/icons/google.png" height="35px"></img>
+            <img src="/static/images/icons/google.png" alt='google' height="35px"></img>
           </div>
           <div className="d-flex justify-content-left text-margin font__13  width_auto flex-column col-md-9 col-sm-9">
               <span className="color__grey d-block">Posted on</span>
@@ -128,7 +128,7 @@ const ValuationSliderTwo = () => {
     },
 
     {
-      time: '2 Weeks Ago',
+      time: '3 Weeks Ago',
       detail:
         'Very good Service. Team has excelled in adding value to our organization right from our inception. Thanks a lot',
         profileimg: '',
@@ -137,7 +137,7 @@ const ValuationSliderTwo = () => {
     },
 
     {
-      time: '2 Weeks Ago',
+      time: '1 Year Ago',
       detail:
         'We really appreciate the competence of Team Starters CFO in handling our Service Tax matters before the Service Tax authorities.',
         profileimg: '',
@@ -146,7 +146,7 @@ const ValuationSliderTwo = () => {
     },
 
     {
-      time: '2 Weeks Ago',
+      time: '9 Month Ago',
       detail:
         'I am very happy with Starters CFO . it provide very specialized service for all tax needs for incorporation, accounting and taxes. I have referred several colleagues and they are all very happy with the service and expertise.',
         profileimg: '',
@@ -155,7 +155,7 @@ const ValuationSliderTwo = () => {
     },
 
 {
-  time: '2 Weeks Ago',
+  time: '6 Month Ago',
   detail:
     "I don't need to worry about auditing related issues. Starters CFO legit decreased my worries related to financial issues of my business",
     profileimg: '',
@@ -164,7 +164,7 @@ const ValuationSliderTwo = () => {
 },
 
 {
-  time: '2 Weeks Ago',
+  time: '1 Year Ago',
   detail:
     'Got a lot of help by Starters CFO in managing the finances of my startup.',
     profileimg: '',
@@ -182,7 +182,7 @@ const ValuationSliderTwo = () => {
 },
 
 {
-  time: '2 Weeks Ago',
+  time: '4 Month Ago',
   detail:
     'I can only say how pleasantly overwhelmed I am with your insight and your professional expertise. I am so impressed with the way you were able to highlight the important and finer aspects of our accounting and financial reporting process. It is much more streamlined. I wish to continue our association in long run.    ',
     profileimg: '',

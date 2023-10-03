@@ -67,3 +67,4 @@ class PerksV2 extends Component {
 }
 
 export default PerksV2;
+

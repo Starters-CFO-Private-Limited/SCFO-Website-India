@@ -83,7 +83,7 @@ togglePopConvert = () => {
 
             <Slider {...settings}>
               {slidesData.map((slide, index) => (
-                <>
+               
               <div key={index} className="plan_price_bo">
                   <h5 className='weight__600'>{slide.subtitle}</h5>
                   {/* <h6>{price}</h6> */}
@@ -96,7 +96,7 @@ togglePopConvert = () => {
                   {/* <p className='text-justify'>{subtitle}</p> */}
                   <button type="button" onClick={this.togglePopConvert} className="btn__primary  mb-3 btn btn-primary">{slide.buttonLabel}</button>
               </div>
-             </>
+             
               ))}
             </Slider>
             </>

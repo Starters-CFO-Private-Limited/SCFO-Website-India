@@ -20,34 +20,37 @@ togglePopConvert = () => {
 
     render() {
    
-      
-        const settings = {
-          dots: false,
-          arrows: true, // Use 'arrows' instead of 'arrow'
-          infinite: true,
-          speed: 500,
-          slidesToShow: 5,
-          slidesToScroll: 1,
-          autoplay: true,
-          responsive: [
-            {
-              breakpoint: 768, // Mobile breakpoint
-              settings: {
-                slidesToShow: 1,
-              },
-            },
-          ],
-          responsive: [
-            {
-              breakpoint: 992, // Mobile breakpoint
-              settings: {
-                slidesToShow: 1,
-              },
-            },
-          ],
-        };
-      
-      
+      const settings = {
+        dots: false,
+        arrows: true, // Use 'arrows' instead of 'arrow'
+        infinite: true,
+        speed: 500,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        autoplay: true,
+        responsive: [
+
+         {
+       
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 1,
+              dots: true
+            }
+       
+          }, 
+          // {
+       
+          //   breakpoint: 1200,
+          //   settings: "unslick" // destroys slick
+       
+          // },
+
+        ],
+      };
+
+
+
         const slidesData = [
           {
             profileimg: '/static/images/icons/valutaion2.png',
@@ -78,16 +81,13 @@ togglePopConvert = () => {
             <Slider {...settings}>
           
                 {slidesData.map((slide, index) => (
-                  <>
-
-                      <div key={index} className="slide3">
+                                       <div key={index} className="slide3">
                       <img src={slide.profileimg} alt="Profile" />
                       {/* <h2>{title}</h2> */}
                       <p>{slide.detail}</p>
                       <button onClick={this.togglePopConvert} className='card_btn_sli'>{slide.buttonLabel}</button>
                     </div>
 
-                  </>
                 ))}
             </Slider>
             </>

@@ -20,7 +20,9 @@ class Perks extends Component {
                 <Row>
                     <Col md={{ 'span': '6' }} sm={{ 'span': '6' }} className="text-center text-md-left">
                         <div className="reliable_txt" style={{ marginBottom: '20px' }}>
+
                             <img src="/static/images/partners/gcp.png" alt='Google Cloud Platform Referral Partner' height="75px" style={{ marginLeft: '-20px' }}></img>
+
                             <p className="color__grey">
                                 Google Cloud Platform Referral Partner. <br></br>
                                 Up to $100K in free credits.
@@ -30,7 +32,9 @@ class Perks extends Component {
                     </Col>
                     <Col md={{ 'span': '6' }} sm={{ 'span': '6' }} className="text-center text-md-left">
                         <div className="reliable_txt" style={{ marginBottom: '20px' }}>
+
                             <img src="/static/images/partners/aws.png" alt='Amazon Web Services Referral Partner' height="75px" style={{ marginLeft: '-20px' }}></img>
+
                             <p className="color__grey">
                                 Amazon Web Services Referral Partner. <br></br>
                                 Up to $5K in free credits.
@@ -66,3 +70,5 @@ class Perks extends Component {
 }
 
 export default Perks;
+
+

@@ -56,10 +56,10 @@ class Footer extends React.Component {
                                 <br></br>
                                 <h6 className="color__white">Social Presence</h6>
                                 <ul className="color__white font__12 color__grey_on_dark" style={{ marginBottom: '30px' }}>
-                                    <li className="first"><a href="https://www.facebook.com/StartersCFO/" target="_blank" rel="noreferrer"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
-                                    <li><a href="https://www.linkedin.com/company/starters-cfo/" target="_blank" rel="noreferrer"><i class="fa-brands fa-linkedin"></i> Linkedin</a></li>
-                                    <li><a href="https://twitter.com/CfoStarter" target="_blank" rel="noreferrer"><i class="fa-brands fa-twitter"></i> Twitter</a></li>
-                                    <li><a href="https://www.instagram.com/starterscfo_2016/" target="_blank" rel="noreferrer"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+                                    <li className="first"><a href="https://www.facebook.com/StartersCFO/" target="_blank" rel="noreferrer"><i className="fa-brands fa-facebook"></i> Facebook</a></li>
+                                    <li><a href="https://www.linkedin.com/company/starters-cfo/" target="_blank" rel="noreferrer"><i className="fa-brands fa-linkedin"></i> Linkedin</a></li>
+                                    <li><a href="https://twitter.com/CfoStarter" target="_blank" rel="noreferrer"><i className="fa-brands fa-twitter"></i> Twitter</a></li>
+                                    <li><a href="https://www.instagram.com/starterscfo_2016/" target="_blank" rel="noreferrer"><i className="fa-brands fa-instagram"></i> Instagram</a></li>
                                 </ul>
                             </Col>
                             <Col>

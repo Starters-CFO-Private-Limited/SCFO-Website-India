@@ -12,7 +12,7 @@ class FAQ extends React.Component {
             this.props.faq.map((item, index) => {
               
               return (
-                <Card className="-no-shadow -no-hover border-radius__0" style={{ marginTop: "10px", marginBottom: "10px" }}>
+                <Card key={index} className="-no-shadow -no-hover border-radius__0" style={{ marginTop: "10px", marginBottom: "10px" }}>
                   <Accordion.Toggle as={Card.Header} eventKey={index+1} className="color__dark">
                     {item.title}
                   </Accordion.Toggle>
