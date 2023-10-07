@@ -35,7 +35,6 @@ import ConsultantPlans from '../components/valuation/ConsultationPlans';
 import PartnersLogo from '../components/valuation/PartnersLogo';
 
 import RegulatoryPurposesText from '../components/valuation/RegulatoryPurposesText';
-// import FormIframe from '../components/leadPages/formIframe';
 
 
 class Valuation extends React.Component {
@@ -67,7 +66,24 @@ class Valuation extends React.Component {
             <>
             <link rel="stylesheet" href="/static/valuation.css" />
 				
-                <Meta title="Start up Valuation in India" description="Find out your Startup Valuation / Business Valuation with help of our business valuation services."></Meta>
+            {/* <Meta title="Start up Valuation in India" description="Find out your Startup Valuation / Business Valuation with help of our business valuation services."></Meta> */}
+            <Meta 
+            title="Get Accurate Valuations for Your Startup with Our CFO Services"
+            description="Starters' CFOs comprehensive valuation solutions provide valuable insights into company worth, aiding strategic decisions and financial planning."
+            keywords="Business Valuation, Discount cash flow, startup valuation, corporate valuation, business appraisal, Company Valuation, ESOP Plans, Fundraise, Sale of a Business, Regulatory purposes, business valuation, 409a valuation, company valuation, pre money valuation, stock valuation, post money valuation, asset valuation, equity valuation, business appraisal, asset based valuation, valuation services"
+            robots="index,follow"
+
+            og_url="https://starterscfo.com"
+            og_type="website"
+            og_title="Get Accurate Valuations for Your Startup with Our CFO Services"
+            og_description="Starters' CFOs comprehensive valuation solutions provide valuable insights into company worth, aiding strategic decisions and financial planning."
+            og_image="https://starterscfo.com/static/images/og/img2.avif"
+            twitter_title="Get Accurate Valuations for Your Startup with Our CFO Services"
+            twitter_card="summary_large_image"
+            twitter_description="Starters' CFOs comprehensive valuation solutions provide valuable insights into company worth, aiding strategic decisions and financial planning."
+            twitter_image="https://starterscfo.com/static/images/og/img2.avif"
+
+          ></Meta>
 
 
                 <Layout promobanner={false}>
@@ -163,6 +179,9 @@ class Valuation extends React.Component {
                         </div>
                         <div className="grass"></div>
                     </div>
+
+                    <h1 className="d-none">Business valuation</h1>
+                    <h2 className="d-none">Startup Valuation</h2>
 
                     <div className="w-100 business_valuation ">
                         <div className="-white">
@@ -532,6 +551,43 @@ class Valuation extends React.Component {
                         <Row style={{ marginTop: '50px' }}></Row>
                     </Container>
 
+                    <div className="w-100 background-color__footer_text">
+                    <Container>
+                        <Row className="background-color__footer_text footer" style={{ paddingTop: '60px', paddingBottom: '10px' }}>
+                            <Col>
+                                <h5 class="font__14 weight__600 mt-2 mb-2">Most Searched for Starters’ CFO </h5>
+                                <p className='font__12'>
+                                Business Valuation | Company Valuation | ESOP Plans | Fund Raise | Sale of a Business | Regulatory purposes| business valuation | 409a valuation | company valuation | pre money valuation | stock valuation | post money valuation | asset valuation | equity valuation | business appraisal | asset based valuation | valuation services 
+                                </p>
+
+                                <h5 class="font__14 weight__600 mt-2 mb-2">Business Valuation</h5>
+                                <p className='font__12'>
+                                An essential aspect that every business owner and investor should be familiar with is business valuation. Whether you're considering selling your business, attracting investors, or making informed financial decisions, understanding the value of your company is crucial. And with the Experts team of Starters’ CFO it would be easy for you to evaluate your Company. Contact Starters’ CFO Today !
+                                </p>
+
+                                <h5 className='font__14 weight__600 mt-2 mb-2'> Company Valuation</h5>
+                                <p className='font__12'>
+                                Starters' CFO  plays a crucial role in helping companies determine their valuation accurately and effectively. As our financial expertise, analytical skills, and understanding of valuation methodologies can create a crucial impact for ensuring an accurate and comprehensive valuation of the company. 
+                                </p>
+
+                                <h5 className='font__14 weight__600 mt-2 mb-2'>ESOP Plans</h5>
+                                <p className='font__12'>
+                                Starters' CFO can provide comprehensive financial expertise to guide a company through the intricacies of ESOP planning, ensuring that the plan is well-structured, compliant, and aligned with the company's overall financial strategy. We can perform an independent valuation of the company to establish the initial stock price, considering factors such as financial performance, market conditions, and industry trends.
+                                </p>
+
+                                <h5 className='font__14 weight__600 mt-2 mb-2'>Fund Raise</h5>
+                                <p className='font__12'>
+                                Starters’ CFO  is expert in developing a comprehensive financial strategy and plan for the company and our experts will help in determining the company's funding needs, assessing its financial health, and outlining the best ways to raise capital to support the firm's growth and operations.
+                                </p>
+
+                                <h5 className='font__14 weight__600 mt-2 mb-2'>Sale of a Business</h5>
+                                <p className='font__12'>
+                                Starters’ CFO plays a crucial role in facilitating the sale of a business. Our  involvement in the sale process can significantly impact the outcome and success of the transaction. We will help in  providing accurate and transparent financial statements, tax records, contracts, and other relevant documents that potential buyers will want to review before making an offer.
+                                </p>
+                            </Col>
+                        </Row>
+                    </Container>
+                    </div>
 
                     <div id="fb-root"></div>
                     <div className="fb-customerchat"

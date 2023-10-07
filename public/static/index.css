@@ -286,6 +286,10 @@ a:hover {
     background-color: #f4f8fb !important;
 }
 
+.background-color__footer_text {
+    background-color: #f5f5f5 !important;
+}
+
 .background-color__bluish {
     background-color: #e9fbf7 !important;
 }

@@ -47,12 +47,33 @@ class CompanyIncorporation extends React.Component {
         return (
 
             <>
-                <Meta title="Company registration services| Private limited company registration| Starter CFO" description="Start your new business with Starters' CFO - the smartest way to incorporate in India. Private Limited Company, One Person Company, LLP, NGO & other forms."></Meta>
+                {/* <Meta title="Company registration services| Private limited company registration| Starter CFO" description="Start your new business with Starters' CFO - the smartest way to incorporate in India. Private Limited Company, One Person Company, LLP, NGO & other forms."></Meta> */}
+
+                <Meta 
+                title="Get your Company Registered with Starters' CFO today !"
+                description="Starters' CFO provides professional company registration services. Our expert team is dedicated to guiding you through every step of the process."
+                keywords="Company Incorporation, register business name, business name registration, register a company, business registration online, Strategic Advisory,  Private Limited Company registration,  LLP, company registration, register business name, business name registration,  register a company, company registration office, pvt ltd company registration,  partnership firm registration, business registration online,  business registration, business name registration,  register a company, proprietorship firm registration"
+                robots="index,follow"
+
+                og_url="https://starterscfo.com"
+                og_type="website"
+                og_title="Get your Company Registered with Starters' CFO today !"
+                og_description="Starters' CFO provides professional company registration services. Our expert team is dedicated to guiding you through every step of the process."
+                og_image="https://starterscfo.com/static/images/og/img1.avif"
+                twitter_title="Get your Company Registered with Starters' CFO today !"
+                twitter_card="summary_large_image"
+                twitter_description="Starters' CFO provides professional company registration services. Our expert team is dedicated to guiding you through every step of the process."
+                twitter_image="https://starterscfo.com/static/images/og/img1.avif"
+
+                ></Meta>
+
 
                 <Layout promobanner={true}>
 
                     <PopConvert show={this.state.showPopConvert} onHide={this.togglePopConvert} product={'ci'} mobile={this.state.mobile}></PopConvert>
                     <ExitConvert></ExitConvert>
+
+                    <h1 className="d-none">Company Registration Services</h1>
 
                     {/* desktop hero */}
                     <div className="d-none d-md-block d-lg-block d-xl-block w-100">
@@ -648,6 +669,32 @@ class CompanyIncorporation extends React.Component {
                             </Container>
                         </Col>
                     </Row>
+               
+               {/* Footer Text */}
+               <div className="w-100 background-color__footer_text">
+                    <Container>
+                        <Row className="background-color__footer_text footer" style={{ paddingTop: '60px', paddingBottom: '10px' }}>
+                            <Col>
+                                <h5 class="font__14 weight__600 mt-2 mb-2">Most Searched for Starters’ CFO </h5>
+                                <p className='font__12'>Company Incorporation | Strategic Advisory | Private Limited Company registration| LLP| company registration| register business name| business name registration| register a company| company registration office| pvt ltd company registration| partnership firm registration| business registration online| business registration| business name registration| register a company| proprietorship firm registration</p>
+
+                                <h5 class="font__14 weight__600 mt-2 mb-2">Company Incorporation</h5>
+                                <p className='font__12'>Starters' CFO comprehensive company incorporation services are designed to guide you through the process of establishing your business with ease. Whether you're a seasoned entrepreneur or venturing into the world of startups for the first time, our team of experts is here to assist you every step of the way.</p>
+
+                                <h5 className='font__14 weight__600 mt-2 mb-2'>Strategic Advisory</h5>
+                                <p className='font__12'>At Starters' CFO, we understand that navigating today's dynamic business landscape requires more than just financial expertise. That's why we're proud to offer comprehensive Strategic Advisory services that go beyond traditional financial consulting. Our dedicated team of experts is committed to helping your business not only survive but thrive in an ever-changing market.</p>
+
+                                <h5 className='font__14 weight__600 mt-2 mb-2'>Private Limited Company registration</h5>
+                                <p className='font__12'>Are you ready to turn your entrepreneurial dreams into a reality with Starters' CFO? One of the crucial steps on this journey is registering your company as a private limited company. This legal structure provides numerous benefits, including limited liability for shareholders, access to funding, and a professional image in the business world.</p>
+
+                                <h5 className='font__14 weight__600 mt-2 mb-2'>LLP</h5>
+                                <p className='font__12'>Navigating the financial aspects of an LLP requires specialized knowledge and expertise. At Starters' CFO, we offer tailored financial services designed to empower LLPs in their journey to success</p>
+
+                            </Col>
+                        </Row>
+                    </Container>
+                    </div>
+
                 </Layout>
             </>
         );

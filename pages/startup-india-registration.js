@@ -38,12 +38,32 @@ class StartupIndiaRegistration extends React.Component {
         return (
 
             <>
-                <Meta title="Start up India Registration" description="Start up India Registration Online. Cheapest, Fastest. Free Perks and gifts included."></Meta>
+                {/* <Meta title="Start up India Registration" description="Start up India Registration Online. Cheapest, Fastest. Free Perks and gifts included."></Meta> */}
 
+                <Meta 
+                title="Streamline Your Startup Registration with Starters' CFO"
+                description="Starters' CFO your team dedicated partner is here to guide you through the process of startup registration with their Expert's suggestions. "
+                keywords="msme startup registration, register startup, startup company registration, startup valuation services, startup valuation, How do I register for start up India, What benefits do I get after Startup India registration?, startup registration, startup india registration, startup register, register your startup, startup registration online, start up company, start up business ideas, startup company, startup ideas, startup company, startup registration online"
+                robots="index,follow"
+
+                og_url="https://starterscfo.com"
+                og_type="website"
+                og_title="Streamline Your Startup Registration with Starters' CFO"
+                og_description="Starters' CFO your team dedicated partner is here to guide you through the process of startup registration with their Expert's suggestions."
+                og_image="https://starterscfo.com/static/images/og/img3.avif"
+                twitter_title="Streamline Your Startup Registration with Starters' CFO"
+                twitter_card="summary_large_image"
+                twitter_description="Starters' CFO your team dedicated partner is here to guide you through the process of startup registration with their Expert's suggestions."
+                twitter_image="https://starterscfo.com/static/images/og/img3.avif"
+
+                ></Meta>
                 <Layout promobanner={true}>
 
                     <PopConvert show={this.state.showPopConvert} onHide={this.togglePopConvert} product={'startupindia'} mobile={this.state.mobile}></PopConvert>
                     <ExitConvert></ExitConvert>
+
+                    <h1 className="d-none">Start up India Registration</h1>
+                    <h2 className="d-none">Tax Benefits</h2>
 
                     <div className="w-100">
                         <div className="-white">
@@ -212,6 +232,32 @@ class StartupIndiaRegistration extends React.Component {
                             </Container>
                         </Col>
                     </Row>
+
+                    {/* Footer Text */}
+                    <div className="w-100 background-color__footer_text">
+                    <Container>
+                    <Row className="background-color__footer_text footer" style={{ paddingTop: '60px', paddingBottom: '10px' }}>
+                            <Col>
+                            <h5 class="font__14 weight__600 mt-2 mb-2">Most Searched for Starters’ CFO </h5>
+                            <p className='font__12'>startup valuation services | startup valuation  | How do I register for start up India | What benefits do I get after Startup India registration? | startup registration | startup india registration | startup register | register your startup | startup registration online | start up company| start up business ideas | startup company | startup ideas | startup company</p>
+
+                            <h5 class="font__14 weight__600 mt-2 mb-2">Startup valuation services </h5>
+                            <p className='font__12'>Starters' CFO recognizes that a precise valuation provides a clear picture of your startup's financial health and potential, enabling you to seize growth opportunities with confidence. From assessing your intellectual property, market positioning, and revenue projections to analyzing industry trends, competitive landscape, and risk factors.</p>
+
+                            <h5 className='font__14 weight__600 mt-2 mb-2'>Startup valuation</h5>
+                            <p className='font__12'>Startup valuation is a critical aspect of any entrepreneurial journey, as it determines the worth of your company in the eyes of potential investors, partners, and even yourself. At Starters' CFO, we understand the importance of accurate valuation for startups, and we're here to guide you through the intricacies of this process.</p>
+
+                            <h5 className='font__14 weight__600 mt-2 mb-2'> What benefits do I get after Startup India registration</h5>
+                            <p className='font__12'>After registering your organization at Starters' CFO under the Startup India initiative you can potentially gain several benefits that can help your startup thrive and succeed in the competitive business landscape. Being a registered startup under Startup India adds a level of credibility and recognition to your business.</p>
+
+                            <h5 className='font__14 weight__600 mt-2 mb-2'>How do I register for start up India</h5>
+                            <p className='font__12'>Our Experts of Starters’ CFO will help you to register for Startup India. Through registered startups can avail various tax benefits, such as income tax exemptions for three consecutive assessment</p>
+
+                            </Col>
+                    </Row>
+                    </Container>
+                    </div>
+                    
                 </Layout>
             </>
         );

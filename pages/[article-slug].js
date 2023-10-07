@@ -71,7 +71,21 @@ export default function Article() {
 <Layout promobanner={true}>
     <link rel="stylesheet" href="/static/blog.css" />
     { blog ? 
-        <Meta title={ parse(blog.yoast_head_json.title) } description={ parse(blog.yoast_head_json.og_description) } ></Meta>
+        <Meta 
+        title={ parse(blog.yoast_head_json.title) } 
+        description={ parse(blog.yoast_head_json.description) } 
+
+        og_url={ parse(blog.yoast_head_json.og_url) }
+        og_type={ parse(blog.yoast_head_json.og_type) }
+        og_title={ parse(blog.yoast_head_json.og_title) }
+        og_description={ parse(blog.yoast_head_json.og_description) }
+        og_image={ parse(blog.yoast_head_json.twitter_image) }
+        twitter_title={ parse(blog.yoast_head_json.twitter_title) }
+        twitter_card={ parse(blog.yoast_head_json.twitter_card) }
+        twitter_description={ parse(blog.yoast_head_json.twitter_description) }
+        twitter_image={ parse(blog.yoast_head_json.twitter_image) }
+
+        ></Meta>
     :
     <Meta title="Articles" description="Starters' CFO Articles"></Meta>
     }
