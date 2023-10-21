@@ -273,26 +273,26 @@ componentDidMount() {
                   <Link href={"/"+object.slug } className="blog_content">
                    <a className="blog_content">
                     <div className="blog_images">
-                      <img src={object.x_featured_media_medium} />
+                      <img src={object.x_featured_media_medium} alt={ parse(object.title.rendered) } />
                     </div>
                     <div className="blog_content_txt">
                       <h2>{ parse(object.title.rendered) }</h2>
                       <div className="categories_user">
                         <p className="author">
                           <span>
-                            <img src="/static/images/blog/user.png" />
+                            <img src="/static/images/blog/user.png" alt='user' />
                           </span>
                           { object.author_details.display_name }
                         </p>
                         <p className="publish_date">
                           <span>
-                            <img src="/static/images/blog/clock.png" />
+                            <img src="/static/images/blog/clock.png" alt="clock" />
                           </span>
                           { object.published_on }
                         </p>
                         <p className="categories_date">
                           <span>
-                            <img src="/static/images/blog/categories.png" />
+                            <img src="/static/images/blog/categories.png" alt='categories' />
                           </span>
                         {  object.post_terms.map((postcats, ind) =>                   
                         <>                    
@@ -397,7 +397,7 @@ componentDidMount() {
                    <Link href={"/"+recentpost.slug } >
                        <a>
                         <span>
-                        <img src={recentpost.x_featured_media_medium} />
+                        <img src={recentpost.x_featured_media_medium} alt={ parse(recentpost.title.rendered) } />
                         </span>
                         <p> { parse(recentpost.title.rendered) }</p>
                         </a>
@@ -427,12 +427,12 @@ componentDidMount() {
                 <div className="social_phots">
                   <h2>INSTAGRAM</h2>
                   <div className="">
-                    <img src="/static/images/blog/foreign-company-starting-business-india-300x200.jpg" />
-                    <img src="/static/images/blog/foreign-company-starting-business-india-300x200.jpg" />
-                    <img src="/static/images/blog/foreign-company-starting-business-india-300x200.jpg" />
-                    <img src="/static/images/blog/foreign-company-starting-business-india-300x200.jpg" />
-                    <img src="/static/images/blog/foreign-company-starting-business-india-300x200.jpg" />
-                    <img src="/static/images/blog/foreign-company-starting-business-india-300x200.jpg" />
+                    <img src="/static/images/blog/foreign-company-starting-business-india-300x200.jpg" alt='instagram' />
+                    <img src="/static/images/blog/foreign-company-starting-business-india-300x200.jpg" alt='instagram' />
+                    <img src="/static/images/blog/foreign-company-starting-business-india-300x200.jpg" alt='instagram' />
+                    <img src="/static/images/blog/foreign-company-starting-business-india-300x200.jpg" alt='instagram' />
+                    <img src="/static/images/blog/foreign-company-starting-business-india-300x200.jpg" alt='instagram' />
+                    <img src="/static/images/blog/foreign-company-starting-business-india-300x200.jpg" alt='instagram' />
                   </div>
                 </div>
               </div>

@@ -86,7 +86,7 @@ export default function Article() {
         <Row className="row">
           <Col className="col-md-8 col-12">
             <div className="single_product_image">
-              <img src={blog.x_featured_media_large} />
+              <img src={blog.x_featured_media_large} alt={ parse(blog.title.rendered) } />
             </div>
             <h2 className="blog_heading">
             <h2>{ parse(blog.title.rendered) }</h2>
@@ -97,7 +97,7 @@ export default function Article() {
               </p>
               <a className="comment_detail" href="#">
                 <span>
-                  <img src="/static/images/blog/user.png" alt="" />
+                  <img src="/static/images/blog/user.png" alt="user" />
                 </span>
                 { blog.author_details.display_name }
               </a>
@@ -126,7 +126,7 @@ export default function Article() {
                 <> 
                 <Link href={"/"+blogList.slug } className="blogs_related">
                     <a className="blogs_related">   
-                        <span> <img src={blogList.x_featured_media_medium} /></span>
+                        <span> <img src={blogList.x_featured_media_medium} alt={ parse(blogList.title.rendered) } /></span>
                         <h2>{ parse(blogList.title.rendered) }</h2>
                     </a>
                 </Link>

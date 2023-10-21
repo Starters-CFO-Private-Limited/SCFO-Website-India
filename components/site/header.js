@@ -107,7 +107,7 @@ class Header extends React.Component {
                     <Navbar {...this.props} collapseOnSelect expand="lg" className="nav__white" sticky="top">
                         <div className="container justify-content-between d-flex -2">
                             <Navbar.Brand>
-                            <Link href="/"><a><img src="/static/images/logos/scfo/no-cap.png" className="nav--logo"></img></a></Link>
+                            <Link href="/"><a><img src="/static/images/logos/scfo/scfo-logo.png" alt='starters scfo' className="nav--logo"></img></a></Link>
                                 {/* web */}
                                 <Link href="/careers"><a><Button className="btn__primary ml-4 py-1 px-2 font__11 rounded__full d-none d-md-inline-block d-lg-inline-block d-xl-inline-block">We're hiring!</Button></a></Link>
                             </Navbar.Brand>

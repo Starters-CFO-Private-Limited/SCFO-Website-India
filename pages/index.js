@@ -86,7 +86,7 @@ class Home extends React.Component {
                                             </div>
                                         </Col>
                                         <Col className="d-flex align-items-center h-100">
-                                            <img src="/static/svg/hero_3.svg" alt="Starters' CFO | Virtual CFOs, Company Incorporation, Accounting Software" height="80%"></img>
+                                            <img src="/static/svg/cfo-service.svg" alt="Starters' CFO | Virtual CFOs, Company Incorporation, Accounting Software" height="80%"></img>
                                         </Col>
                                     </Row>
                                 </Container>
@@ -158,7 +158,7 @@ class Home extends React.Component {
                                     <Card.Body className="d-flex" style={{ paddingTop: '50px' }}>
                                         <Row>
                                             <Col md={5} className="text-center">
-                                                <img src="/static/images/illustrations/automated_accounting.svg" className="features__illustration"></img>
+                                                <img src="/static/images/illustrations/company_incorporation_and_valuation.svg" alt="Company Incorporation & Valuation" className="features__illustration"></img>
                                                 <br></br><br></br>
                                                 <Button className="btn__secondary on_white d-none d-md-inline-block d-lg-inline-block d-xl-inline-block" onClick={this.togglePopConvert}>Start Trial</Button>
                                             </Col>
@@ -193,7 +193,7 @@ class Home extends React.Component {
                                     <Card.Body style={{ paddingTop: '50px', paddingLeft: '30px', paddingRight: '30px' }}>
                                         <Row className="text-center">
                                             <Col>
-                                                <img src="/static/images/illustrations/compliance.webp" className="features__illustration"></img>
+                                                <img src="/static/images/illustrations/statutory_compliance.webp" alt="Statutory Compliance" className="features__illustration"></img>
                                                 <br></br><br></br>
                                                 <h4 className="color__dark"><b>Statutory Compliance</b></h4>
                                             </Col>
@@ -227,7 +227,7 @@ class Home extends React.Component {
                                     <Card.Body style={{ paddingTop: '50px', paddingLeft: '30px', paddingRight: '30px' }}>
                                         <Row className="text-center">
                                             <Col>
-                                                <img src="/static/images/illustrations/1.svg" className="features__illustration"></img>
+                                                <img src="/static/images/illustrations/payroll_automation.svg" alt="Payroll Automation" className="features__illustration"></img>
                                                 <br></br><br></br>
                                                 <h4 className="color__dark"><b>Payroll Automation</b></h4>
                                             </Col>
@@ -261,7 +261,7 @@ class Home extends React.Component {
                                     <Card.Body style={{ paddingTop: '50px', paddingLeft: '30px', paddingRight: '30px' }}>
                                         <Row className="text-center">
                                             <Col>
-                                                <img src="/static/images/illustrations/service.svg" className="features__illustration"></img>
+                                                <img src="/static/images/illustrations/virtual_cfo.svg" alt="Virtual CFO" className="features__illustration"></img>
                                                 <br></br><br></br>
                                                 <h4 className="color__dark"><b>Virtual CFO</b></h4>
                                             </Col>
@@ -300,7 +300,7 @@ class Home extends React.Component {
                                     <Card.Body className="d-flex" style={{ paddingTop: '50px' }}>
                                         <Row>
                                             <Col md={5} className="text-center" style={{ justifyContent: "center", alignItems: "center", display: "flex", flexDirection: "column" }}>
-                                                <img src="/static/images/illustrations/payroll.svg" className="features__illustration"></img>
+                                                <img src="/static/images/illustrations/payroll.svg" alt="International Payroll Outsourcing" className="features__illustration"></img>
                                                 <br></br><br></br>
                                                 <Button className="btn__secondary on_white d-none d-md-inline-block d-lg-inline-block d-xl-inline-block" onClick={this.togglePopConvert}>Consult Now</Button>
                                             </Col>
@@ -408,7 +408,7 @@ class Home extends React.Component {
                     <Container>
                         <Row>
                             <Col md={4} className="justify-content-end d-xs-flex d-sm-flex d-md-none d-lg-none d-xl-none text-center">
-                                <img src="/static/images/sample/cta_card.webp" className="cta_card__image"></img>
+                                <img src="/static/images/sample/businesses_trust.webp" alt="Over 1000 businesses trust us" className="cta_card__image"></img>
                                 <div className="hsg-cta-block__circles" data-background-image="horizontal-circles-pink"></div>
                                 <br></br><br></br>
                             </Col>
@@ -428,7 +428,7 @@ class Home extends React.Component {
                                 </p>
                             </Col>
                             <Col md={4} className="justify-content-end d-none d-md-flex">
-                                <img src="/static/images/sample/cta_card.webp" className="cta_card__image"></img>
+                                <img src="/static/images/sample/businesses_trust.webp" alt="Over 1000 businesses trust us" className="cta_card__image"></img>
                                 <div className="hsg-cta-block__circles" data-background-image="horizontal-circles-pink"></div>
                             </Col>
                         </Row>

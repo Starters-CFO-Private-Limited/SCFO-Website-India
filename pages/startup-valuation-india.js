@@ -198,6 +198,7 @@ class Valuation extends React.Component {
                             </Container>
                         </div>
                     </div>
+
 <Col className='valuation_services'>   
                  <Container className='sec_3'>
                        
@@ -226,6 +227,7 @@ class Valuation extends React.Component {
                                 <h5 className="text-left" >  </h5>
                                 <p className=" text-justify" style={{fontSize:"12px"}}>
                                 Starters' CFO differs from the competition in the simple online processes it has built to help you achieve your valuation needs.
+
                                 </p>
                                 <div className='text-left'>
                                 <Button className="yello_theme_b text-left" style={{ marginRight: "10px;"}} onClick={this.togglePopConvert}>Find more </Button>
@@ -239,6 +241,7 @@ class Valuation extends React.Component {
                                 <h5 className="text-left" >  </h5>
                                 <p className=" text-justify" style={{fontSize:"12px"}}>
                                 You can stop struggling through lists of email attachments sent back and forth for ever! Our digital partners include Zoho Books, Tally, Quickbooks & Razorpay amongst others.
+
                                 </p>
                                 <div className='text-left'>
                                 <Button className="yello_theme_b text-left" style={{ marginRight: "10px;"}} onClick={this.togglePopConvert}>Find more </Button>
@@ -248,6 +251,7 @@ class Valuation extends React.Component {
                            
                            
                         </Row>
+
                        
                        
                         <Row style={{alignItems:"center;"}} className="valuationservices d-xs-block d-sm-block d-md-none w-100">
@@ -256,6 +260,7 @@ class Valuation extends React.Component {
                            <ValuationServices /> 
                            </Col>
                            
+
                         </Row>
                        
 
@@ -282,8 +287,10 @@ class Valuation extends React.Component {
                                         <li style={{ marginTop: '5px'}}><i className="fa-solid fa-circle-check color__scfo"></i>&nbsp; ESOP Valuation</li>
                                         <li style={{ marginTop: '5px'}}><i className="fa-solid fa-circle-check color__scfo"></i>&nbsp; Accounting Standard Valuation</li>
                                     </ul>
+
                                 </div>    */}
                                 <img src="/static/images/banner/info_profession.png" alt='Valuation for regulatory purposes' className="" ></img>
+
                             </Col>
                             <Col sm={12} md={6}>
                                 <p className="font__20 color__dark">

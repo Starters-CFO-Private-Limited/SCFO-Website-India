@@ -175,7 +175,7 @@ class CompanyIncorporation extends React.Component {
 
                         <Row className="text-center">
                             <Col>
-                                <img src="/static/images/illustrations/incorporate.svg" className="features__illustration"></img>
+                                <img src="/static/images/illustrations/company-incorporation.svg" alt='Company Incorporation' className="features__illustration"></img>
                                 <br></br><br></br>
                                 <h4 className="color__dark"><b>Company Incorporation</b></h4>
                                 <p className="color__grey font__15 text-center">
@@ -186,7 +186,7 @@ class CompanyIncorporation extends React.Component {
                                 </p>
                             </Col>
                             <Col>
-                                <img src="/static/images/illustrations/agreement.svg" className="features__illustration"></img>
+                                <img src="/static/images/illustrations/agreement.svg" alt='Legal Agreements' className="features__illustration"></img>
                                 <br></br><br></br>
                                 <h4 className="color__dark"><b>Legal Agreements</b></h4>
                                 <p className="color__grey font__15 text-center">
@@ -197,7 +197,7 @@ class CompanyIncorporation extends React.Component {
                                 </p>
                             </Col>
                             <Col>
-                                <img src="/static/images/illustrations/advisory.svg" className="features__illustration"></img>
+                                <img src="/static/images/illustrations/advisory.svg" alt='Strategic Advisory' className="features__illustration"></img>
                                 <br></br><br></br>
                                 <h4 className="color__dark"><b>Strategic Advisory</b></h4>
                                 <p className="color__grey font__15 text-center">
@@ -234,7 +234,7 @@ class CompanyIncorporation extends React.Component {
                         <Row>
                             <Col md={{ 'span': '6' }} sm={{ 'span': '6' }} className="text-center text-md-left">
                                 <div className="reliable_txt" style={{ marginBottom: '20px' }}>
-                                    <img src="/static/images/partners/gcp.png" height="75px" style={{ marginLeft: '-20px' }}></img>
+                                    <img src="/static/images/partners/gcp.png" alt='Google Cloud Platform Referral Partner' height="75px" style={{ marginLeft: '-20px' }}></img>
                                     <p className="color__grey">
                                         Google Cloud Platform Referral Partner. <br></br>
                                         Up to $100K in free credits.
@@ -244,7 +244,7 @@ class CompanyIncorporation extends React.Component {
                             </Col>
                             <Col md={{ 'span': '6' }} sm={{ 'span': '6' }} className="text-center text-md-left">
                                 <div className="reliable_txt" style={{ marginBottom: '20px' }}>
-                                    <img src="/static/images/partners/aws.png" height="75px" style={{ marginLeft: '-20px' }}></img>
+                                    <img src="/static/images/partners/aws.png" alt='Amazon Web Services Referral Partner' height="75px" style={{ marginLeft: '-20px' }}></img>
                                     <p className="color__grey">
                                         Amazon Web Services Referral Partner. <br></br>
                                         Up to $5K in free credits.
@@ -254,7 +254,7 @@ class CompanyIncorporation extends React.Component {
                             </Col>
                             <Col md={{ 'span': '6' }} sm={{ 'span': '6' }} className="text-center text-md-left">
                                 <div className="reliable_txt" style={{ marginBottom: '20px' }}>
-                                    <img src="/static/images/partners/rzp.png" height="45px" style={{ marginBottom: '10px' }}></img>
+                                    <img src="/static/images/partners/rzp.png" alt='Razorpay Partner' height="45px" style={{ marginBottom: '10px' }}></img>
                                     <p className="color__grey">
                                         Razorpay Partner. <br></br>
                                         Discounted transaction rates of 2%.
@@ -264,7 +264,7 @@ class CompanyIncorporation extends React.Component {
                             </Col>
                             <Col md={{ 'span': '6' }} sm={{ 'span': '6' }} className="text-center text-md-left">
                                 <div className="reliable_txt" style={{ marginBottom: '20px' }}>
-                                    <img src="/static/images/partners/instaspaces.png" height="45px" style={{ marginLeft: '-10px' }}></img>
+                                    <img src="/static/images/partners/instaspaces.png" alt='Instaspaces Partner' height="45px" style={{ marginLeft: '-10px' }}></img>
                                     <br></br><br></br>
                                     <p className="color__grey">
                                         Instaspaces Partner. <br></br>
@@ -600,7 +600,7 @@ class CompanyIncorporation extends React.Component {
                         </Row>
                         <Row>
                             <Col md={2} className="d-none d-md-flex">
-                                <img src="/static/images/logos/scfo/square.png" style={{ height: '50px' }}></img>
+                                <img src="/static/images/logos/scfo/scfo-square-logo.png" alt='Starters CFO' style={{ height: '50px' }}></img>
                             </Col>
                             <Col>
                                 <h5 className="color__dark">Get started with Starters CFO</h5>

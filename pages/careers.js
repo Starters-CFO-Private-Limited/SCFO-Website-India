@@ -96,17 +96,17 @@ class Careers extends React.Component {
 
                         <Row className="text-center">
                             <Col>
-                                <img src="/static/images/illustrations/mentoring.svg" className="h-6"></img>
+                                <img src="/static/images/illustrations/mentoring-business.svg" alt='Mentoring Business' className="h-6"></img>
                                 <br></br><br></br>
                                 <p className="color__grey font__15 text-center">Mentoring by Business<br /> Speaker Dr. Vivek Bindra</p>
                             </Col>
                             <Col>
-                                <img src="/static/images/illustrations/promotion.svg" className="h-6"></img>
+                                <img src="/static/images/illustrations/training-and-development.svg" alt='On the job training and development' className="h-6"></img>
                                 <br></br><br></br>
                                 <p className="color__grey font__15 text-center">On the job training and development</p>
                             </Col>
                             <Col>
-                                <img src="/static/images/illustrations/work.svg" className="h-6"></img>
+                                <img src="/static/images/illustrations/work.svg" alt='Flexible work options' className="h-6"></img>
                                 <br></br><br></br>
                                 <p className="color__grey font__15 text-center">Flexible work options</p>
                             </Col>
@@ -116,17 +116,17 @@ class Careers extends React.Component {
 
                         <Row className="text-center">
                             <Col>
-                                <img src="/static/images/illustrations/salary_increment.svg" className="h-6"></img>
+                                <img src="/static/images/illustrations/salary_increment.svg" alt='Annual Salary Increments' className="h-6"></img>
                                 <br></br><br></br>
                                 <p className="color__grey font__15 text-center">Annual Salary Increments<br /> (after proper review)</p>
                             </Col>
                             <Col>
-                                <img src="/static/images/illustrations/shield.svg" className="h-6"></img>
+                                <img src="/static/images/illustrations/peer-recognition.svg" alt='Peer recognition' className="h-6"></img>
                                 <br></br><br></br>
                                 <p className="color__grey font__15 text-center">Peer recognition</p>
                             </Col>
                             <Col>
-                                <img src="/static/images/illustrations/group.svg" className="h-6"></img>
+                                <img src="/static/images/illustrations/team-outing.svg" alt='Team outings' className="h-6"></img>
                                 <br></br><br></br>
                                 <p className="color__grey font__15 text-center">Team outings</p>
                             </Col>

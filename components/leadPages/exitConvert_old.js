@@ -129,7 +129,7 @@ class ExitConvert extends React.Component {
                             <Col md={{ 'span': '5' }} className="d-flex justify-content-center flex-column align-items-start">
 
                                 <a href="" onClick={(e) => { this._handleClose(e) }}>
-                                    <img src="/static/images/logos/scfo/no-cap.png" className="pop-convert--modal-logo"></img>
+                                    <img src="/static/images/logos/scfo/scfo-logo.png" alt='starters scfo' className="pop-convert--modal-logo"></img>
                                 </a>
 
                                 <br></br><br></br>

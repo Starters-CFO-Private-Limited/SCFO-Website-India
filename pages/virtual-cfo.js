@@ -119,7 +119,7 @@ class VirtualCFO extends React.Component {
 												</div>
 											</Col>
 											<Col className="d-flex flex-column align-items-center justify-content-center">
-												<img src="/static/images/icons/google.png" width={'50px'}></img>
+												<img src="/static/images/icons/google.png" alt='google' width={'50px'}></img>
 												<br></br>
 												<h4 className="color__grey d-block">5 / 5</h4>
 												<div className="color__scfo d-flex flex-row">
@@ -148,7 +148,7 @@ class VirtualCFO extends React.Component {
 												</div>
 											</Col>
 											<Col className="d-flex align-items-end">
-												<img src="/static/images/icons/google.png" height={'50px'}></img>
+												<img src="/static/images/icons/google.png" alt='google' height={'50px'}></img>
 											</Col>
 											<Col className="d-flex justify-content-left flex-column">
 												<h4 className="color__grey d-block">5 / 5</h4>
@@ -183,7 +183,7 @@ class VirtualCFO extends React.Component {
 																	</h5>
 																	<Row className="mt-4">
 																		<Col style={{ flex: 1 }} className="text-right">
-																			<img src="/static/images/people/1.jpg" height={'50px'} width={'50px'} style={{ borderRadius: '50%' }}></img>
+																			<img src="/static/images/people/shruti-choudhary.jpg" alt='Shruti Choudhary' height={'50px'} width={'50px'} style={{ borderRadius: '50%' }}></img>
 																		</Col>
 																		<Col style={{ flex: 9, marginLeft: '-10px' }}>
 																			<h5 className="color__dark font__15 text-left">Shruti Choudhary<br></br><span className="color__grey font__12">Product Manager</span></h5>
@@ -200,7 +200,7 @@ class VirtualCFO extends React.Component {
 																	</h5>
 																	<Row className="mt-4">
 																		<Col style={{ flex: 1 }} className="text-right">
-																			<img src="/static/images/people/2.jpg" height={'50px'} width={'50px'} style={{ borderRadius: '50%' }}></img>
+																			<img src="/static/images/people/kunal-kishore.jpg" alt='Kunal Kishore' height={'50px'} width={'50px'} style={{ borderRadius: '50%' }}></img>
 																		</Col>
 																		<Col style={{ flex: 9, marginLeft: '-10px' }}>
 																			<h5 className="color__dark font__15 text-left">Kunal Kishore<br></br><span className="color__grey font__12">Business Consultant</span></h5>
@@ -217,7 +217,7 @@ class VirtualCFO extends React.Component {
 																	</h5>
 																	<Row className="mt-4">
 																		<Col style={{ flex: 1 }} className="text-right">
-																			<img src="/static/images/people/3.jpg" height={'50px'} width={'50px'} style={{ borderRadius: '50%' }}></img>
+																			<img src="/static/images/people/rohit-joshi.jpg" alt='Rohit Joshi' height={'50px'} width={'50px'} style={{ borderRadius: '50%' }}></img>
 																		</Col>
 																		<Col style={{ flex: 9, marginLeft: '-10px' }}>
 																			<h5 className="color__dark font__15 text-left">Rohit Joshi<br></br><span className="color__grey font__12">CEO, Kreatryx</span></h5>
@@ -278,7 +278,7 @@ class VirtualCFO extends React.Component {
 									<Card.Body style={{ paddingTop: '50px', paddingLeft: '30px', paddingRight: '30px' }}>
 										<Row className="text-center">
 											<Col>
-												<img src="/static/images/illustrations/compliance.webp" className="features__illustration"></img>
+												<img src="/static/images/illustrations/accounting-and-taxes.webp" alt='Accounting & Taxes' className="features__illustration"></img>
 												<br></br><br></br>
 												<h4 className="color__dark"><b>Accounting & Taxes</b></h4>
 											</Col>
@@ -312,7 +312,7 @@ class VirtualCFO extends React.Component {
 									<Card.Body style={{ paddingTop: '50px', paddingLeft: '30px', paddingRight: '30px' }}>
 										<Row className="text-center">
 											<Col>
-												<img src="/static/images/illustrations/1.svg" className="features__illustration"></img>
+												<img src="/static/images/illustrations/statutory_compliance.svg" alt='Statutory Compliance' className="features__illustration"></img>
 												<br></br><br></br>
 												<h4 className="color__dark"><b>Statutory Compliance</b></h4>
 											</Col>
@@ -347,7 +347,7 @@ class VirtualCFO extends React.Component {
 									<Card.Body style={{ paddingTop: '50px', paddingLeft: '30px', paddingRight: '30px' }}>
 										<Row className="text-center">
 											<Col>
-												<img src="/static/images/illustrations/service.svg" className="features__illustration"></img>
+												<img src="/static/images/illustrations/payroll_on_autopilot.svg" alt='Payroll on Autopilot' className="features__illustration"></img>
 												<br></br><br></br>
 												<h4 className="color__dark"><b>Payroll on Autopilot</b></h4>
 											</Col>
@@ -387,7 +387,7 @@ class VirtualCFO extends React.Component {
 									<Card.Body className="d-flex" style={{ paddingTop: '50px' }}>
 										<Row>
 											<Col md={5} className="text-center" style={{ justifyContent: "center", alignItems: "center", display: "flex", flexDirection: "column" }}>
-												<img src="/static/images/illustrations/payroll.svg" className="features__illustration"></img>
+												<img src="/static/images/illustrations/services_on_demand.svg" alt='Services on demand' className="features__illustration"></img>
 												<br></br><br></br>
 												<Button className="btn__secondary on_white d-none d-md-inline-block d-lg-inline-block d-xl-inline-block" onClick={this.togglePopConvert}>Consult Now</Button>
 											</Col>
@@ -436,7 +436,7 @@ class VirtualCFO extends React.Component {
 									<Card.Body style={{ paddingTop: '50px', paddingLeft: '30px', paddingRight: '30px' }}>
 										<Row className="text-center">
 											<Col>
-												<img src="/static/images/illustrations/business_insights.svg" className="features__illustration"></img>
+												<img src="/static/images/illustrations/business_insights.svg" alt='Business Insights' className="features__illustration"></img>
 												<br></br><br></br>
 												<h4 className="color__dark"><b>Business Insights</b></h4>
 											</Col>
@@ -468,7 +468,7 @@ class VirtualCFO extends React.Component {
 									<Card.Body style={{ paddingTop: '50px', paddingLeft: '30px', paddingRight: '30px' }}>
 										<Row className="text-center">
 											<Col>
-												<img src="/static/images/illustrations/1.svg" className="features__illustration"></img>
+												<img src="/static/images/illustrations/automated_payroll.svg" alt='Automated Payroll' className="features__illustration"></img>
 												<br></br><br></br>
 												<h4 className="color__dark"><b>Automated Payroll</b></h4>
 											</Col>
@@ -499,7 +499,7 @@ class VirtualCFO extends React.Component {
 									<Card.Body style={{ paddingTop: '50px', paddingLeft: '30px', paddingRight: '30px' }}>
 										<Row className="text-center">
 											<Col>
-												<img src="/static/images/illustrations/automated_accounting.svg" className="features__illustration"></img>
+												<img src="/static/images/illustrations/experienced_accountants.svg" alt='Experienced Accountants' className="features__illustration"></img>
 												<br></br><br></br>
 												<h4 className="color__dark"><b>Experienced Accountants</b></h4>
 											</Col>
