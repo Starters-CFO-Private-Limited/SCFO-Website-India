@@ -42,12 +42,34 @@ class TrademarkRegistration extends React.Component {
         return (
 
             <>
-                <Meta title="Draft ESOP policies for your employees" description="Trademark karo, safe raho. Register a trademark with Starters' CFO. Trademark Attorney Services included for free!"></Meta>
+                {/* <Meta title="Draft ESOP policies for your employees" description="Trademark karo, safe raho. Register a trademark with Starters' CFO. Trademark Attorney Services included for free!"></Meta> */}
+
+
+                <Meta 
+                title="Efficient Online Trademark & Brand Registration with Starters's CFO"
+                description="Through Starters' CFO Online Trademark registration services. Register your trademark from the comfort of your office or home, saving time and effort."
+                keywords="trademark registration online, Trademark Registration , Brand Registration, tm registration, registered trademark, e register trademark, trademark a name, trademark business name, logo registration, e filing trademark,trademark search online, trademark filing, apply for trademark, trademark renewal, us trademark registration, trademark name and logo, trademark registration cost"
+                robots="index,follow"
+
+                og_url="https://starterscfo.com"
+                og_type="website"
+                og_title="Efficient Online Trademark & Brand Registration with Starters's CFO"
+                og_description="Through Starters' CFO Online Trademark registration services. Register your trademark from the comfort of your office or home, saving time and effort."
+                og_image="https://starterscfo.com/static/images/og/img7.avif"
+                twitter_title="Efficient Online Trademark & Brand Registration with Starters's CFO"
+                twitter_card="summary_large_image"
+                twitter_description="Through Starters' CFO Online Trademark registration services. Register your trademark from the comfort of your office or home, saving time and effort."
+                twitter_image="https://starterscfo.com/static/images/og/img7.avif"
+
+                ></Meta>
 
                 <Layout promobanner={true}>
 
                     <PopConvert show={this.state.showPopConvert} onHide={this.togglePopConvert} product={'trademark'} mobile={this.state.mobile}></PopConvert>
                     <ExitConvert></ExitConvert>
+
+                    <h1 className="d-none">Trademark Registration</h1>
+                    <h2 className="d-none">What is  trademark?</h2>
 
                     <div className="w-100">
                         <div className="-white">
@@ -477,6 +499,33 @@ class TrademarkRegistration extends React.Component {
                             </Container>
                         </Col>
                     </Row>
+
+
+                    {/* Footer Text */}
+                    <div className="w-100 background-color__footer_text">
+                    <Container>
+                    <Row className="background-color__footer_text footer" style={{ paddingTop: '60px', paddingBottom: '10px' }}>
+                            <Col>
+                            <h5 class="font__14 weight__600 mt-2 mb-2">Most Searched for Starters’ CFO </h5>
+                            <p className='font__12'>Trademark Registration | Startup India | MSME | Brand Registration| tm registration| registered trademark| trademark registration online| e register trademark| trademark a name| trademark business name| logo registration| e filing trademark|trademark search online|trademark filing| apply for trademark| trademark renewal</p>
+
+                            <h5 class="font__14 weight__600 mt-2 mb-2">Trademark Registration</h5>
+                            <p className='font__12'>Are you passionate about your business and the brand you've built? To ensure that identity is unique, Starters' CFO will help to protect the same through trademark registration legally. A registered trademark offers numerous benefits, including exclusive rights to use the name for your services and protection against unauthorized usage by others.</p>
+
+                            <h5 className='font__14 weight__600 mt-2 mb-2'>Startup India</h5>
+                            <p className='font__12'>At Starters' CFO, we understand that the journey of turning your innovative ideas into a successful business begins with proper registration. We are your dedicated partners in guiding you through the intricate process of startup registration, ensuring that your foundation is strong, compliant, and ready to flourish.</p>
+
+                            <h5 className='font__14 weight__600 mt-2 mb-2'>MSME</h5>        
+                            <p className='font__12'>Effective financial management is essential for the growth and sustainability of MSMEs. Starters' CFO offers comprehensive financial services that cater to the specific needs of MSMEs, including budgeting, cash flow management, financial reporting, and tax optimization. Our goal is to empower MSMEs with the financial tools they need to achieve long-term success.</p>
+
+                            <h5 className='font__14 weight__600 mt-2 mb-2'>Brand Registration</h5>
+                            <p className='font__12'>Your organization's name is more than just a word; it's a representation of your vision, values, and offerings. Protecting this identity is essential to your business's long-term success. With Starters' CFO's brand registration services, you can confidently build, grow, and expand your business while safeguarding the brand you've worked tirelessly to create.</p>
+
+                            </Col>
+                    </Row>
+                    </Container>
+                    </div>
+
                 </Layout>
             </>
         );

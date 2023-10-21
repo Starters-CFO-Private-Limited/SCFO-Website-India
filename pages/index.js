@@ -38,34 +38,37 @@ class Home extends React.Component {
             <>
                 <Head>
                     <title> Virtual CFO Services | Accounting, Services in Delhi | Starter CFO </title>
-                    <meta name="title" content="Starters' CFO | Virtual CFOs, Company Incorporation, Accounting Software"></meta>
-                    <meta name="description" content="Starters CFO offers Virtual CFO Services for all your business needs. Hire us for Virtual CFO Services, Valuations and accounting service in Delhi, India."/>
-                    <meta name="keywords" content="Starters' CFO, Virtual CFO, SMEs, Startups, India"></meta>
+                    <meta name="title" content="Get Your Finances in Order with Starters' CFO"></meta>
+                    <meta name="description" content="Starters’ CFO offers Virtual CFO Services for all your business needs. Hire us for Virtual CFO Services, Valuations and accounting service in Delhi, India."/>
+                    <meta name="keywords" content="Statutory Compliance , Payroll Automation , Virtual CFO , Company registration services , Accounting services , Payroll Outsourcing , Partnership firm, LLP Registration, one person company, one person company registration, private limited company registration, pvt ltd company registration Best virtual cfo services, virtual CFO services, company valuation in india, company formation online, private limited company registration, accounting services in Delhi, private company valuation, business valuation services in india, company registration services, virtual cfo services in India, cfo services for startups, business valuation services india, cfo services for startups in india, virtual cfo for startups, company valuation india, virtual bookkeeping services in delhi, virtual cfo packages, start-up business valuation services, fast track trademark registration india, valuation firms in india"></meta>
                     <meta name="copyright" content="Starters CFO" />
+                    <link rel="canonical" href="https://starterscfo.com/" />
+                    
                     <meta name="language" content="English" />
                     <meta name="coverage" content="Worldwide" />
                     <meta name="distribution" content="Global" />
                     <meta name="robots" content="index,follow"></meta>
 
                     <meta property="og:type" content="website"></meta>
-                    <meta property="og:url" content="https://www.starterscfo.com/"></meta>
-                    <meta property="og:title" content="Starters' CFO | Virtual CFOs, Company Incorporation, Accounting Software"></meta>
-                    <meta property="og:description" content="You run your business. We will do the bookkeeping. 
-            India's first Virtual CFO Service for start-ups and SMEs. Accounting & Taxes, Statutory Compliances & more"></meta>
-                    <meta property="og:image" content="/static/images/banner/meta.png"></meta>
+                    <meta property="og:url" content="https://starterscfo.com/"></meta>
+                    <meta property="og:title" content="Get Your Finances in Order with Starters' CFO"></meta>
+                    <meta property="og:description" content="Starters CFO offers Virtual CFO Services for all your business needs. Hire us for Virtual CFO Services, Valuations and accounting service in Delhi, India."></meta>
+                    <meta property="og:image" content="https://starterscfo.com/static/images/illustrations/compliance.webp"></meta>
 
                     <meta property="twitter:card" content="summary_large_image"></meta>
-                    <meta property="twitter:url" content="https://www.starterscfo.com/"></meta>
-                    <meta property="twitter:title" content="Starters' CFO | Virtual CFOs, Company Incorporation, Accounting Software"></meta>
-                    <meta property="twitter:description" content="You run your business. We will do the bookkeeping. 
-            India's first Virtual CFO Service for start-ups and SMEs. Accounting & Taxes, Statutory Compliances & more"></meta>
-                    <meta property="twitter:image" content="/static/images/banner/meta.png"></meta>
+                    <meta property="twitter:url" content="https://starterscfo.com/"></meta>
+                    <meta property="twitter:title" content="Get Your Finances in Order with Starters' CFO"></meta>
+                    <meta property="twitter:description" content="Starters CFO offers Virtual CFO Services for all your business needs. Hire us for Virtual CFO Services, Valuations and accounting service in Delhi, India."></meta>
+                    <meta property="twitter:image" content="https://starterscfo.com/static/images/illustrations/compliance.webp"></meta>
                     <meta name="google-site-verification" content="hwGg0k7JuVnA49F784MZXUy6ABXLBXG-OK8On0vglTA" />
                 </Head>
 
                 <Layout promobanner={true}>
 
                     <PopConvert show={this.state.showPopConvert} onHide={this.togglePopConvert} product={'vcfo'}></PopConvert>
+                    
+                    <h1 className="d-none">Company Incorporation & Valuation</h1>
+                    <h2 className="d-none">Payroll Automation</h2>
 
                     <div className="d-none d-md-block d-lg-block d-xl-block w-100">
                         <div className="hero--wrapper">
@@ -434,6 +437,35 @@ class Home extends React.Component {
                         </Row>
                         <Row style={{ marginTop: '50px' }}></Row>
                     </Container>
+
+
+
+                    {/* Footer Text */}
+                    <div className="w-100 background-color__footer_text">
+                    <Container>
+                    <Row className="background-color__footer_text footer" style={{ paddingTop: '60px', paddingBottom: '10px' }}>
+                            <Col>
+                            <h5 class="font__14 weight__600 mt-2 mb-2">Most Searched for Starters’ CFO </h5>
+                            <p className='font__12'>Statutory Compliance | Payroll Automation | Virtual CFO | Company registration services | Accounting services | Payroll Outsourcing | Partnership firm| LLP Registration| one person company| one person company registration| private limited company registration| pvt ltd company registration| Business registration service| Trademark Registration| company incorporation| partnership firm|partnership deed registration| certificate of incorporation| startup india|small business ideas|starting a business|government registrations|registrar of companies|register a company|register a business|company registration office|business registration online|copyright registration| copyright application| copyright filing|online copyright registration|tds return filing| cleartds | professional tax registration|professional tax enrollment|copyright registration|digital signature certificate|GST Registration|GST Filing|GST Advisory|Indirect Tax|Private Limited Company / OPC| Limited Liability Partnership| Proprietorship Tax Return Filing| Income Tax Notice| Proprietorship to Pvt Ltd Company| Compliance Check - Secretarial Audit |udyam registration| udyog aadhar | msme registration | udyog aadhar registration</p>
+
+                            <h5 class="font__14 weight__600 mt-2 mb-2">Statutory Compliance</h5>
+                            <p className='font__12'>Starters' CFO  Statutory compliance in payroll involves the legal and regulatory requirements set by the government concerning employee wages, benefits, taxes, and deductions. with the help of  some Characteristics in statutory compliance in payroll such as,  Employee Classification, Minimum Wage, Overtime Pay, Tax Deduction , Social Security and Medicare, Leave and Holiday, Compliance Reporting, Labor Laws, Audit and Review, Technology and Software, Professional Assistance</p>
+
+                            <h5 className='font__14 weight__600 mt-2 mb-2'>Payroll Automation</h5>
+                            <p className='font__12'>An automated payroll system can significantly reduce manual errors, save time, and enhance employee satisfaction. By selecting the right system, implementing it effectively, and ensuring ongoing support, Starters' CFO can position itself at the forefront of efficient payroll management.</p>
+
+                            <h5 className='font__14 weight__600 mt-2 mb-2'>Virtual CFO</h5>        
+                            <p className='font__12'>Starters' CFO, your trusted partner for the Virtual CFO services. With a team of experienced financial experts, we are dedicated to helping your business thrive and succeed by providing top-notch financial guidance and strategic insights.we're not just financial consultants; we're your partners in success.</p>
+
+                            <h5 className='font__14 weight__600 mt-2 mb-2'>Company registration services</h5>
+                            <p className='font__12'>Starters' CFO, your trusted partner for seamless and efficient company registration services. Whether you're a growing entrepreneur or an established business looking to expand, our expert team is here to guide you through the process of registering your company with precision and expertise.</p>
+
+                            <h5 className='font__14 weight__600 mt-2 mb-2'>LLP Registration</h5>
+                            <p className='font__12'>Starters' CFO is here to assist you in seamlessly registering your Limited Liability Partnership (LLP). Our comprehensive LLP registration services ensure a hassle-free and efficient process, allowing you to focus on what truly matters – building your business.</p>
+                            </Col>
+                    </Row>
+                    </Container>
+                    </div>
                 </Layout>
             </>
         );

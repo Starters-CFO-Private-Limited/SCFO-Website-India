@@ -43,7 +43,26 @@ class VirtualCFO extends React.Component {
 		return (
 
 			<>
-				<Meta title="Virtual CFO Services | best virtual cfo services| Starter CFO" description="You run your business. We will do the bookkeeping. India's first Virtual CFO Service for start-ups and SMEs."></Meta>
+				{/* <Meta title="Virtual CFO Services | best virtual cfo services| Starter CFO" description="You run your business. We will do the bookkeeping. India's first Virtual CFO Service for start-ups and SMEs."></Meta> */}
+
+
+				<Meta 
+				title="Expert Virtual CFO & Accounting Services in Delhi - Starters' CFO"
+				description="Starters’ CFO the Best CFO firm in delhi that specializes in offering Virtual CFO services specifically tailored to startups and small businesses"
+				keywords="virtual cfo, virtual cfo services, vcfo services, virtual cfo pricing, best virtual cfo services, virtual cfo solutions, virtual cfo cost, virtual cfo for startups, virtual cfo packages, virtual cfo small business, virtual cfo services pricing, best virtual cfo,virtual cfo companies, the virtual cfo, accounting services, cost accounting, forensic accounting, corporate accounting, accounting firm,  payroll accounting, accounting and auditing ,accounting consultant, bookkeeping accounting , accounting outsourcing,  accounting consultant"
+				robots="index,follow"
+
+				og_url="https://starterscfo.com"
+				og_type="website"
+				og_title="Expert Virtual CFO & Accounting Services in Delhi - Starters' CFO"
+				og_description="Starters’ CFO the Best CFO firm in delhi that specializes in offering Virtual CFO services specifically tailored to startups and small businesses"
+				og_image="https://starterscfo.com/static/images/og/img4.avif"
+				twitter_title="Expert Virtual CFO & Accounting Services in Delhi - Starters' CFO"
+				twitter_card="summary_large_image"
+				twitter_description="Starters’ CFO the Best CFO firm in delhi that specializes in offering Virtual CFO services specifically tailored to startups and small businesses."
+				twitter_image="https://starterscfo.com/static/images/og/img2.avif"
+
+				></Meta>
 
 				<PopConvert show={this.state.showPopConvert} onHide={this.togglePopConvert}></PopConvert>
 				<ExitConvert></ExitConvert>
@@ -51,6 +70,8 @@ class VirtualCFO extends React.Component {
 				<Layout promobanner={true}>
 
 					<link rel="stylesheet" href="/static/virtual.css" />
+					
+					<h1 className="d-none">Virtual CFOs in India</h1>
 
 					<div className="w-100">
 						<div className="-white">
@@ -616,6 +637,37 @@ class VirtualCFO extends React.Component {
 						</Col>
 
 					</Row>
+
+
+					{/* Footer Text */}
+					<div className="w-100 background-color__footer_text">
+					<Container>
+					<Row className="background-color__footer_text footer" style={{ paddingTop: '60px', paddingBottom: '10px' }}>
+							<Col>
+							<h5 class="font__14 weight__600 mt-2 mb-2">Most Searched for Starters’ CFO </h5>
+							<p className='font__12'>Business Insights | Automated Payroll | Experienced Accountants| Statutory Compliance | Accounting services | CFO | virtual cfo services| best virtual cfo services| virtual cfo packages| virtual cfo business| accounting services| cost accounting| forensic accounting| corporate accounting| accounting firm| payroll accounting|cloud accounting| accounting standard| small business accountant| accounting and auditing |accounting consultant| bookkeeping accounting | accounting outsourcing| accounting consultant</p>
+
+							<h5 class="font__14 weight__600 mt-2 mb-2">Business Insights</h5>
+							<p className='font__12'>Business insights refer to valuable and actionable information derived from data analysis and Starters’ CFO  can help you to take  business decisions with that data. So that  business leaders and decision-makers better understand their organization's performance, customers, operations, and market dynamics.</p>
+
+							<h5 className='font__14 weight__600 mt-2 mb-2'>Automated Payroll</h5>
+							<p className='font__12'>Manual payroll tasks can be time-consuming and prone to errors. With Starters' CFO automation services, you can significantly reduce the time spent on payroll processing, allowing your HR and finance teams to focus on more strategic initiatives.We proudly offers advanced automation services to streamline your payroll processes.</p>
+
+							<h5 className='font__14 weight__600 mt-2 mb-2'>Experienced Accountants</h5>        
+							<p className='font__12'>At Starters' CFO, we understand that the backbone of any successful business lies in its financial health. With our team of experienced accountants, we offer a wide range of top-notch accounting services tailored to meet the unique needs of your organization. Our expertise goes beyond number-crunching; we are your strategic partner in achieving financial excellence.</p>
+
+							<h5 className='font__14 weight__600 mt-2 mb-2'>Proprietorship Tax Return Filing</h5>
+							<p className='font__12'>Fulfilling your tax obligations is an essential aspect of running a successful business. As Starters' CFO, navigating the intricacies of tax return filing is crucial to maintaining financial transparency and compliance. </p>
+
+							<h5 className='font__14 weight__600 mt-2 mb-2'>Accounting services</h5>
+							<p className='font__12'>Accounting services refer to the professional services provided by accounting firms or individual accountants to help businesses and individuals manage their financial records, transactions, and reporting.</p>
+
+							<h5 className='font__14 weight__600 mt-2 mb-2'>CFO</h5>
+							<p className='font__12'>At Starters' CFO, we understand that financial success is the cornerstone of any thriving business. Our team of seasoned financial experts is dedicated to helping startups and small businesses navigate the complex world of finance. With our tailored CFO services, you can expect strategic financial planning, analysis, and guidance that will empower your business to grow and flourish.</p>
+							</Col>
+					</Row>
+					</Container>
+					</div>
 
 				</Layout>
 			</>
